@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+.hsw_inputBoxArrow {
+    align-items: center;
+    display: inline-flex;
+    height: 12px;
+    justify-content: center;
+    margin-left: 5px;
+    width: 12px;
+}
+.hsw_inputBoxArrow:after {
+    border: solid #008cff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    padding: 3px;
+    position: relative;
+    top: -3px;
+    transform: rotate(45deg);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+}
+/* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
+.nav2{
+    background-color: #0A223D;
+    padding:10px 0px 10px 70px ;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    z-index: 100;
+}
+.nav2 label{
+    font-size: 12px;
+    color:#008cff;
+    font-weight: bold;
+}
+.nav2 button{
+    background:#223950;
+    padding:5px 9px 10px 9px;
+    border: 0;
+    width: 15%;
+    border-radius: 5px;
+    display: grid;
+    text-align: left;
+}
+.nav2 select{
+    padding: 5px 0px 0px 0px ;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border:0;
+    -webkit-appearance: none;
+}
+.nav2 option{
+    color:#4A4A4A;
+}
+.nav2 select:focus{
+    outline: none;
+}
+#search{
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(42,242,233);
+    background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------nav3---------------------------------------------------------------------------- */
+.nav3{
+    background-color:#cfe8fd ;
+    
+}
+.nav3 div{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    padding:10px 9px 0px 70px;
+}
+.nav3 div a{
+    color:#008cff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#head{
+    font-size: 24px;
+    font-weight: 900;
+}
+/* ----------------------------------------------------------------------nav3---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------nav4---------------------------------------------------------------------------- */
+.nav4{
+    background-color:#cfe8fd ;
+    padding: 10px 0 0 65px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+.div1 {
+    display: flex;
+    padding-top: 8px;
+}
+.sticky1 {
+    position: sticky;
+    top: 70px;
+    width: 100%;
+  }
+.div1 select{
+    border:0;
+    background: transparent;
+    color:#008cff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 20px;
+}
+.div1 #select1{
+    width: 90px;
+}
+.div1 select option{
+    color: black;
+}
+.div1 select:focus,#search1{
+    outline: none;
+}
+.selected{
+    display: none;
+}
+.div2{
+    display: flex;
+    gap: 20px;
+    margin-right: 70px;
+}
+#search1{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 0 0 2px 10px;
+    font-size: 15px;
+    border: 0;
+    border-left: 0;
+}
+#s1{
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+}
+/* ----------------------------------------------------------------------nav4---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------body---------------------------------------------------------------------------- */
+.mainbody{
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+}
+.main img{
+    width: 280px;
+    height:180px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 20px 20px 0 20px;
+}
+.small{
+    margin: 0 20px 20px 20px;
+}
+.small img{
+    width: 57.5px;
+    height:50.5px;
+}
+.body p{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.mace{
+    display: flex;
+    width: 940px;
+}
+.eddy{
+    margin-top: 30px;
+}
+.eddy span{
+    font-size:22px ;
+    font-weight: bolder;
+}
+.post{
+    display: grid;
+}
+#a{
+    font-size: 12px;
+    color:#008cff;
+    font-weight: bold;
+}
+#b{
+    color:green;
+}
+#rating{
+    background-color:#0b58b4;
+    border: 0;
+    color: white;
+    width: 30px;
+    border-radius: 5px;
+}
+#review{
+    font-size: 15px;
+    color:#0b58b4;
+    font-weight: bolder;
+    margin-left: 4px;
+}
+.money{
+    position: absolute;
+    right: 78px;
+    height: 256.5px;
+    width: 190px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 100px 20px 0 50px;
+    text-align: right;
+    background-color: #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 0px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.box{
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box:hover{
+    border: 1px solid #0b58b4;
+    background-color: #f4fbfe;
+}
+#strikeprice{
+    color: #9b9b9b;
+    font-size: 16px;
+}
+#displayprice{
+    color: black;
+    font-size:26px;
+}
+#tax{
+    color: #4a4a4a;font-size: 12px;
+}
+/* ----------------------------------------------------------------------body---------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------filters------------------------------------------------------------------------- */
+.filters{
+    margin-left: 70px;
+}
+.filters span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.fprice,.frating{
+    display: grid;
+    gap: 10px;
+}
+.fprice small ,.frating small{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.filters input[type=checkbox]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.filters p{
+    font-size: 14px;
+    color: #4A4A4A;
+}
+#range{
+    display: flex;
+    gap: 7px;
+}
+#range input[type=number]{
+    width: 60px;
+    height:35px;
+    padding-left: 4px;
+}
+#range button{
+    width: 35px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 0;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    background-color:#03A9F4;
+}
+/* ----------------------------------------------------------------------filters------------------------------------------------------------------------- */
