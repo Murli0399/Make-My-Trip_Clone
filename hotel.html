@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <br><br><br><br>
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+    <nav class="nav2">
+        <button>
+            <label for="city">CITY, AREA OR PROPERTY<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option value="">Mumbai</option>
+            </select>
+        </button>
+        <button>
+            <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow"></span></label>
+        </button>
+        <button>
+            <label for="outdate">CHECK-OUT<span class="hsw_inputBoxArrow"></span></label>
+        </button>
+        <button>
+            <label for="room">ROOMS & GUESTS<span class="hsw_inputBoxArrow"></span></label>
+        </button>
+        <button id="search"><b>SEARCH</b></button>
+    </nav>
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------navbar3------------------------------------------------------------------------------- -->
+    <nav class="nav3">
+        <div>
+            <a href="">Home</a>
+            &gt
+            <p style="color:#798189">Hotels and more in Mumbai</p>
+        </div>
+        <div id="head">
+            <p><b>Hotels, Villas, Apartments and more in Mumbai</b></p>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------------------navbar3------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------navbar4------------------------------------------------------------------------------- -->
+    <nav class="nav4">
+        <div class="div1">
+            <select name="" id="">
+                <option value="" selected class="selected">Select Trip Type</option>
+                <option value="Business">Business</option>
+                <option value="Family">Family</option>
+                <option value="Romantic">Romantic</option>
+            </select>
+            <label for="" style="font-size: 14px;font-weight: 600;">Sort by:</label>
+            <select name="" id="select1">
+                <option value="Popularity">Popularity</option>
+                <option value="Price-Low to High">Price-Low to High</option>
+                <option value="Price-High to Low">Price-High to Low</option>
+                <option value="User Rating-High to Low">User Rating-High to Low</option>
+            </select>
+            <p style="font-size: 14px;color: #4a4a4a;">Showing 745 properties in Mumbai</p>
+        </div>
+        <div class="div2">
+            <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/sprite/view-map-new.png" alt="" width="100px" style="margin-bottom: 10px;">
+            <div style="display: flex;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIipC-vMEFEecKPfRr66bvMgAF7KPhvg8PA&usqp=CAU" alt="" id="s1">
+                <input type="search" name="" id="search1" placeholder="Search location or property">
+            </div>
+            
+        </div>
+    </nav>
+    <!---------------------------------------------------------------navbar4-------------------------------------------------------------------------------->
+    <div class="mainbody">
+        <!-- ---------------------------------------------------------filters---------------------------------------------------------------------------- -->
+        <div class="filters">
+            <span>Selete Filters</span>
+            <div class="fprice">
+                <small>Price (per night)</small>
+                <div style="display: flex;"><input type="checkbox" name="" id="0-3000" value="0-3000"><p>₹ 0 - ₹ 3000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="3000-5000" value="3000-5000"><p>₹ 3000 - ₹ 5000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="5500-9000" value="5500-9000"><p>₹ 5500 - ₹ 9000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="9000-15000" value="9000-15000"><p>₹ 9000 - ₹ 15000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="15000-30000" value="15000-30000"><p>₹ 15000 - ₹ 30000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="3000+" value="3000+"><p>₹ 30000 +</p></div>
+                <p style="font-size: 15px;">Your Budget</p>
+                <div id="range">
+                    <input type="number" name="" id="lower" placeholder="Min">
+                    <p style="margin-top: 6px;">to</p>
+                    <input type="number" name="" id="upper" placeholder="Max">
+                    <button id="filter-btn">→</button>
+                </div>
+            </div>
+            <div class="frating">
+                <small>User Rating</small>
+                <div style="display: flex;"><input type="checkbox" name="" id="excellent" value="excellent"><p>4.5 & above (Excellent)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="verygood" value="verygood"><p>4 & above (Very Good)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="" id="good" value="good"><p>3 & above (Good)</p></div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------filters---------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
+        <div class="body">
+            <p>Showing Properties in Mumbai</p>
+            <div id="hotel">
+                <div class="box">
+                    <div class="mace">
+                        <div class="sett">
+                            <div class="main">
+                                <img id="img"src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9c4df512626711ed988d0a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg"/>
+                            </div>
+                            <div class="small">
+                                <img id="img1" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-0b133018930d11eda0690a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
+                                <img id="img2" src="https://r1imghtlak.mmtcdn.com/0105f2de626811ed9de80a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
+                                <img id="img3" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9b6c734e626711edb0ee0a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
+                                <img id="img4" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9b09f54e672f11edb49b0a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg" onclick="clickimg(this)" alt="">
+                            </div>
+                        </div>
+                        <div class="eddy">
+                            <div class="zap">
+                                <button id="rating">3.7</button>
+                                <small id="review">Very Good</small>
+                            </div>
+                            <span id="hotelname" >Novotel Mumbai International Airport</span>
+                            <div class="post">
+                                <small id="a">Near Mumbai Airport</small>
+                                <small id="b"><i class="fa-solid fa-check"></i>Free Cancellation <u>till check in</u></small>
+                            </div>
+                        </div>
+                        <div class="money">
+                            <strike id="strikeprice">₹ 2400</strike>
+                            <p id="displayprice">₹ 2256</p>
+                            <p id="tax" >+ ₹ 432 taxes & fee </p>
+                            <p style="color: #9b9b9b;font-size: 10px;">Per Night</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
+    </div>
+
+</body>
+</html>
+<script src="./hotel.js"></script>

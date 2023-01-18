@@ -1,0 +1,171 @@
+body {
+    background-color: #e5eef4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Right side container for displaying flights information */
+
+#Right-side-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+/* Oneward flights */
+#one-ward-fligts {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+#one-ward-flight-info {
+    background-color: #FFFFFF;
+    padding: 10px 20px 20px 20px;
+
+}
+
+.sort-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: small;
+    margin: 25px 0px 0px 0px;
+}
+
+.left-sort-button-arrow {
+    margin-left: 5px;
+}
+
+
+.one-ward-flight-list-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cards for one-ward flights */
+
+.one-ward-card {
+    background-color: #FFFFFF;
+    padding: 10px 20px 30px 20px;
+    margin-top: 5px;
+}
+
+.flight-name-logo {
+    align-items: center;
+}
+
+.flight-img-logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.flight-details {
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+}
+
+.flight-time {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-place {
+    font-size: small;
+}
+
+.duration {
+    font-size: small;
+}
+
+.no-stop {
+    font-size: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: large;
+}
+
+.select-flight {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* Return flights */
+#return-fligts {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+#return-flight-info {
+    background-color: #FFFFFF;
+    padding: 10px 20px 20px 20px;
+
+}
+.return-sort-button-arrow {
+    margin-left: 5px;
+}
+
+
+.return-flight-list-cards {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Cards for one-ward flights */
+
+.return-card {
+    background-color: #FFFFFF;
+    padding: 10px 20px 30px 20px;
+    margin-top: 5px;
+}
+
+
+/* Selected Fligth detail */
+
+#selected-flight{
+    width: 72%;
+    background-color:#0a223d ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    color: #fff;
+}
+
+#bookNowBtn{
+    background-image: linear-gradient(97deg,#53b2fe,#065af3 130%);
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    padding: 12px 30px;
+}
+#lockPriceBtn{
+    background-color: #0a223d;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 900;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 10px 28px;
+}

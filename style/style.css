@@ -1,0 +1,1284 @@
+:root {
+    --color-primary: #008cff;
+    --color-btn-primary-bg: linear-gradient(93deg, #53b2fe, #065af3);
+    --color-btn-primary-text: #fff;
+    --color-btn: #008cff;
+    --btn-border-radius: 4px
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0
+}
+
+*,
+html {
+    box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Lato";
+    color: rgb(107, 107, 107);
+    margin: 0;
+    padding: 0;
+}
+.background {
+    background: rgb(232, 232, 232) ;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #051322, #15457c);
+    background-size: 100% 500px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.container {
+    width: 1200px;
+}
+.logo {
+    height: 36px;
+    width: 113px;
+}
+.data {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.categories {
+    background-color: white;
+    width: 950px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #7a7a7a;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+
+}
+.categories span {
+    font-size: 14px;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categories i{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.tickets {
+    background-color: white;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 20px;
+}
+.ticket-type {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.ticket-type span {
+    padding: 5px;
+}
+.ticket-type span i {
+    font-size: 14px;
+}
+.selected-ticket-type {
+    background-color: rgb(211, 211, 211);
+    border-radius: 30px;
+}
+.flight-search {
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.flight {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 300px;
+    border-right: 1px solid rgb(221, 220, 220);
+}
+.flight h1 {
+    margin: 0;
+}
+.fare-search {
+    margin-top: 50px;
+    font-size: 14px;
+    display: flex;
+}
+.fare-select {
+    width: 80px;
+    display: flex;
+}
+.selected-fare-type i {
+    font-size: 14px;
+    color: rgb(18, 119, 226);
+}
+.fare-type span {
+    color: rgb(80, 80, 80);
+}
+.search-button {
+    width: 216px;
+    height: 44px;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    color: white;
+    font-size: 24px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: absolute;
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+}
+.searchbtncont{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
+
+a {
+    color: var(--color-primary, #008cff);
+    cursor: pointer;
+    text-decoration: none
+}
+
+a:focus,
+a:hover {
+    outline: 0;
+    text-decoration: none
+}
+
+.makeRelative {
+    position: relative
+}
+
+.capText {
+    text-transform: uppercase
+}
+
+.appendBottom2 {
+    margin-bottom: 2px
+}
+
+.appendBottom5 {
+    margin-bottom: 5px
+}
+
+.appendBottom6 {
+    margin-bottom: 6px
+}
+
+.appendBottom10 {
+    margin-bottom: 10px
+}
+
+.appendBottom12 {
+    margin-bottom: 12px
+}
+
+.appendBottom15 {
+    margin-bottom: 15px
+}
+
+.appendBottom20 {
+    margin-bottom: 20px
+}
+
+.appendBottom25 {
+    margin-bottom: 25px
+}
+
+.appendBottom30 {
+    margin-bottom: 30px
+}
+
+.appendBottom40 {
+    margin-bottom: 40px
+}
+
+.appendBottom50 {
+    margin-bottom: 50px
+}
+
+
+.landingContainer {
+    margin: 0 auto;
+    width: 1200px
+}
+
+.chHeaderWrapper.navOnly nav {
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .4);
+    display: flex;
+    height: 79px
+}
+
+.chHeaderContainer li a.active .chNavText {
+    background: var(--color-primary, #008cff);
+    color: #fff
+}
+
+.textCenter {
+    text-align: center
+}
+
+html[dir=rtl] .userSection>li {
+    background-color: transparent;
+    border: dotted hsla(0, 0%, 100%, .15);
+    border-width: 0 2px 0 0
+}
+
+html[dir=rtl] .userSection li.lhUser.userLoggedOut {
+    background-image: var(--color-btn-primary-bg, linear-gradient(93deg, #53b2fe, #065af3));
+    border: 0;
+    border-radius: 4px;
+    margin-left: 0
+}
+
+html[dir=rtl] .userSection li.geoSwitcher {
+    background-color: hsla(0, 0%, 100%, .15);
+    border: 0;
+    padding: 0
+}
+
+html[dir=ltr] .userSection li {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 5px 10px
+}
+
+html[dir=rtl] .userSection li {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px
+}
+
+html[dir=rtl] .userSection li.myBizIntro {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2)
+}
+
+html[dir=rtl] .userSection li.lhUser:after {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    margin-top: -5px;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg)
+}
+
+:root {
+    --color-primary: #008cff;
+    --color-btn-primary-bg: linear-gradient(93deg, #53b2fe, #065af3);
+    --color-btn-primary-text: #fff;
+    --color-btn: #008cff;
+    --btn-border-radius: 4px
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0
+}
+
+*,
+html {
+    box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: var(--color-primary, #008cff);
+    cursor: pointer;
+    text-decoration: none
+}
+
+a:focus,
+a:hover {
+    outline: 0;
+    text-decoration: none
+}
+
+.makeRelative {
+    position: relative
+}
+
+.capText {
+    text-transform: uppercase
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(1turn)
+    }
+} */
+
+.appendBottom2 {
+    margin-bottom: 2px
+}
+
+.appendBottom5 {
+    margin-bottom: 5px
+}
+
+.appendBottom6 {
+    margin-bottom: 6px
+}
+
+.appendBottom10 {
+    margin-bottom: 10px
+}
+
+.appendBottom12 {
+    margin-bottom: 12px
+}
+
+.appendBottom15 {
+    margin-bottom: 15px
+}
+
+.appendBottom20 {
+    margin-bottom: 20px
+}
+
+.appendBottom25 {
+    margin-bottom: 25px
+}
+
+.appendBottom30 {
+    margin-bottom: 30px
+}
+
+.appendBottom40 {
+    margin-bottom: 40px
+}
+
+.appendBottom50 {
+    margin-bottom: 50px
+}
+
+html[dir=ltr] .appendLeft2 {
+    margin-left: 2px
+}
+
+html[dir=ltr] .appendLeft5 {
+    margin-left: 5px
+}
+
+html[dir=ltr] .appendLeft10 {
+    margin-left: 10px
+}
+
+html[dir=ltr] .appendLeft20 {
+    margin-left: 20px
+}
+
+html[dir=ltr] .appendLeft40 {
+    margin-left: 40px
+}
+
+html[dir=ltr] .appendLeft50 {
+    margin-left: 50px
+}
+
+html[dir=ltr] .appendRight5 {
+    margin-right: 5px
+}
+
+html[dir=ltr] .appendRight8 {
+    margin-right: 8px
+}
+
+html[dir=ltr] .appendRight10 {
+    margin-right: 10px
+}
+
+html[dir=ltr] .appendRight15 {
+    margin-right: 15px
+}
+
+html[dir=ltr] .appendRight20 {
+    margin-right: 20px
+}
+
+html[dir=ltr] .appendRight25 {
+    margin-right: 25px
+}
+
+html[dir=ltr] .appendRight30 {
+    margin-right: 30px
+}
+
+.appendTop3 {
+    margin-top: 3px
+}
+
+.appendTop5 {
+    margin-top: 5px
+}
+
+.appendTop10 {
+    margin-top: 10px !important
+}
+
+.appendTop15 {
+    margin-top: 15px
+}
+
+.appendTop20 {
+    margin-top: 20px
+}
+
+.appendTop25 {
+    margin-top: 25px
+}
+
+.appendTop30 {
+    margin-top: 30px
+}
+
+.appendTop250 {
+    margin-top: 250px
+}
+
+i:after,
+i:before {
+    box-sizing: border-box;
+    content: ""
+}
+
+.font8 {
+    font-size: 8px;
+    line-height: 8px
+}
+
+.font9 {
+    font-size: 9px;
+    line-height: 9px
+}
+
+.font10 {
+    font-size: 10px;
+    line-height: 10px
+}
+
+.font11 {
+    font-size: calc(var(--font-scale, 1)*11px);
+    line-height: 11px
+}
+
+.font12 {
+    font-size: calc(var(--font-scale, 1)*12px);
+    line-height: 12px
+}
+
+.font14 {
+    font-size: calc(var(--font-scale, 1)*14px);
+    line-height: 14px
+}
+
+.font16 {
+    font-size: calc(var(--font-scale, 1)*16px);
+    line-height: 16px
+}
+
+.font18 {
+    font-size: calc(var(--font-scale, 1)*18px);
+    line-height: 18px
+}
+
+.font20 {
+    font-size: calc(var(--font-scale, 1)*20px);
+    line-height: 20px
+}
+
+.font22 {
+    font-size: calc(var(--font-scale, 1)*22px);
+    line-height: 22px
+}
+
+.font23 {
+    font-size: calc(var(--font-scale, 1)*23px);
+    line-height: 23px
+}
+
+.font24 {
+    font-size: calc(var(--font-scale, 1)*24px);
+    line-height: 24px
+}
+
+.font26 {
+    font-size: calc(var(--font-scale, 1)*26px);
+    line-height: 26px
+}
+
+.font28 {
+    font-size: calc(var(--font-scale, 1)*28px);
+    line-height: 28px
+}
+
+.font30 {
+    font-size: calc(var(--font-scale, 1)*30px);
+    line-height: 30px
+}
+
+.lineHeight14 {
+    line-height: 14px
+}
+
+.lineHeight16 {
+    line-height: 16px
+}
+
+.lineHeight26 {
+    line-height: 26px !important
+}
+
+.latoBlack {
+    font-weight: 900
+}
+
+.latoBold {
+    font-weight: 700
+}
+
+.whiteText {
+    color: #fff
+}
+
+.blackText {
+    color: #000
+}
+
+.darkGreyText {
+    color: #4a4a4a
+}
+
+.myBizText {
+    color: #ff5a5a
+}
+
+html[dir=ltr] .textRight {
+    text-align: right
+}
+
+html[dir=ltr] .pushRight {
+    margin-left: auto
+}
+.rightcontent{
+    margin-left: auto;
+}
+.makeFlex {
+    display: flex
+}
+
+.flexOne {
+    flex: 1
+}
+
+.makeFlex.column {
+    flex-direction: column
+}
+
+.makeFlex.perfectCenter {
+    align-items: center;
+    justify-content: center
+}
+
+.makeFlex.hrtlCenter {
+    align-items: center
+}
+
+.makeFlex.vrtlCenter {
+    justify-content: center
+}
+
+.makeFlex.spaceBetween {
+    justify-content: space-between
+}
+
+.makeFlex.top {
+    align-items: flex-start
+}
+
+.cursorPointer {
+    cursor: pointer
+}
+
+img {
+    max-width: 100%
+}
+
+html[dir=rtl] .textRight {
+    text-align: left
+}
+
+.textCenter {
+    text-align: center
+}
+
+html[dir=rtl] .pushRight {
+    margin-right: auto
+}
+
+html[dir=rtl] .appendLeft2 {
+    margin-right: 2px
+}
+
+html[dir=rtl] .appendLeft5 {
+    margin-right: 5px
+}
+
+html[dir=rtl] .appendLeft10 {
+    margin-right: 10px
+}
+
+html[dir=rtl] .appendLeft20 {
+    margin-right: 20px
+}
+
+html[dir=rtl] .appendRight5 {
+    margin-left: 5px
+}
+
+html[dir=rtl] .appendRight8 {
+    margin-left: 8px
+}
+
+html[dir=rtl] .appendRight10 {
+    margin-left: 10px
+}
+
+html[dir=rtl] .appendRight15 {
+    margin-left: 15px
+}
+
+html[dir=rtl] .appendRight20 {
+    margin-left: 20px
+}
+
+html[dir=rtl] .appendRight25 {
+    margin-left: 25px
+}
+
+html[dir=rtl] .appendRight30 {
+    margin-left: 30px
+}
+
+.chSprite {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/commonHeaderSprite11.png) !important;
+    background-repeat: no-repeat;
+    background-size: 230px 306px
+}
+
+.navOnly .chSprite {
+    background-size: 300px 400px
+}
+
+.webp .chSprite {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/commonHeaderSprite11.webp) !important;
+    background-repeat: no-repeat;
+    background-size: 230px 306px
+}
+
+.webp .navOnly .chSprite {
+    background-size: 300px 400px
+}
+
+.chHotels {
+    background-position: -37px -28px
+}
+
+.chBuses {
+    background-position: -90px -30px
+}
+
+.chHolidays {
+    background-position: -54px -179px
+}
+
+.chCabs {
+    background-position: -115px -30px
+}
+
+.chTrains {
+    background-position: -137px -27px
+}
+
+.chActivities {
+    background-position: -161px -56px
+}
+
+.chActivities.active {
+    background-position: -127px -56px
+}
+
+.chFlights {
+    background-position: -2px -30px
+}
+
+.chCharterFlights {
+    background-position: -93px -54px
+}
+
+.chForex {
+    background-position: -101px -179px
+}
+
+.chForex.active {
+    background-position: -141px -179px
+}
+
+.chFlights.active {
+    background-position: -2px -1.5px
+}
+
+.chCharterFlights.active {
+    background-position: -55px -54px
+}
+
+.chTrains.active {
+    background-position: -137px .5px
+}
+
+.chCabs.active {
+    background-position: -115px -1.5px
+}
+
+.chHolidays.active {
+    background-position: -11px -179px
+}
+
+.chBuses.active {
+    background-position: -90px -1.5px
+}
+
+.chHotels.active {
+    background-position: -37px .5px
+}
+
+html[dir=ltr] .chMy {
+    background-color: transparent;
+    background-position: -33px -61px
+}
+
+.chHomestays {
+    background-position: -80px -116px
+}
+
+.chHomestays.active {
+    background-position: -80px -145px
+}
+
+.flagSprite {
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/flagSprite2.png);
+    background-repeat: no-repeat;
+    background-size: 16px 74px;
+    display: inline-block
+}
+
+.flagSprite.in {
+    background-position: 0 0;
+    height: 12px;
+    width: 15px
+}
+
+.flagSprite.us {
+    background-position: 0 -12px;
+    height: 12px;
+    width: 15px
+}
+
+.flagSprite.ae {
+    background-position: 0 -24px;
+    height: 12px;
+    width: 15px
+}
+
+._MyBiz .active .chFlights {
+    background-position: -2px -87px
+}
+
+._MyBiz .active .chHotels {
+    background-position: -37px -87px
+}
+
+._MyBiz .active .chTrains {
+    background-position: -137px -86px
+}
+
+._MyBiz .active .chCabs {
+    background-position: -115px -87px
+}
+
+._MyBiz .active .chHolidays {
+    background-position: -68px -87px
+}
+
+._MyBiz .active .chBuses {
+    background-position: -90px -87px
+}
+
+._MyBiz .active .chCharterFlights {
+    background-position: -191px -56px
+}
+
+html[dir=rtl] .chMy {
+    background-color: transparent;
+    background-position: -28px -61px
+}
+
+:root {
+    --color-primary: #008cff;
+    --color-btn-primary-bg: linear-gradient(93deg, #53b2fe, #065af3);
+    --color-btn-primary-text: #ffffff;
+    --color-link-primary: #008cff;
+    --color-slider-track: #008cff;
+    --btn-border-radius: 34px
+}
+
+p[title]:hover:after {
+    content: attr(title);
+    width: 220px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .3);
+    background-color: #eaf5ff;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 10px
+}
+
+p[title]:hover:after {
+    content: attr(title);
+    width: 220px;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .3);
+    background-color: #eaf5ff;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 10px
+}
+
+img {
+    max-width: 100%
+}
+
+.font32 {
+    font-size: calc(var(--font-scale, 1) * 32px);
+    line-height: 32px
+}
+
+
+html[dir=ltr] .userSection li {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 5px 10px
+}
+
+.html[dir=ltr] userSection li.myBizIntro {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2)
+}
+
+.userPerText {
+    color: #c2c2c2
+}
+
+.userNameIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%
+}
+
+@supports (-moz-appearance:none) {
+    .widgetSection .widgetSearchBtn {
+        width: 216px;
+        padding: 13px 10px 10px;
+        margin-bottom: -32px
+    }
+}
+
+.footNav {
+    padding: 20px 0
+}
+
+.footNav__list li:hover a {
+    color: #008cff
+}
+
+.footNav__list {
+    margin-bottom: 20px
+}
+
+.footNav__list li {
+    display: inline-block
+}
+
+.footNav__list li a {
+    font-size: calc(var(--font-scale, 1) * 12px);
+    color: #4a4a4a;
+    line-height: 14px
+}
+
+.aboutMMT {
+    background: #e7e7e7;
+    padding: 60px 0
+}
+
+.aboutMMT .grid-3 .aboutDesc {
+    max-width: 33%;
+    margin-right: 3%;
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+.aboutMMT .grid-3 .aboutDesc:last-of-type {
+    margin-right: 0
+}
+
+.aboutMMT .grid {
+    flex-wrap: wrap
+}
+
+.aboutMMT .grid .aboutDesc {
+    width: 50%;
+    margin-top: 44px;
+    padding-bottom: 28px;
+    border-bottom: solid 1px #979797
+}
+
+.aboutMMT .grid .aboutDesc:nth-child(even) {
+    padding-left: 6%
+}
+
+.aboutMMT .grid .aboutDesc:nth-child(odd) {
+    padding-right: 6%
+}
+
+.aboutMMT .grid .aboutDesc:nth-child(1),
+.aboutMMT .grid .aboutDesc:nth-child(2) {
+    margin-top: 0
+}
+
+.aboutMMT .grid .aboutDesc:nth-last-child(1),
+.aboutMMT .grid .aboutDesc:nth-last-child(2):nth-child(odd) {
+    border-bottom: none
+}
+
+.aboutMMT .aboutDesc a {
+    color: inherit !important
+}
+
+.aboutMMT .aboutDesc .heading {
+    letter-spacing: .31px
+}
+
+.footerBottom {
+    background: #000;
+    padding: 50px 0 60px
+}
+
+.socialMediaLinks {
+    width: 110px;
+}
+
+.socialMediaLinks a {
+    width: 50px;
+    height: 50px
+}
+
+.bdrWhite {
+    color: #fff
+}
+
+._MyBiz .navOnly .chHolidays {
+    background-position: -70px -235px
+}
+
+._MyBiz .navOnly .chCabs {
+    background-position: -154px -37px
+}
+
+._MyBiz .navOnly .chFlights {
+    background-position: -4px -37px
+}
+
+._MyBiz .navOnly .chHotels {
+    background-position: -50px -37px
+}
+
+._MyBiz .navOnly .chBuses {
+    background-position: -121px -38px
+}
+
+._MyBiz .navOnly .chCabs {
+    background-position: -154px -37px
+}
+
+._MyBiz .navOnly .active .chFlights {
+    background-position: -4px -113px
+}
+
+._MyBiz .navOnly .active .chHotels {
+    background-position: -50px -114px
+}
+
+._MyBiz .navOnly .active .chBuses {
+    background-position: -121px -114px
+}
+
+._MyBiz .navOnly .active .chHolidays {
+    background-position: -14px -235px
+}
+
+._MyBiz .navOnly .active .chCabs {
+    background-position: -154px -114px
+}
+
+._MyBiz .navOnly .chHeaderContainer li a.active .chNavText {
+    color: #ff664b;
+    border-bottom: solid 3px #ff664b
+}
+
+._MyBiz .mmtLogo img {
+    width: 60px;
+    height: 30px
+}
+
+.bgGradient {
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #051322, #15457c);
+    background-size: 100% 438px;
+    min-height: 100vh
+}
+
+.webpSupport.bgGradient {
+    background-image: url(data:image/webp;base64,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)
+}
+
+.myPartner .bgGradient {
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #0b1b29 -60%, #554176);
+    background-size: 100% 454px;
+    min-height: 100vh
+}
+
+._MyBiz .bgGradient {
+    background-image: linear-gradient(to bottom, #371f30, #371f30)
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.widgetLoader {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+    top: 120px;
+    left: 0;
+    right: 0
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+@keyframes page_loader__mover {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+.myIconWhite {
+    background-position: -67px -489px !important
+}
+
+.myBizIcon {
+    background-position: -98px -491px
+}
+
+.minContainer {
+    min-height: 300px
+}
+
+html[dir=rtl] .userSection li {
+    cursor: pointer;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+    margin-right: 5px;
+    border-radius: 4px;
+    padding: 5px 10px
+}
+
+html[dir=rtl] .userSection li.myBizIntro {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2)
+}
+
+.arrowDown {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+    border-top: 2px solid #008cff;
+    border-right: 2px solid #008cff;
+    -webkit-transform: rotate(135deg) skew(3deg, 3deg);
+    -moz-transform: rotate(135deg) skew(3deg, 3deg);
+    -ms-transform: rotate(135deg) skew(3deg, 3deg);
+    -o-transform: rotate(135deg) skew(3deg, 3deg);
+    transform: rotate(135deg) skew(3deg, 3deg)
+}
+
+@keyframes cm--spinner {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes myprofileShimmer {
+    0% {
+        background-position: -468px 0
+    }
+
+    100% {
+        background-position: 468px 0
+    }
+}
+
+@keyframes errorMsgGnricAnimation {
+    0% {
+        bottom: 0;
+        opacity: 1
+    }
+
+    40% {
+        bottom: 48px;
+        opacity: 1
+    }
+
+    100% {
+        bottom: -48px;
+        opacity: 1
+    }
+}
