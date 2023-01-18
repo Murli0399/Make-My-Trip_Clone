@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&family=Titillium+Web&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navigation {
+    position: fixed;
+    width: 22%;
+    height: 100%;
+    background: linear-gradient(#061424, #17457c);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+.navigation h2 {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.navigation .icon {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.navigation .iname {
+    line-height: 61px;
+    color: white;
+    font-size: 16px;
+    /* padding: 10px 0; */
+}
+
+.navigation .iname p:hover {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
