@@ -11,15 +11,17 @@
     <!-- Login or Create Account page -->
     <div id="login_page">
         <div id="bcc">
+            <span id="your_otp">YOUR OTP-</span><p id="otp_display">1234</p>
         <div id="frist_button">
             <button id="login_button">LOGIN ACCOUNT</button>
             <button id="sign_up_button">SIGN UP ACCOUNT</button>
         </div>
        </div>
        <p id="p_tag">Email or Mobile Number</p>
-       <input type="text" onkeypress="change()" id="name_input" placeholder="Enter email or mobile number">
-       <input type="password" id="otp_input" placeholder="Enter your correct otp">
-       <button id="continue_button">CONTINUE</button>
+       <input type="number" onkeypress="change()" id="number_input" placeholder="Enter email or mobile number">
+       <input type="number" id="otp_input" placeholder="Enter your correct otp">
+       <button id="continue_button">genrate otp</button>
+       <button id="new_continue">CONTINUE</button>
       <div id="hr">
         <hr><span>Or Login/Signup With</span><hr>
       </div>
@@ -37,13 +39,16 @@
         <!-- <p id="p_tags">Work Email<span>Forgot Login Id?</span></p> -->
         <form id="input_or_countinue_div">
         <p id="p_tags">Name<span>Forgot Login Id?</span></p>
-        <input type="name" id="named_input" placeholder="Enter your name">
+        <input type="name" onkeypress="forname()" id="named_input" placeholder="Enter your name">
+        <p id="cre_one">minimum required length is 3</p>
         <p id="p_tags">Work Email</p>
         <input type="email" id="email_input" placeholder="Enter your work email id">
         <p id="p_tags">Number</p>
-        <input type="number" id="number_input" placeholder="Enter your number">
+        <input type="number" onkeypress="fornumber()" id="numbers_input" placeholder="Enter your number">
+        <p id="cre_two">minimum required length is 10 Digit</p>
         <p id="p_tags">Password</p>
         <input type="password" onkeypress="key()" id="password_input" placeholder="Enter your password">
+        <p id="cre_three">minimum required length is 4</p>
         <!-- <button id="continue_buttons">CONTINUE</button> -->
         <input type="submit" id="continue_buttons" value="CONTINUE">
         </form>

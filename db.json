@@ -1,19 +1,84 @@
 {
-    "flights": [
-        {
-            "from": "delhi",
-            "to": "kolkata",
-            "distance": "07h 25m",
-            "price": 7322,
-            "airlines": "Go First",
-            "logo": "img link",
-            "start_time": "00:30",
-            "end_time": "08:00"
-        }
-    ],
-    "hotels":[
-        {
-            "name":"murli"
-        }
-    ]
+  "flights": [
+    {
+      "from": "delhi",
+      "to": "kolkata",
+      "distance": "07h 25m",
+      "price": 7322,
+      "airlines": "Go First",
+      "logo": "img link",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "murli"
+    }
+  ],
+  "user": [
+    {
+      "name": "sourabh",
+      "email": "rahul@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "sou",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Rahul",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "8269298587",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "sou",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 9
+    }
+  ]
 }
