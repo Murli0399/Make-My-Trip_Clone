@@ -1,0 +1,109 @@
+{
+  "flights": [
+    {
+      "id": 2,
+      "from": "delhi",
+      "to": "pune",
+      "distance": "07h 25m",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    },
+    {
+      "from": "Banglore",
+      "to": "Indore",
+      "distance": "08h15m",
+      "price": 6580,
+      "airlines": "air india",
+      "logo": "img/airindia.png",
+      "start_time": "06:30",
+      "end_time": "14:45",
+      "id": 6
+    },
+    {
+      "from": "Banglore",
+      "to": "Indore",
+      "distance": "08h15m",
+      "price": 99999,
+      "airlines": "air india",
+      "logo": "img/airindia.png",
+      "start_time": "06:30",
+      "end_time": "14:45",
+      "id": 7
+    },
+    {
+      "from": "Pune",
+      "to": "Dhanbad",
+      "distance": "02h 45m",
+      "price": 10000,
+      "airlines": "indigo",
+      "logo": "img/indigo.png",
+      "start_time": "00:00",
+      "end_time": "14:45",
+      "id": 10
+    },
+    {
+      "from": "Indore",
+      "to": "Hyderabad",
+      "distance": "07h 00m",
+      "price": 11111,
+      "airlines": "indigo",
+      "logo": "img/indigo.png",
+      "start_time": "05:50",
+      "end_time": "12:30",
+      "id": 12
+    }
+  ],
+  "hotels": [
+    {
+      "hotelname": "Taj Santacruz,Mumbai",
+      "city": "Mumbai",
+      "mainimg": "https://r1imghtlak.mmtcdn.com/d274c9e063c511e8b0e60aadd12e06f2.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+      "img1": "https://r1imghtlak.mmtcdn.com/8828302c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img2": "https://r1imghtlak.mmtcdn.com/8c6766f8237c11e89e47025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img3": "https://r1imghtlak.mmtcdn.com/8630176c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img4": "https://r1imghtlak.mmtcdn.com/d274c9e063c511e8b0e60aadd12e06f2.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+      "rating": "4.6",
+      "locat": "Near Mumbai Airport",
+      "dprice": "48750",
+      "id": 1
+    },
+    {
+      "hotelname": "Hotel Keshar",
+      "city": "Khandwa",
+      "mainimg": "https://r1imghtlak.mmtcdn.com/8828302c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img1": "https://r1imghtlak.mmtcdn.com/8828302c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img2": "https://r1imghtlak.mmtcdn.com/8c6766f8237c11e89e47025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img3": "https://r1imghtlak.mmtcdn.com/8630176c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img4": "https://r1imghtlak.mmtcdn.com/d274c9e063c511e8b0e60aadd12e06f2.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+      "rating": "3.7",
+      "locat": "Ram Nagar",
+      "dprice": "16500",
+      "id": 2
+    },
+    {
+      "hotelname": "Taj Santacruz,Mumbai",
+      "city": "Mumbai",
+      "mainimg": "https://r1imghtlak.mmtcdn.com/d274c9e063c511e8b0e60aadd12e06f2.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+      "img1": "https://r1imghtlak.mmtcdn.com/8828302c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img2": "https://r1imghtlak.mmtcdn.com/8c6766f8237c11e89e47025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img3": "https://r1imghtlak.mmtcdn.com/8630176c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+      "img4": "https://r1imghtlak.mmtcdn.com/d274c9e063c511e8b0e60aadd12e06f2.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+      "rating": "4.6",
+      "locat": "Near Mumbai Airport",
+      "dprice": "46750",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "user_name": "rajeev",
+      "mobile": 8462858556,
+      "email": "m@gmail.com",
+      "password": 123456,
+      "id": 1
+    }
+  ]
+}

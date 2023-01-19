@@ -240,6 +240,7 @@ select,
   line-height: 40px;
   outline: none;
   padding: 10px;
+  color: #001b3a;
 }
 
 .modal-content button {
@@ -254,11 +255,13 @@ select,
   background-color: #103158;
   border: none;
 }
-.modal-content button:hover{
+
+.modal-content button:hover {
   background-color: #154378;
   transition: 0.8s;
   cursor: pointer;
 }
+
 .modal-content .margin-left {
   margin-left: 15px;
 
@@ -281,4 +284,9 @@ select,
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(51, 51, 51);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
