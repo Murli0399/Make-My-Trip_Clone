@@ -355,3 +355,12 @@ width:93%;
      font-family: sans-serif;
      margin-bottom: 15px;
  }
+ /* input number scroll hidden
+9:49 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input{
+    outline: none;
+}
