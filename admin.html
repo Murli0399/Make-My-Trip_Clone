@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/admin.css">
+  <link rel="stylesheet" href="style/navigation.css">
+  <title>MakemyTrip Admin</title>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <h2>Take a Trip</h2>
+    <div class="flex">
+      <div class="icon">
+        <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
+        <div class="imgs"><img src="img/flight.png" alt="flights"></div>
+        <div class="imgs"><img src="img/hotels.png" alt="hotels"></div>
+        <div class="imgs"><img src="img/homestay.png" alt="homestay"></div>
+        <div class="imgs"> <img src="img/holiday-p.png" alt="holiday"></div>
+        <div class="imgs"> <img src="img/traines.png" alt="traines"></div>
+        <div class="imgs"><img src="img/buses.png" alt="buses"></div>
+        <div class="imgs"> <img src="img/cabs.png" alt="cabs"></div>
+        <div class="imgs"><img src="img/users.png" alt="users"></div>
+      </div>
+      <div class="iname">
+        <p>Dahsboard</p>
+        <p onclick="flightPage()">Flights</p>
+        <p onclick="hotelPage()">Hotels</p>
+        <p>Homestay</p>
+        <p>Holiday Package</p>
+        <p>Trains</p>
+        <p>Buses</p>
+        <p>Cabs</p>
+        <p onclick="userPage()">Users</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main container -->
+  <div class="container">
+    <!-- dashboard container work start here -->
+
+    <div class="dashboard" id="dashboard">
+      <div class="dash-head">
+        <h2>Dashboard</h2>
+        <h4>Admin</h4>
+      </div>
+
+      <div class="card-list">
+        <div class="card">
+          <div class="flex-div">
+            <div class="image">
+              <img src="img/users.png" alt="">
+            </div>
+            <div class="data">
+              <p>Users</p>
+              <h5 id="total_users">100</h5>
+            </div>
+          </div>
+          <div class="total-text">
+            <p>Total Register User</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex-div">
+            <div class="image">
+              <img src="img/flight.png" alt="">
+            </div>
+            <div class="data">
+              <p>Flights</p>
+              <h5 id="total_flight">100</h5>
+            </div>
+          </div>
+          <div class="total-text">
+            <p>Total Register Flights</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex-div">
+            <div class="image">
+              <img src="img/hotels.png" alt="">
+            </div>
+            <div class="data">
+              <p>Hotels</p>
+              <h5 id="total_hotels">100</h5>
+            </div>
+          </div>
+          <div class="total-text">
+            <p>Total Register Hotels</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="flex-div">
+            <div class="image">
+              <img src="img/traines.png" alt="">
+            </div>
+            <div class="data">
+              <p>Trains</p>
+              <h5>100</h5>
+            </div>
+          </div>
+          <div class="total-text">
+            <p>Total Register Trains</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  
+
+
+
+    
+
+
+
+  </div>
+
+
+</body>
+
+<script src="script/admin.js"></script>
+
+
+</html>

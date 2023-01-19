@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/admin_flight.css">
+  <link rel="stylesheet" href="style/navigation.css">
+  <title>MakemyTrip Admin</title>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <h2>Make my Trip</h2>
+    <div class="flex">
+      <div class="icon">
+        <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
+        <div class="imgs"><img src="img/flight.png" alt="flights"></div>
+        <div class="imgs"><img src="img/hotels.png" alt="hotels"></div>
+        <div class="imgs"><img src="img/homestay.png" alt="homestay"></div>
+        <div class="imgs"> <img src="img/holiday-p.png" alt="holiday"></div>
+        <div class="imgs"> <img src="img/traines.png" alt="traines"></div>
+        <div class="imgs"><img src="img/buses.png" alt="buses"></div>
+        <div class="imgs"> <img src="img/cabs.png" alt="cabs"></div>
+        <div class="imgs"><img src="img/users.png" alt="users"></div>
+      </div>
+      <div class="iname">
+        <p onclick="dashboardPage()">Dahsboard</p>
+        <p onclick="flightPage()">Flights</p>
+        <p onclick="hotelPage()">Hotels</p>
+        <p>Homestay</p>
+        <p>Holiday Package</p>
+        <p>Trains</p>
+        <p>Buses</p>
+        <p>Cabs</p>
+        <p onclick="userPage()">Users</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main container -->
+  <div class="container">
+    <!-- dashboard container work start here -->
+
+
+    <div class="flights" id="flight">
+      <div class="flight-head">
+        <h2>Flight</h2>
+        <div>
+          <input type="text" name="" id="searchByCity" placeholder="Search By City">
+          <button id="myBtn">Add New Flight</button>
+        </div>
+        <h4>Admin</h4>
+      </div>
+
+      <div class="flight-body">
+        <div class="sort-filter">
+          <select name="pricesort" id="sortPrice">
+            <option value="">Sort By Price</option>
+            <option value="l2h">Low to High</option>
+            <option value="h2l">High to Low</option>
+          </select>
+          <select name="airlinesfilter" id="filterByAir">
+            <option value="">Filter Airlines</option>
+            <option value="air india">Air India</option>
+            <option value="air asia">Air Asia</option>
+            <option value="go first">Go First</option>
+            <option value="indigo">Indigo</option>
+            <option value="spice jet">Spice Jet</option>
+          </select>
+        </div>
+        <div class="flight-data">
+          <header class="table_head">
+            <p class="rewHead head-1">Airlines</p>
+            <p class="rewHead head-2">Arival</p>
+            <p class="rewHead head-3">Total Time</p>
+            <p class="rewHead head-4">Departure</p>
+            <p class="rewHead head-5">Price</p>
+            <p class="rewHead head-6">Operation</p>
+          </header>
+          <div class="flight-card-list" id="flight-cont">
+
+            <!-- All appended flight data here -->
+            <div class="flight-card">
+              <div class="card-head-1">
+                <div class="logo">
+                  <img src="img/airindia.png" alt="">
+                </div>
+                <p>Air India</p>
+              </div>
+              <div class="card-head-2">
+                <p>13:05</p>
+                <p class="thoda-big">Goa</p>
+              </div>
+              <div class="card-head-2">
+                <p>19h50m</p>
+              </div>
+              <div class="card-head-2">
+                <p>08:55</p>
+                <p class="thoda-big">Kolkata</p>
+              </div>
+              <div class="card-head-2">
+                <p>7,290</p>
+              </div>
+              <div class="card-head-2">
+                <p class="green">Update</p>
+                <p class="red">Delete</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 id="registerFlight">Register Flight</h3>
+        <h3 id="updateFlight">Update Flight</h3>
+        <form class="flex center" id="flight-add">
+          <div class="input1">
+            <label for="start-city">Arrival City</label>
+            <input type="text" name="start-city" id="startCity" placeholder="Arrival City" required>
+            <label for="takeoff-time">Take-off Time</label>
+            <input type="text" name="takeoff-time" id="takeoffTime" placeholder="00:00" required>
+            <label for="airlines">Airlines</label>
+            <select name="airlines" id="airlines">
+              <option value="">Select Airlines</option>
+              <option value="air india">Air India</option>
+              <option value="air asia">Air Asia</option>
+              <option value="go first">Go First</option>
+              <option value="indigo">Indigo</option>
+              <option value="spice jet">Spice Jet</option>
+            </select>
+            <label for="travel-time">Travel Time</label>
+            <input type="text" name="travel-time" id="travelTime" placeholder="12h 55m" required>
+          </div>
+          <div class="input2">
+            <label for="departure-city">Departure City</label>
+            <input type="text" name="departure-city" id="departureCity" placeholder="Departure City" required>
+            <label for="landing-time">Landing Time</label>
+            <input type="text" name="landing-time" id="landingTime" placeholder="00:00" required>
+            <label for="logo">Company Logo</label>
+            <input type="text" name="logo" id="airlogo" placeholder="logo link" required>
+            <label for="price">Price</label>
+            <input type="number" name="price" id="cost" placeholder="7851" required>
+            <button type="close" class="margin-left" id="close">Close</button>
+            <button type="reset" class="margin-left">Reset</button>
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="update" id="updateBtn">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var closeBtn = document.getElementById("close");
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+
+  </div>
+
+</body>
+
+<script src="script/admin_flight.js"></script>
+
+</html>

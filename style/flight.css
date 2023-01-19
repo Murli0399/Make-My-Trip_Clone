@@ -1,10 +1,16 @@
 body {
     background-color: #e5eef4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato';
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
+/* * {
+    font-family: 'Lato';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
 .flex {
     display: flex;
 }
@@ -14,13 +20,279 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.hsw_inputBoxArrow {
+    align-items: center;
+    display: inline-flex;
+    height: 12px;
+    justify-content: center;
+    margin-left: 5px;
+    width: 12px;
+}
+.hsw_inputBoxArrow::after {
+    border: solid #008cff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    padding: 3px;
+    position: relative;
+    top: -3px;
+    transform: rotate(45deg);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+}
+/* ...............................................Nav2 for selecting flight destination and date .................................................*/
+.nav2{
+    background-color: #0A223D;
+    padding:10px 0px 10px 70px ;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    z-index: 100;
+}
+.nav2 label{
+    font-size: 12px;
+    color:#008cff;
+    font-weight: bold;
+}
+.nav2 button{
+    background:#223950;
+    padding:5px 9px 10px 9px;
+    border: 0;
+    width: 12%;
+    border-radius: 5px;
+    display: grid;
+    text-align: left;
+}
+.nav2 select{
+    padding: 5px 0px 0px 0px ;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border:0;
+    -webkit-appearance: none;
+}
+.nav2 option{
+    color:#4A4A4A;
+}
+.nav2 select:focus{
+    outline: none;
+}
+#search{
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(42,242,233);
+    background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+
+
+/* ...................................................................................................... */
+/* ...........................main section.............................. */
+#main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+/* .................Filter Section............................ */
+
+.filter-sec{
+    width: 24%;
+}
+#heading-filter{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #fff;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    margin-bottom:-30px ;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+
+}
+/* ............................Filter for price (slider)................... */
+
+.range{
+    box-sizing: border-box;
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    padding: 0 20px 0 20px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+  }
+  .priceslider h3{
+    position: relative;
+    top: 55px;
+    left: 20px;
+  }
+  
+  .sliderValue{
+    position: relative;
+    top: 60px;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+
+  /* .sliderValue{
+    position: relative;
+    width: 100%;
+  }
+  .sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    transform: translateX(-200%) scale(0);
+    font-weight: 500;
+    top: -10px;
+    line-height: 55px;
+    z-index: 2;
+    color: #fff;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+
+  }
+  .sliderValue span.show{
+    transform: translateX(-50%) scale(1);
+  }
+  .sliderValue span:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #008cff;
+    border: 3px solid #fff;
+    z-index: -1;
+    left: -50%;
+    transform: translateX(-50%) rotate(45deg);
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  } */
+  .field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  .field .value{
+    position: absolute;
+    font-size: 18px;
+    color: #008cff;
+    font-weight: 600;
+  }
+  .field .value.left{
+    bottom: 30px;
+    left: 0px;
+  }
+  .field .value.right{
+    right: -0px;
+    bottom: 30px;
+  }
+  .range input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    z-index: 2222;
+  }
+  .range input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #008cff;
+    border: 1px solid #008cff;
+    cursor: pointer;
+  }
+  .range input::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #664AFF;
+    border: 1px solid #664AFF;
+    cursor: pointer;
+  }
+  .range input::-moz-range-progress{
+    background: #664AFF; 
+  }
+
+
+
+/* ......................Filter for Airline */
+.fairline{
+    display: grid;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+
+}
+.fairline .small{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+.filter-sec input[type=checkbox]{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 10px;
+}
+.filter-sec p{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin-bottom: 0px;
+}
+
+
+
+
 
 /* Right side container for displaying flights information */
 
 #Right-side-container {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 74%;
 }
 
 /* Oneward flights */
@@ -140,11 +412,14 @@ body {
 /* Selected Fligth detail */
 
 #selected-flight{
-    width: 72%;
+    width: 70%;
     background-color:#0a223d ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
+    display: flex;
     color: #fff;
+    padding: 0px 20px;
+    justify-content: space-between;
+    display: none;
+    
 }
 
 #bookNowBtn{
@@ -160,7 +435,6 @@ body {
 }
 #lockPriceBtn{
     background-color: #0a223d;
-    margin-bottom: 8px;
     cursor: pointer;
     border-radius: 30px;
     color: #fff;
@@ -168,4 +442,37 @@ body {
     outline: none;
     border: 2px solid #fff;
     padding: 10px 28px;
+}
+
+#selected-on-ward-time-1,#selcted-on-ward-time-2,#selected-return-time-1,#selected-return-time-2,#selected-departure-price,
+#selected-return-price
+{
+    font-weight: bold;
+}
+
+#total-price{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0px;
+    margin-right: 20px;
+}
+#total-price-div{
+    width: 350px;
+    text-align: center;
+    justify-content: right;
+    align-items: center;
+}
+
+.small-blue{
+    font-size: smaller;
+    color: #32c5ff;
+}
+
+#selected-departure-price,#selected-return-price{
+    margin-left: 50px;
+}
+.vertical-line{
+    height: 50px;
+    width: 0px;
+    border: 1px solid white;
 }

@@ -1,0 +1,87 @@
+
+
+/* side bar work end */
+/* --------------------------------------- */
+
+.container {
+    width: 78%;
+    margin-left: 22%;
+    background-color: #e7e7e7;
+    padding-bottom: 15px;
+}
+
+/* .dashboard {
+    display: none;
+} */
+
+.dash-head {
+    background-color: white;
+    padding: 0 20px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.dash-head h4 {
+    cursor: pointer;
+}
+
+.card-list {
+    height: 170px;
+    /* border: 1px solid red; */
+
+    display: flex;
+}
+
+.card-list .card {
+    width: 22%;
+    height: 140px;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+}
+
+.card-list .card .flex-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.card-list .card .flex-div .data {
+    text-align: right;
+}
+
+.card-list .card .flex-div .data h5 {
+    font-size: 30px;
+    text-align: right;
+}
+
+.card-list .card .total-text {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid rgb(42, 42, 42);
+    line-height: 45px;
+}
+
+/* ------------------------ */
+
+
+/* scroll bar edit */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+  }
