@@ -8,7 +8,8 @@
             "airlines": "Go First",
             "logo": "img link",
             "start_time": "00:30",
-            "end_time": "08:00"
+            "end_time": "08:00",
+            "duration":"07:30"
         }
     ],
     "hotels":[
