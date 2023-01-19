@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
-    <link rel="stylesheet" href="style\hotel.css">
+    <link rel="stylesheet" href="./style/hotel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
@@ -13,23 +13,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <br><br><br><br>
+    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
+    <!-- <nav class="nav1">
+        <button>
+            <img src="./New folder/flight.png" alt="">
+            <p>Flight</p>
+        </button>
+        <button>
+            <img src="./New folder/hotel.png" alt="">
+            <p>Hotel</p>
+        </button>
+        <button>
+            <img src="./New folder/homestay.png" alt="">
+            <p>Homestays</p>
+        </button>
+        <button>
+            <img src="./New folder/hp.png" alt="">
+            <p>Holiday Packages</p>
+        </button>
+        <button>
+            <img src="./New folder/train.png" alt="">
+            <p>Trains</p>
+        </button>
+        <button>
+            <img src="./New folder/bus.png" alt="">
+            <p>Buses</p>
+        </button>
+        <button>
+            <img src="./New folder/cab.png" alt="">
+            <p>Cabs</p>
+        </button>
+        <button>
+            <img src="./New folder/forex.png" alt="">
+            <p>Forex</p>
+        </button>
+        <button>
+            <img src="./New folder/more.png" alt="">
+            <p>More<span class="hsw_inputBoxArrow"></span></p>
+        </button>
+    </nav> -->
     <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
     <nav class="nav2">
         <button>
             <label for="city">CITY, AREA OR PROPERTY<span class="hsw_inputBoxArrow"></span></label>
-            <select name="" id="">
-                <option value="">Mumbai</option>
+            <select name="" id="city">
+                <optgroup label="Popular Cities" style="font-size: 15px;color: #4a4a4a;">
+                <option  value="Mumbai" >Mumbai</option>
+                <option  value="Delhi" >Delhi</option>
+                <option  value="Bengaluru">Bengaluru</option>
+                <option  value="Goa">Goa</option>
+                <option  value="Chennai">Chennai</option>
+                <option  value="Jaipur">Jaipur</option>
+                <option  value="Hyderabad">Hyderabad</option>
+                <option  value="Singapore">Singapore</option>
+                <option  value="Dubai">Dubai</option>
+                <option  value="Bangkok">Bangkok</option>
+                </optgroup>
+                
             </select>
         </button>
         <button>
-            <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow"></span></label>
+            <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow" ></span></label>
+            <select name="" id="">
+                <option>Thu, 19 Jan 2023</option>
+            </select>
         </button>
         <button>
             <label for="outdate">CHECK-OUT<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option>Fri, 20 Jan 2023</option>
+            </select>
         </button>
         <button>
             <label for="room">ROOMS & GUESTS<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option>1 Room, 2 Adults</option>
+            </select>
         </button>
         <button id="search"><b>SEARCH</b></button>
     </nav>
@@ -39,10 +98,11 @@
         <div>
             <a href="">Home</a>
             &gt
-            <p style="color:#798189">Hotels and more in Mumbai</p>
+            <p id="nav3p"></p>
         </div>
         <div id="head">
-            <p><b>Hotels, Villas, Apartments and more in Mumbai</b></p>
+            <p id="nav4p"><script>
+            </script></p>
         </div>
     </nav>
     <!-- ---------------------------------------------------------navbar3------------------------------------------------------------------------------- -->
@@ -57,12 +117,11 @@
             </select>
             <label for="" style="font-size: 14px;font-weight: 600;">Sort by:</label>
             <select name="" id="select1">
-                <option value="Popularity">Popularity</option>
+                <option value="">Popularity</option>
                 <option value="Price-Low to High">Price-Low to High</option>
                 <option value="Price-High to Low">Price-High to Low</option>
-                <option value="User Rating-High to Low">User Rating-High to Low</option>
             </select>
-            <p style="font-size: 14px;color: #4a4a4a;">Showing 745 properties in Mumbai</p>
+            <p style="font-size: 14px;color: #4a4a4a;" id="body2p"></p>
         </div>
         <div class="div2">
             <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/sprite/view-map-new.png" alt="" width="100px" style="margin-bottom: 10px;">
@@ -80,15 +139,16 @@
             <span>Selete Filters</span>
             <div class="fprice">
                 <small>Price (per night)</small>
-                <div style="display: flex;"><input type="checkbox" name="" id="0-3000" value="0-3000"><p>₹ 0 - ₹ 3000</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="3000-5000" value="3000-5000"><p>₹ 3000 - ₹ 5000</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="5500-9000" value="5500-9000"><p>₹ 5500 - ₹ 9000</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="9000-15000" value="9000-15000"><p>₹ 9000 - ₹ 15000</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="15000-30000" value="15000-30000"><p>₹ 15000 - ₹ 30000</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="3000+" value="3000+"><p>₹ 30000 +</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="0-3000" value="0-3000"><p>₹ 0 - ₹ 3000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="3000-5000" value="3000-5000"><p>₹ 3000 - ₹ 5000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="5500-9000" value="5500-9000"><p>₹ 5500 - ₹ 9000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="9000-15000" value="9000-15000"><p>₹ 9000 - ₹ 15000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="15000-30000" value="15000-30000"><p>₹ 15000 - ₹ 30000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="3000+" value="3000+"><p>₹ 30000 +</p></div>
                 <p style="font-size: 15px;">Your Budget</p>
                 <div id="range">
                     <input type="number" name="" id="lower" placeholder="Min">
+
                     <p style="margin-top: 6px;">to</p>
                     <input type="number" name="" id="upper" placeholder="Max">
                     <button id="filter-btn">→</button>
@@ -96,48 +156,17 @@
             </div>
             <div class="frating">
                 <small>User Rating</small>
-                <div style="display: flex;"><input type="checkbox" name="" id="excellent" value="excellent"><p>4.5 & above (Excellent)</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="verygood" value="verygood"><p>4 & above (Very Good)</p></div>
-                <div style="display: flex;"><input type="checkbox" name="" id="good" value="good"><p>3 & above (Good)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="excellent" value="4.5"><p>4.5 & above (Excellent)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="verygood" value="4"><p>4 & above (Very Good)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="good" value="3"><p>3 & above (Good)</p></div>
             </div>
         </div>
         <!-- ---------------------------------------------------------filters---------------------------------------------------------------------------- -->
         <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
         <div class="body">
-            <p>Showing Properties in Mumbai</p>
+            <p id="body1p"></p>
             <div id="hotel">
-                <div class="box">
-                    <div class="mace">
-                        <div class="sett">
-                            <div class="main">
-                                <img id="img"src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9c4df512626711ed988d0a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg"/>
-                            </div>
-                            <div class="small">
-                                <img id="img1" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-0b133018930d11eda0690a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
-                                <img id="img2" src="https://r1imghtlak.mmtcdn.com/0105f2de626811ed9de80a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
-                                <img id="img3" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9b6c734e626711edb0ee0a58a9feac02.jpg?&output-quality=75&downsize=243:162&output-format=jpg" onclick="clickimg(this)" alt="">
-                                <img id="img4" src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202211131045515112-9b09f54e672f11edb49b0a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg" onclick="clickimg(this)" alt="">
-                            </div>
-                        </div>
-                        <div class="eddy">
-                            <div class="zap">
-                                <button id="rating">3.7</button>
-                                <small id="review">Very Good</small>
-                            </div>
-                            <span id="hotelname" >Novotel Mumbai International Airport</span>
-                            <div class="post">
-                                <small id="a">Near Mumbai Airport</small>
-                                <small id="b"><i class="fa-solid fa-check"></i>Free Cancellation <u>till check in</u></small>
-                            </div>
-                        </div>
-                        <div class="money">
-                            <strike id="strikeprice">₹ 2400</strike>
-                            <p id="displayprice">₹ 2256</p>
-                            <p id="tax" >+ ₹ 432 taxes & fee </p>
-                            <p style="color: #9b9b9b;font-size: 10px;">Per Night</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
@@ -145,4 +174,4 @@
 
 </body>
 </html>
-<script src="scripts\hotel.js"></script>
+<script src="./scripts/hotel.js"></script>
