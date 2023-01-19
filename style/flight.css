@@ -4,6 +4,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    width: 100vw;
 }
 /* * {
     font-family: 'Lato';
@@ -54,6 +55,7 @@ body {
     gap: 5px;
     width: 100%;
     z-index: 100;
+    box-sizing: border-box;
 }
 .nav2 label{
     font-size: 12px;
@@ -249,6 +251,20 @@ body {
     background: #664AFF; 
   }
 
+  #filterbyPriceBtn{
+    border: none;
+    position: relative;
+    top: -155px;
+    right: -210px;
+    color: white;
+    text-align: center;
+    padding:7px 10px  ;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #008cff;
+    cursor: pointer;
+    /* background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%); */
+  }
 
 
 /* ......................Filter for Airline */
@@ -283,6 +299,21 @@ body {
     margin-bottom: 0px;
 }
 
+#filterbyAirlineBtn{
+    width: auto;
+    border: none;
+    top: -190px;
+    right: -230px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding:7px 10px  ;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #008cff;
+    cursor: pointer;
+}
+
 
 
 
@@ -293,11 +324,12 @@ body {
     display: flex;
     justify-content: space-between;
     width: 74%;
+    gap: 10px;
 }
 
 /* Oneward flights */
 #one-ward-fligts {
-    width: 49%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -380,7 +412,7 @@ body {
 
 /* Return flights */
 #return-fligts {
-    width: 49%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -412,6 +444,9 @@ body {
 /* Selected Fligth detail */
 
 #selected-flight{
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
     width: 70%;
     background-color:#0a223d ;
     display: flex;
@@ -475,4 +510,8 @@ body {
     height: 50px;
     width: 0px;
     border: 1px solid white;
+}
+
+#return-selected-box{
+    display: none;
 }
