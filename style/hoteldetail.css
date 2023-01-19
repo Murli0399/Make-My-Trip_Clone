@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+.hsw_inputBoxArrow {
+    align-items: center;
+    display: inline-flex;
+    height: 12px;
+    justify-content: center;
+    margin-left: 5px;
+    width: 12px;
+}
+.hsw_inputBoxArrow:after {
+    border: solid #008cff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    padding: 3px;
+    position: relative;
+    top: -3px;
+    transform: rotate(45deg);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+}
+/* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
+.nav2{
+    width: 100%;
+    background-color: #0A223D;
+    padding:10px 0px 10px 70px ;
+    display: flex;
+    gap: 5px;
+    z-index: 100;
+}
+.nav2 label{
+    font-size: 12px;
+    color:#008cff;
+    font-weight: bold;
+}
+.nav2 button{
+    background:#223950;
+    padding:5px 9px 10px 9px;
+    border: 0;
+    width: 15%;
+    border-radius: 5px;
+    display: grid;
+    text-align: left;
+}
+.nav2 select{
+    padding: 5px 0px 0px 0px ;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border:0;
+    -webkit-appearance: none;
+}
+.nav2 option{
+    color:#4A4A4A;
+}
+.nav2 select:focus{
+    outline: none;
+}
+#search{
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(42,242,233);
+    background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+    cursor: pointer;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+/* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
+.gfg { 
+    position: relative; 
+} 
+.first-txt { 
+    position: absolute; 
+    top: 17px; 
+    left: 72px; 
+    color: white;
+    font-weight: 500;
+} 
+.second-txt { 
+    /* border: 2px solid black; */
+    position: absolute; 
+    bottom: 1px; 
+    display: flex;
+    gap: 20px;
+    width:1354px;
+} 
+.name1{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+.name1 h1{
+    height:90px;
+    font-size:28px;
+    padding: 30px 0 0 70px ;
+    color: white;
+}
+.price1{
+    position: absolute; 
+    top: 300px; 
+    left: 890px; 
+    width: 380px;
+    border-radius: 10px;
+    background: white;
+    padding: 20px 25px 0 25px;
+}
+.price1 img{
+    border-radius: 10px;
+}
+.price1 p{
+    font-size: 22px ;
+    margin: 10px 0 10px 0;
+    font-weight: 900;
+}
+.dit{
+    display: flex;
+    justify-content: space-between;
+}
+.dit label{
+    margin: 10px 0 25px 0;
+}
+#book{
+    border: 0;
+    color: white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    margin-left: 18px;
+    background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+    cursor: pointer;
+}
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin-left: 50px;
+}
+.slideshow-container img{
+    width: 500px;
+    border-radius: 10px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.maindel{
+    display: flex;
+    gap: 50px;
+    width: 65%;
+    margin-top: 25px;
+}
+#ing{
+    border:0;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0b58b4;
+    font-size: 28px;
+    font-weight: 900;
+}
+#rq{
+    color: #0b58b4;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#r{
+    color: #008cff;
+}
+#about,#amenities{
+    margin-left: 70px;
+    margin-top: 20px;
+}
