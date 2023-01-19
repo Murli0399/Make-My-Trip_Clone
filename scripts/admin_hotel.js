@@ -142,44 +142,51 @@ function showHotelData(data) {
       submitBtn.style.display = "none";
       addHotelhead.style.display = "none";
 
-      //   let from = document.getElementById("startCity");
-      //   from.value = element.from;
-      //   let to = document.getElementById("departureCity");
-      //   to.value = element.to;
-      //   let distance = document.getElementById("travelTime");
-      //   distance.value = element.distance;
-      //   let price = document.getElementById("cost");
-      //   price.value = element.price;
-      //   let airlines = document.getElementById("airlines");
-      //   airlines.value = element.airlines;
-      //   let logo = document.getElementById("airlogo");
-      //   logo.value = element.logo;
-      //   let start_time = document.getElementById("takeoffTime");
-      //   start_time.value = element.start_time;
-      //   let end_time = document.getElementById("landingTime");
-      //   end_time.value = element.end_time;
+      let hotel_name = document.getElementById("hotelname");
+      hotel_name.value = element.hotelname;
+      let city = document.getElementById("city");
+      city.value = element.city;
+      let main_Img = document.getElementById("mainImg");
+      main_Img.value = element.mainimg;
+      let img_1 = document.getElementById("image_2");
+      img_1.value = element.img1;
+      let img_2 = document.getElementById("image_3");
+      img_2.value = element.img2;
+      let img_3 = document.getElementById("image_4");
+      img_3.value = element.img3;
+      let img_4 = document.getElementById("image_5");
+      img_4.value = element.img4;
+      let rating_R = document.getElementById("rating");
+      rating_R.value = element.rating;
+      let street = document.getElementById("nearBy");
+      street.value = element.locat;
+      let dprice_P = document.getElementById("price");
+      dprice_P.value = element.dprice;
 
-      //   updateBtn.addEventListener("click", (e) => {
-      //     e.preventDefault();
-      //     let obj = {
-      //       "from": from.value,
-      //       "to": to.value,
-      //       "distance": distance.value,
-      //       "price": price.value,
-      //       "airlines": airlines.value,
-      //       "logo": logo.value,
-      //       "start_time": start_time.value,
-      //       "end_time": end_time.value
-      //     }
-      //     console.log(obj);
-      //     fetch(`${baseServerURL}/flights/${element.id}`, {
-      //       method: 'PATCH',
-      //       headers: {
-      //         "Content-Type": "application/json"
-      //       },
-      //       body: JSON.stringify(obj)
-      //     })
-      //   })
+
+      updateBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let obj = {
+          "hotelname": hotel_name.value,
+          "city": city.value,
+          "mainimg": main_Img.value,
+          "img1": img_1.value,
+          "img2": img_2.value,
+          "img3": img_3.value,
+          "img4": img_4.value,
+          "rating": rating_R.value,
+          "locat": street.value,
+          "dprice": dprice_P.value
+        }
+        console.log(obj);
+        fetch(`${baseServerURL}/hotels/${element.id}`, {
+          method: 'PATCH',
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(obj)
+        })
+      })
 
     })
 
