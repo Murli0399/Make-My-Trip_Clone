@@ -364,3 +364,158 @@ input::-webkit-inner-spin-button {
 input{
     outline: none;
 }
+
+@media all and (min-width:300px) and (max-width:1286px) {
+    #hr>hr+span{
+        margin-top: 3px;
+        font-size: 8px;
+     }
+     #privacy_policy{
+        text-align: center;
+        font-size: 9px;
+     }
+}
+
+
+@media all and (min-width:300px) and (max-width:1109px) {
+    #frist_button{
+        width: 70%;
+        /* background-color: #53b2fe; */
+    }
+    #login_button{
+        font-size: 10px;
+      
+    }
+    #sign_up_button{
+        font-size: 10px;
+    }
+    #hr>hr+span{
+       font-size: 8px;
+    }
+    #privacy_policy{
+        text-align: center;
+        font-size: 8px;
+     }
+}
+
+@media all and (min-width:300px) and (max-width:927px) {
+    /* for both button */
+    #frist_button{
+        width: 90%;
+        /* background-color: #53b2fe; */
+    }
+    #login_button{
+        font-size: 7px;
+        
+    }
+    #sign_up_button{
+        font-size: 7px;
+    }
+    #hr>hr+span{
+        margin-top: 5px;
+        font-size: 6px;
+     }
+
+/* for p_tag */
+#p_tag{
+    margin-top: 45px;
+    margin-left: 5%;
+  line-height: 5px;
+  font-family: sans-serif;
+  color:#4A4A4A;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* for number_input */
+#number_input{
+    width:82%;
+    display: block;
+    margin: auto;
+    padding:12px ;
+    border-radius:4px ;
+   border:1px solid #939090;
+   font-size: 12px;
+   margin-bottom: 20px;
+}
+}
+
+@media all and (min-width:300px) and (max-width:800px) {
+    #hr>hr{
+        width:25%;
+    }
+}
+@media all and (min-width:300px) and (max-width:720px) {
+    #hr>hr{
+        width:25%;
+    }
+    #hr>hr+span{
+        margin-top: 5px;
+        font-size: 6px;
+     }
+
+}
+
+@media all and (min-width:300px) and (max-width:670px) {
+    #frist_button{
+        width: 95%;
+        /* background-color: #53b2fe; */
+    }
+    #login_button{
+        font-size: 7px;
+        
+    }
+    #sign_up_button{
+        font-size: 7px;
+    }
+    #continue_button{
+     padding:8px;
+    }
+    #new_continue{
+     padding: 8px;
+    }
+}
+
+@media all and (min-width:300px) and (max-width:635px) {
+    #frist_button{
+        width: 95%;
+        /* background-color: #53b2fe; */
+    }
+    #login_button{
+        font-size: 4px;
+        width:35%;
+        margin-right: 20px;
+    }
+    #sign_up_button{
+        font-size: 4px;
+        width:35%;
+    }
+}
+
+
+@media all and (min-width:300px) and (max-width:550px) {
+    #number_input{
+        font-size: 9px;
+        width:75%;
+    }
+    #p_tag{
+        font-size:9px ;
+    }
+    #continue_button{
+        padding:8px;
+        font-size: 12px;
+       }
+       #new_continue{
+        padding: 8px;
+        font-size: 12px;
+       }
+       #hr>hr{
+        width:10%;
+    }
+}
+
+@media all and (min-width:0px) and (max-width:338px) {
+body{
+    display: none;
+}
+}

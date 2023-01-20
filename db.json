@@ -1,14 +1,103 @@
 {
   "flights": [
     {
-      "from": "delhi",
-      "to": "kolkata",
+      "id": 2,
+      "from": "Delhi",
+      "to": "pune",
       "distance": "07h 25m",
-      "price": 7322,
-      "airlines": "Go First",
-      "logo": "img link",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
       "start_time": "00:30",
       "end_time": "08:00"
+    },
+    {
+      "id": 3,
+      "from": "New delhi",
+      "to": "pune",
+      "distance": "07h 25m",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    },
+    {
+      "id": 4,
+      "from": "New Mumbai",
+      "to": "pune",
+      "distance": "07h 25m",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    },
+    {
+      "id": 5,
+      "from": "Delhi Airport",
+      "to": "pune",
+      "distance": "07h 25m",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    },
+    {
+      "from": "Banglore",
+      "to": "Indore",
+      "distance": "08h15m",
+      "price": 6580,
+      "airlines": "air india",
+      "logo": "img/airindia.png",
+      "start_time": "06:30",
+      "end_time": "14:45",
+      "id": 6
+    },
+    {
+      "from": "Banglore",
+      "to": "Indore",
+      "distance": "08h15m",
+      "price": 99999,
+      "airlines": "air india",
+      "logo": "img/airindia.png",
+      "start_time": "06:30",
+      "end_time": "14:45",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "from": "Delhi Terminal 1",
+      "to": "pune",
+      "distance": "07h 25m",
+      "price": 40,
+      "airlines": "go first",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "08:00"
+    },
+    {
+      "from": "Pune",
+      "to": "Dhanbad",
+      "distance": "02h 45m",
+      "price": 10000,
+      "airlines": "indigo",
+      "logo": "img/indigo.png",
+      "start_time": "00:00",
+      "end_time": "14:45",
+      "id": 10
+    },
+    {
+      "from": "Indore",
+      "to": "Hyderabad",
+      "distance": "07h 00m",
+      "price": 11111,
+      "airlines": "indigo",
+      "logo": "img/indigo.png",
+      "start_time": "05:50",
+      "end_time": "12:30",
+      "id": 12
     }
   ],
   "hotels": [
@@ -25,67 +114,11 @@
       "id": 1
     },
     {
-      "name": "rahul",
+      "name": "Rohit",
       "email": "patidarsourabh574@gmail.com",
-      "number": "7909378587",
+      "number": "6909378587",
       "password": "1234",
       "id": 2
-    },
-    {
-      "name": "sourabh",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378588",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "name": "sourabh",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378589",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "name": "sourabh",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378580",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "name": "sourabh",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378581",
-      "password": "1234",
-      "id": 6
-    },
-    {
-      "name": "so",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "790937858",
-      "password": "1234",
-      "id": 7
-    },
-    {
-      "name": "sou",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378573",
-      "password": "1233",
-      "id": 8
-    },
-    {
-      "name": "sourabh",
-      "email": "rahul@gmail.com",
-      "number": "7909378583",
-      "password": "1234",
-      "id": 9
-    },
-    {
-      "name": "sourabh",
-      "email": "patidarsourabh574@gmail.com",
-      "number": "7909378597",
-      "password": "1234",
-      "id": 10
     }
   ]
 }
