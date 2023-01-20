@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight-Booking, Cheap Flight, Air Ticket Booking at Lowest Airfare|MakeMyTrip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <!-- <style>
+        
+        
+    </style> -->
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <img class="logo" src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png">
+            <div class="data">
+                <!-- <div class="categories">
+                    <span><i class="fa-sharp fa-solid fa-plane-departure"></i>Flights</span>
+                    <span><i class="fa-solid fa-hotel"></i>Hotel</span>
+                    <span><i class="fa-sharp fa-solid fa-house"></i>HomeStays</span>
+                    <span><i class="fa-solid fa-hotel"></i>Holiday Package</span>
+                    <span><i class="fa-solid fa-train-subway"></i>Trains</span>
+                    <span><i class="fa-solid fa-bus"></i>Bushes</span>
+                    <span><i class="fa-solid fa-taxi"></i>Cabs</span>
+                    <span><i class="fa-solid fa-camera"></i>Forex</span>
+                    <span><i class="fa-sharp fa-solid fa-plane-arrival"></i>Charted Flight</span>
+                    <span><i class="fa-solid fa-person-hiking"></i>Activities</span>
+                    
+                </div> -->
+                <div class="tickets">
+                    <div class="ticket-type">
+                        <span class="selected-ticket-type"><i class="fa-solid fa-circle-check"></i>ONEWAY</span>
+                        <span> <input type="radio" />ROUND TRIP</span>
+                        <span> <input type="radio" />MULTI CITY</span>
+                        <span id="end">Book International and Domestic Flights</span>
+                    </div>
+                    <div>
+
+
+<div class="flight-search">
+      <div class="flight1">
+
+         <span id="span1">FROM</span>
+         <input type="text" id="input1" placeholder="From">
+         <div id="down_bar">
+            <p class="suggestion_name">input1input1input1input1input1input1input1input1</p>
+            <!-- <p class="suggestion_name">input2</p>
+            <p class="suggestion_name">GINH</p> -->
+            <p class="suggestion_name">DFD</p>
+            <p class="suggestion_name">DF</p>
+         </div>
+         <h1 id="fromh1">Delhi</h1>
+         <!-- <span id="span2">DEL, Delhi Airport India</span> -->
+         <span id="span2"><a id="anchor1">DEL</a> , <a id="anchor2">Delhi</a> Airport India</span>
+
+     </div>
+
+      <div class="flight2">
+
+            <span id="span3">TO</span>
+            <input type="text" id="input2" placeholder="To">
+            <div id="down_bar1">
+                <p class="suggestion_name">input1input1input1input1input1input1input1input1</p>
+                <!-- <p class="suggestion_name">input2</p>
+                <p class="suggestion_name">GINH</p> -->
+                <p class="suggestion_name">DFD</p>
+                <p class="suggestion_name">DF</p>
+            </div>
+            <h1 id="toh1">Bengaluru</h1>
+            <span id="span4"><a id="anchor3">BRL</a>, <a id="anchor4">Bengluro</a> International Airp...</span>
+     </div>
+
+     <div class="flight3">
+
+        <span id="span3">DEPARTURE <input id="calendor" type="date" ></span>
+        <input type="text" id="input2" placeholder="To">
+        <!-- <div id="down_bar1"></div> -->
+        <h1 id="toh1">  <span id="for_day">6</span><span id="for_month"> Feb</span>'<span id="for_year">23</span></h1>
+        <!-- <span id="span4"><a id="anchor3">BRL</a>, <a id="anchor4">Bengluro</a> International Airp...</span> -->
+        <span id="var">Monday</span>
+      </div>
+
+      <div class="flight4">
+
+        <span id="span3">RETURN </span>
+        <p>Tap to add a return date for bigger discounts</p>
+      </div>
+
+      <div class="flight5">
+    <div>
+        <span id="span1">TRAVELLERS & CLASS</span>
+        <select id="select_number">
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+    </div>
+        <h1 id="fromh1"><span id="new_span">1</span> Traveller</h1>
+        <!-- <span id="span2">DEL, Delhi Airport India</span> -->
+        <span id="span2">Economy/Premium Economy</span>
+        <span id="span2">Group Bookings Available!</span>
+        <!-- <select id="select_number">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select> -->
+    </div>
+
+</div>
+                        <div class="fare-search">
+                            <span class="fare-select">Select A Fare Type:</span>
+                            <div class="fare-type">
+                                <span class="selected-fare-type"><i class="fa-solid fa-circle-check"></i>Regular
+                                    Fares</span>
+                                <span> <input type="radio" />Armmed Forces Fares</span>
+                                <span> <input type="radio" />Students Fares</span>
+                                <span> <input type="radio" />Senior Citizen Fares</span>
+                                <span> <input type="radio" />Doctors & Nurses Fares</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchbtncont">
+                        <button class="search-button">SEARCH</button>
+                    </div>
+                </div>
+                <script src="index.js"></script>
+                <script src="new.js"></script>

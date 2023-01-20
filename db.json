@@ -1,4 +1,128 @@
 {
+"flights": [
+      {
+        "id": 2,
+        "from": "Delhi",
+        "to": "pune",
+        "distance": "07h 25m",
+        "price": 40,
+        "airlines": "go first",
+        "logo": "img/gofirst.png",
+        "start_time": "00:30",
+        "end_time": "08:00"
+      },
+      {
+        "id": 3,
+        "from": "New delhi",
+        "to": "pune",
+        "distance": "07h 25m",
+        "price": 40,
+        "airlines": "go first",
+        "logo": "img/gofirst.png",
+        "start_time": "00:30",
+        "end_time": "08:00"
+      },
+      {
+        "id": 4,
+        "from": "New Mumbai",
+        "to": "pune",
+        "distance": "07h 25m",
+        "price": 40,
+        "airlines": "go first",
+        "logo": "img/gofirst.png",
+        "start_time": "00:30",
+        "end_time": "08:00"
+      },
+      {
+        "id": 5,
+        "from": "Delhi Airport",
+        "to": "pune",
+        "distance": "07h 25m",
+        "price": 40,
+        "airlines": "go first",
+        "logo": "img/gofirst.png",
+        "start_time": "00:30",
+        "end_time": "08:00"
+      },
+      {
+        "from": "Banglore",
+        "to": "Indore",
+        "distance": "08h15m",
+        "price": 6580,
+        "airlines": "air india",
+        "logo": "img/airindia.png",
+        "start_time": "06:30",
+        "end_time": "14:45",
+        "id": 6
+      },
+      {
+        "from": "Banglore",
+        "to": "Indore",
+        "distance": "08h15m",
+        "price": 99999,
+        "airlines": "air india",
+        "logo": "img/airindia.png",
+        "start_time": "06:30",
+        "end_time": "14:45",
+        "id": 7
+      },
+      {
+        "id": 8,
+        "from": "Delhi Terminal 1",
+        "to": "pune",
+        "distance": "07h 25m",
+        "price": 40,
+        "airlines": "go first",
+        "logo": "img/gofirst.png",
+        "start_time": "00:30",
+        "end_time": "08:00"
+      },
+      {
+        "from": "Pune",
+        "to": "Dhanbad",
+        "distance": "02h 45m",
+        "price": 10000,
+        "airlines": "indigo",
+        "logo": "img/indigo.png",
+        "start_time": "00:00",
+        "end_time": "14:45",
+        "id": 10
+      },
+      {
+        "from": "Indore",
+        "to": "Hyderabad",
+        "distance": "07h 00m",
+        "price": 11111,
+        "airlines": "indigo",
+        "logo": "img/indigo.png",
+        "start_time": "05:50",
+        "end_time": "12:30",
+        "id": 12
+      }
+    ],
+    "hotels": [
+      {
+        "name": "murli"
+      }
+    ],
+    "user": [
+      {
+        "name": "sourabh",
+        "email": "patidarsourabh574@gmail.com",
+        "number": "7909378587",
+        "password": "1234",
+        "id": 1
+      },
+      {
+        "name": "Rohit",
+        "email": "patidarsourabh574@gmail.com",
+        "number": "6909378587",
+        "password": "1234",
+        "id": 2
+      }
+    ]
+  }
+=======
   "flights": [
     {
       "id": 2,

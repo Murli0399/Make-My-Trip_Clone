@@ -1,12 +1,65 @@
-:root {
-    --color-primary: #008cff;
-    --color-btn-primary-bg: linear-gradient(93deg, #53b2fe, #065af3);
-    --color-btn-primary-text: #fff;
-    --color-btn: #008cff;
-    --btn-border-radius: 4px
+.offers{
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+}
+.offers-child{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 10px;
+}
+.offers-first-img{
+    padding-top: 10px;
+}
+.offers-child > div > img{
+   padding: 0px 7px 0px 7px;
+}
+.offers img{
+    width: 100%;
 }
 
-body,
+/* DOWN LOAD APP NOE CSS********** */
+.down-app-now{
+  width: 80%;
+  margin: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  margin-top: 50px;
+  border-radius: 15px;
+}
+.down-app-now img{
+    width: 100%;
+}
+
+/* TRIP MONEY CSS************ */
+.trip-money{
+  width: 80%;
+  margin: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  margin-top: 25px;
+  border-radius: 15px;
+}
+.trip-money img{
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+/* SEVERAL FLIGHTS CSS************ */
+.several-flights{
+    width: 80%;
+    margin: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.several-flights img{
+    width: 100%;
+}
+
+
 html {
     margin: 0;
     padding: 0
@@ -31,26 +84,164 @@ ul {
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     font-family: "Lato";
-    color: rgb(107, 107, 107);
+    color: rgb(94, 94, 94);
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 .background {
-    background: rgb(232, 232, 232) ;
+    background: #f2f2f2 ;
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, #051322, #15457c);
     background-size: 100% 500px;
     display: flex;
     justify-content: center;
     height: 500px;
+    /* border:1px solid red; */
 }
+/* nav area  */
+.floatingnav{
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    background: #fff;
+    z-index: 4;
+    width: 100vw;
+    left: 0;
+    padding: 0 140px;
+    display: flex;
+    box-shadow: 0px 0px 5px black;
+
+    /* to hide floating nav  */
+    /* display: none; */
+}
+.midbtns{
+    display: flex;
+    width: 100%;
+
+
+}
+.midbtns div{
+    font-size: 14px;
+    padding: 10px;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.rightbtnsup {
+    display: flex;
+}
+
+.rightbtnsup .login{ 
+    width: 216px;
+    height: 44px;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4px 10px; */
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+    /* border:1px solid red; */
+}
+.rightbtnsup .login i{ 
+    margin-left: 10px;
+}
+.rightbtnsup .langbtn{ 
+    height: 44px;
+    background-color: #2b3745;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 30px;
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+    margin-left: 10px;
+}
+.rightbtnsup .login img{
+    height: 20px;
+
+}
+.rightbtnsup .langbtn img{
+    height: 15px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.rightbtns{
+    display: flex;
+}
+
+.rightbtns .login{ 
+    width: 216px;
+    height: 44px;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4px 10px; */
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+}
+.rightbtns .login img{
+    height: 25px;
+    margin-right: 5px;
+}
+.rightbtns .login i{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.rightbtns .langbtn{ 
+    /* width: 216px; */
+    height: 44px;
+    background-color: #2b3745;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 30px;
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+    margin-left: 10px;
+}
+.rightbtns .langbtn img{
+    height: 23px;
+    margin-right: 10px;
+}
+
+
 .container {
     width: 1200px;
 }
 .logo {
     height: 36px;
     width: 113px;
+    margin: 10px;
 }
 .data {
     display: flex;
@@ -83,7 +274,7 @@ body {
 .tickets {
     background-color: white;
     width: 1200px;
-    height: 300px;
+    /* height: 300px; */
     position: absolute;
     top: 70px;
     z-index: 1;
@@ -121,7 +312,7 @@ body {
     margin: 0;
 }
 .fare-search {
-    margin-top: 50px;
+    margin-top: 6px;
     font-size: 14px;
     display: flex;
 }
@@ -153,6 +344,7 @@ body {
     margin: auto;
 }
 .searchbtncont{
+    margin-top: 50px;
     width: 100%;
     display: block;
     position: relative;
@@ -161,7 +353,7 @@ body {
 
 
 a {
-    color: var(--color-primary, #008cff);
+    /* color: var(--color-primary, #008cff); */
     cursor: pointer;
     text-decoration: none
 }
@@ -328,7 +520,7 @@ ul {
 }
 
 a {
-    color: var(--color-primary, #008cff);
+    /* color: var(--color-primary, #008cff); */
     cursor: pointer;
     text-decoration: none
 }
@@ -1021,6 +1213,7 @@ html[dir=ltr] .userSection li {
 .aboutMMT .aboutDesc .heading {
     letter-spacing: .31px
 }
+/* footer   */
 
 .footerBottom {
     background: #000;
@@ -1281,4 +1474,303 @@ html[dir=rtl] .userSection li.myBizIntro {
         bottom: -48px;
         opacity: 1
     }
+}
+
+
+/* New css  */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Lato";
+    color: rgb(94, 94, 94);
+    margin: 0;
+    /* padding: 0; */
+}
+
+.background {
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #051322, #15457c);
+    background-size: 100% 500px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.logo {
+    height: 36px;
+    width: 113px;
+    margin: 10px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.categories {
+    background-color: white;
+    width: 950px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #7a7a7a;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+
+}
+.categories span {
+    font-size: 14px;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categories i{
+    font-size: 24px;
+    margin-bottom: 5px; 
+}
+.tickets {
+    background-color: white;
+    width: 1300px;
+    height: 350px;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.ticket-type {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.ticket-type span {
+    padding: 5px;
+}
+
+.ticket-type span i {
+    font-size: 14px;
+}
+
+.selected-ticket-type {
+    background-color: rgb(211, 211, 211);
+    border-radius: 30px;
+}
+
+.flight-search {
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* border:1px solid red; */
+}
+
+.flight1 {
+    margin: 15px;
+    /* margin-left: 15px; */
+    color: rgb(33, 32, 32);
+    width: 270px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid rgb(131, 128, 128); */
+    padding: 0px;
+}
+
+.flight2 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 270px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight3 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 150px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight4 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 150px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight5 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 270px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight1 h1 {
+    margin: 0;
+}
+
+.flight2 h1 {
+    margin: 0;
+}
+
+.flight3 h1 {
+    margin: 0;
+}
+
+.flight4 h1 {
+    margin: 0;
+}
+
+.flight5 h1 {
+    margin: 0;
+}
+
+.fare-search {
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+
+.fare-select {
+    width: 80px;
+    display: flex;
+}
+
+.selected-fare-type i {
+    font-size: 14px;
+    color: rgb(18, 119, 226);
+}
+
+.fare-type span {
+    color: rgb(80, 80, 80);
+}
+
+.search-button {
+    width: 216px;
+    height: 44px;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    color: white;
+    font-size: 24px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: absolute;
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+}
+
+.searchbtncont {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
+#input1 {
+    width: 95%;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: -40px;
+    outline: none;
+    color: rgb(76, 74, 74);
+    display: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#down_bar {
+    width: 235px;
+    max-height: 200px;
+    margin-top: 41px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    color: black;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    /* border:1px solid red; */
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+#input2 {
+    width: 95%;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: -40px;
+    outline: none;
+    color: rgb(76, 74, 74);
+    display: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#down_bar1 {
+    width: 235px;
+    max-height: 200px;
+    margin-top: 41px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    color: black;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    /* border:1px solid red; */
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+#calendor {
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+#end {
+    margin-left: 50%;
+}
+
+#span1,
+#span2 {
+    color: rgb(78, 76, 76);
+}
+
+.suggestion_name {
+    /* padding: 6px 0px; */
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-family: sans-serif;
+    font-weight: 600; */
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+#select_number{
+    /* border:1px solid red; */
+    margin-left: 10px;
+    margin-top: -80px;
+    border:none;
+    outline: none;
+    color:#008cff;
+    font-size: 16px;
 }
