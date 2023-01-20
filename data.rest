@@ -1,0 +1,8 @@
+
+
+# GET https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees?limit=10$page=1
+
+POST https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees
+headers: 'Content-Type': 'application/json'
+
+body: JSON.stringify({ "name": "murli" })

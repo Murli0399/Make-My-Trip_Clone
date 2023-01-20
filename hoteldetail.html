@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoteldetail</title>
+    <link rel="stylesheet" href="./style/hoteldetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
+    <!-- <nav class="nav1">
+        <button>
+            <img src="./New folder/flight.png" alt="">
+            <p>Flight</p>
+        </button>
+        <button>
+            <img src="./New folder/hotel.png" alt="">
+            <p>Hotel</p>
+        </button>
+        <button>
+            <img src="./New folder/homestay.png" alt="">
+            <p>Homestays</p>
+        </button>
+        <button>
+            <img src="./New folder/hp.png" alt="">
+            <p>Holiday Packages</p>
+        </button>
+        <button>
+            <img src="./New folder/train.png" alt="">
+            <p>Trains</p>
+        </button>
+        <button>
+            <img src="./New folder/bus.png" alt="">
+            <p>Buses</p>
+        </button>
+        <button>
+            <img src="./New folder/cab.png" alt="">
+            <p>Cabs</p>
+        </button>
+        <button>
+            <img src="./New folder/forex.png" alt="">
+            <p>Forex</p>
+        </button>
+        <button>
+            <img src="./New folder/more.png" alt="">
+            <p>More<span class="hsw_inputBoxArrow"></span></p>
+        </button>
+    </nav> -->
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+    <nav class="nav2">
+        <button>
+            <label for="city">CITY, AREA OR PROPERTY<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="city">
+            </select>
+        </button>
+        <button>
+            <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow" ></span></label>
+            <select name="" id="">
+                <option>Thu, 19 Jan 2023</option>
+            </select>
+        </button>
+        <button>
+            <label for="outdate">CHECK-OUT<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option>Fri, 20 Jan 2023</option>
+            </select>
+        </button>
+        <button>
+            <label for="room">ROOMS & GUESTS<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option>1 Room, 2 Adults</option>
+            </select>
+        </button>
+        <button id="search"><b>SEARCH</b></button>
+    </nav>
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+<div class="del">
+</div>
+<div class="maindel">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://r1imghtlak.mmtcdn.com/9ed55506c70611e8924d0a7510c9dcdc.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://r1imghtlak.mmtcdn.com/90ce65fa1aa111e7a5f20a209fbd0127.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,90&output-format=jpg&downsize=821:550&crop=821:550" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://r1imghtlak.mmtcdn.com/249d44e6719511e7a5c1025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550" >
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="https://r1imghtlak.mmtcdn.com/4cbdd91ac70011e8a5c40224510f5e5b.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550" >
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="arate">
+            <div class="rate" style="display: flex;margin-top: 50px;">
+                <button id="ing"></button>
+                <div style="margin-left: 10px;margin-top: 10px;">
+                    <p id="rq"></p>
+                    <p id="r">(2398 Reviews)</p>
+                </div>
+            </div>
+            <div class="map" style="margin-top:20px;display: flex;">
+                <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/map-bg-new.png" alt="" width="80" height="80">
+                <i class="fa-solid fa-location-dot" style="position:absolute;margin-left:29px;margin-top:23px;font-size:35px;color: red;"></i>
+                <p id="r" style="font-size: 20px;font-weight: 900;margin-top:30px;margin-left: 10px;">View on Map</p>
+            </div>
+        </div>
+</div>
+<div>
+    <h2 id="about"></h2>
+    <img src="http://127.0.0.1:5500/New%20folder/Screenshot%202023-01-19%20163133.png" alt="">
+    <h2 id="amenities"></h2>
+    <img src="./New folder/Screenshot 2023-01-19 164108.png" alt="">
+    <img src="./New folder/Screenshot 2023-01-19 164149.png" alt="">
+</div>
+</body>
+</html>
+<script src="./scripts/hoteldetail.js"></script>

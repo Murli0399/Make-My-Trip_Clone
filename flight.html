@@ -11,261 +11,307 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Nav 1  (main-with flights-hotels-trains,etc)-->
+    <nav class="nav1">
 
-    <!-- div for right-side container for displaying all flights data -->
-    <div id="Right-side-container">
-        <!-- displaying oneward fligths -->
+    </nav>
+    <!-- .......................................................................................................................... -->
 
-        <div id="one-ward-fligts">
-            <div id="one-ward-flight-info">
-                <div>
-                    <p style="font-size: 16px;">
-                        <b id="one-ward-flight-name">New Delhi → Bengaluru</b>
-                        <span id="one-ward-date">Wed, 18 Jan</span>
-                    </p>
-                </div>
-                <div class="sort-buttons">
-                    <div>
-                        <span id="one-ward-departure-sort">Departure</span>
-                        <span class="left-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
+    <!-- NAv 2(sticky nav bar for chosing destination and date of flight) -->
+    <nav class="nav2">
+        <button style="width: 8%;">
+            <label for="trip-type">Trip Type<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="trip-type">
+                <option value="round-trip">Round Trip</option>
+                <option value="one-way">One Way</option>
+                
+            </select>
+        </button>
+        <button>
+            <label for="From">FROM</label>
+        </button>
+        <button>
+            <label for="To">TO</label>
+        </button>
+        <button>
+            <label for="depart-date">DEPART</label>
+        </button>
+        <button>
+            <label for="return-date">RETURN</label>
+        </button>
+        <button>
+            <label for="passenger">PASSENGERS</label>
+        </button>
+        <button id="search"><b>SEARCH</b></button>
+
+    </nav>
+    <!-- ............................................................................................................. -->
+    <!-- ...............................................Main Section.............................................................. -->
+    <div id="main">
+
+        <!-- ...................Filter Scetion ..................... -->
+        <div class="filter-sec">
+
+            <div id="heading-filter">Select Filters</div>
+
+            <!-- ...........FIlter for price(slider) -->
+            <div class="priceslider">
+                <h3>One Way Price</h3>
+                <div class="range">
+                    <div class="sliderValue">
+                        <Label for="slide-value">Price Under:</Label>
+                        <span id="slide-value">Rs.10000</span>
                     </div>
-                    <div>
-                        <span id="one-ward-duration-sort">Duration</span>
-                        <span class="left-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
+                    <div class="field">
+                        <div class="value left">
+                            5000</div>
+                        <input type="range" min="5000" max="12000" value="10000" steps="1">
+                        <div class="value right">
+                            12000</div>
                     </div>
-                    <div>
-                        <span id="one-ward-arrival-sort">Arrival</span>
-                        <span class="left-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
-                    </div>
-                    <div>
-                        <span id="one-ward-price-sort">Price</span>
-                        <span class="left-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
-                    </div>
+                    <button id="filterbyPriceBtn">Apply</button>
                 </div>
             </div>
 
-            <!-- List of Cards -->
-            <div id="one-ward-flight-list-cards">
-                <div class="one-ward-card">
-                    <div class="flight-name-logo flex" style="">
-                        <img class="flight-img-logo"
-                            src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
-                        <p>Air Asia</p>
-                    </div>
-                    <div class="flight-details flex">
-                        <div class="flex-col">
-                            <span class="flight-time">13:15</span>
-                            <span class="card-place">New Delhi</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="duration">10 h 55 m</span>
-                            <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
-                            <span class="no-stop">Non Stop</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="flight-time">00:15</span>
-                            <span class="card-place">Bengaluru</span>
-                        </div>
-                        <div class="">
-                            <label for="select-flight" class="price">Rs 5,000</label>
-                            <input type="radio" class="select-flight">
-                        </div>
-                    </div>
+            <!-- .................Filter for Airline........................... -->
+            <div class="fairline">
+                <span class="small">Airlines</span>
+                <div style="display: flex"><input type="checkbox" name="Airlines" id="Airlines" value="AirIndia" checked>
+                    <p>Air India</p>
                 </div>
-                <div class="one-ward-card">
-                    <div class="flight-name-logo flex" style="">
-                        <img class="flight-img-logo"
-                            src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
-                        <p>Air Asia</p>
-                    </div>
-                    <div class="flight-details flex">
-                        <div class="flex-col">
-                            <span class="flight-time">13:15</span>
-                            <span class="card-place">New Delhi</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="duration">10 h 55 m</span>
-                            <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
-                            <span class="no-stop">Non Stop</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="flight-time">00:15</span>
-                            <span class="card-place">Bengaluru</span>
-                        </div>
-                        <div class="">
-                            <label for="select-flight" class="price">Rs 5,000</label>
-                            <input type="radio" class="select-flight">
-                        </div>
-                    </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="AirAsia" checked >
+                    <p>Air Asia</p>
                 </div>
-                <div class="one-ward-card">
-                    <div class="flight-name-logo flex" style="">
-                        <img class="flight-img-logo"
-                            src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
-                        <p>Air Asia</p>
-                    </div>
-                    <div class="flight-details flex">
-                        <div class="flex-col">
-                            <span class="flight-time">13:15</span>
-                            <span class="card-place">New Delhi</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="duration">10 h 55 m</span>
-                            <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
-                            <span class="no-stop">Non Stop</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="flight-time">00:15</span>
-                            <span class="card-place">Bengaluru</span>
-                        </div>
-                        <div class="">
-                            <label for="select-flight" class="price">Rs 5,000</label>
-                            <input type="radio" class="select-flight">
-                        </div>
-                    </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Akasa" checked>
+                    <p>Akasa Air</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- displaying return fligths -->
-        <div id="return-fligts">
-            <div id="return-flight-info">
-                <div>
-                    <p style="font-size: 16px;">
-                        <b id="return-flight-name">Bengaluru → New Delhi</b>
-                        <span id="return-date">Thurs, 19 Jan</span>
-                    </p>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="GoFirst" checked>
+                    <p>Go First</p>
                 </div>
-                <div class="sort-buttons">
-                    <div>
-                        <span id="return-departure-sort">Departure</span>
-                        <span class="return-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
-                    </div>
-                    <div>
-                        <span id="one-ward-duration-sort">Duration</span>
-                        <span class="return-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
-                    </div>
-                    <div>
-                        <span id="one-ward-arrival-sort">Arrival</span>
-                        <span class="return-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
-                    </div>
-                    <div>
-                        <span id="one-ward-price-sort">Price</span>
-                        <span class="return-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
-                    </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="IndiGo" checked>
+                    <p>IndiGo</p>
                 </div>
-            </div>
-
-            <!-- List of Cards -->
-            <div id="return-flight-list-cards">
-
-                <div class="return-card">
-                    <div class="flight-name-logo flex" >
-                        <img class="flight-img-logo"
-                            src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
-                        <p>Air Asia</p>
-                    </div>
-                    <div class="flight-details flex">
-                        <div class="flex-col">
-                            <span class="flight-time">13:15</span>
-                            <span class="card-place">New Delhi</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="duration">10 h 55 m</span>
-                            <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
-                            <span class="no-stop">Non Stop</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="flight-time">00:15</span>
-                            <span class="card-place">Bengaluru</span>
-                        </div>
-                        <div class="">
-                            <label for="select-flight" class="price">Rs 5,000</label>
-                            <input type="radio" class="select-flight">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="return-card">
-                    <div class="flight-name-logo flex" >
-                        <img class="flight-img-logo"
-                            src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
-                        <p>Air Asia</p>
-                    </div>
-                    <div class="flight-details flex">
-                        <div class="flex-col">
-                            <span class="flight-time">13:15</span>
-                            <span class="card-place">New Delhi</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="duration">10 h 55 m</span>
-                            <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
-                            <span class="no-stop">Non Stop</span>
-                        </div>
-                        <div class="flex-col">
-                            <span class="flight-time">00:15</span>
-                            <span class="card-place">Bengaluru</span>
-                        </div>
-                        <div class="">
-                            <label for="select-flight" class="price">Rs 5,000</label>
-                            <input type="radio" class="select-flight">
-                        </div>
-                    </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="SpiceJet" checked>
+                    <p>SpiceJet</p>
                 </div>
                 
             </div>
+            <button id="filterbyAirlineBtn">Apply</button>
+        </div>
+
+
+        <!-- div for right-side container for displaying all flights data -->
+        <div id="Right-side-container">
+            <!-- displaying oneward fligths -->
+
+            <div id="one-ward-fligts">
+                <div id="one-ward-flight-info">
+                    <div>
+                        <p style="font-size: 16px;">
+                            <b id="one-ward-flight-name">New Delhi → Bengaluru</b>
+                            <span id="one-ward-date">Wed, 18 Jan</span>
+                        </p>
+                    </div>
+                    <div class="sort-buttons">
+                        <div>
+                            <span id="one-ward-departure-sort">Departure</span>
+                            <span class="left-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-duration-sort">Duration</span>
+                            <span class="left-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-arrival-sort">Arrival</span>
+                            <span class="left-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-price-sort">Price</span>
+                            <span class="left-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List of Cards -->
+                <div id="one-ward-flight-list-cards">
+                    <div class="one-ward-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10 h 55 m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-oneway-flight" value="10" onclick="onSelectOne(this.value)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- displaying return fligths -->
+            <div id="return-fligts">
+                <div id="return-flight-info">
+                    <div>
+                        <p style="font-size: 16px;">
+                            <b id="return-flight-name">Bengaluru → New Delhi</b>
+                            <span id="return-date">Thurs, 19 Jan</span>
+                        </p>
+                    </div>
+                    <div class="sort-buttons">
+                        <div>
+                            <span id="return-departure-sort">Departure</span>
+                            <span class="return-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-duration-sort">Duration</span>
+                            <span class="return-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-arrival-sort">Arrival</span>
+                            <span class="return-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-price-sort">Price</span>
+                            <span class="return-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List of Cards -->
+                <div id="return-flight-list-cards">
+
+                    <div class="return-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10 h 55 m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-return-flight" value="1" onclick="onSelectReturn(this.value)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="return-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10 h 55 m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-return-flight"  value="2" onclick="onSelectReturn(this.value)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-        
+
+
     <div id="selected-flight">
         <div>
-            <div class="flex">
+            <div class="flex" style="align-items:center;">
                 <p>Departure</p>
-                <span>.</span>
+                <span style="margin: 0px 7px;">&#8226</span>
                 <p id="selected-departure-flight-name">Indigo</p>
             </div>
             <div class="flex">
-                <img class="flight-img-logo"src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                <img class="flight-img-logo" id="selected-departure-flight-logo"
+                    src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
                 <div>
-                    <span id="selected-on-ward-time-1">22:5</span>→<span id="selcted-on-ward-time-2">01:45</span>
-                    <p >Flight Details</p>
+                    <span id="selected-on-ward-time-1">22:5</span>→<span id="selected-on-ward-time-2">01:45</span>
+                    <p class="small-blue">Flight Details</p>
                 </div>
-                <div>Rs 5,200</div>
+                <div id="selected-departure-price">Rs 5,200</div>
             </div>
         </div>
-        
-        <div>
-            <div class="flex">
+        <hr>
+        <div style="justify-content: left;" id="return-selected-box" >
+            <div class="flex" style="align-items:center;">
                 <p>Return</p>
-                <span>.</span>
+                <span style="margin: 0px 7px;">&#8226</span>
                 <p id="selected-return-flight-name">Air Asia</p>
             </div>
             <div class="flex">
-                <img class="flight-img-logo"src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                <img class="flight-img-logo" id="selected-return-flight-logo"
+                    src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
                 <div>
-                    <span id="selected-return-time-1">22:5</span>→<span id="selcted-return-time-2">01:45</span>
-                    <p>Flight Details</p>
+                    <span id="selected-return-time-1">22:5</span>→<span id="selected-return-time-2">01:45</span>
+                    <p class="small-blue">Flight Details</p>
                 </div>
-                <div>Rs 5,900</div>
+                <div id="selected-return-price">Rs 5,900</div>
             </div>
         </div>
-            <div class="flex">
-                <div>
-                    <p id="total-price">RS 11,100</p>
-                    <p>Fare Details</p>
-                </div>
-                <div>
-                    <button id="bookNowBtn">Book Now</button><br>
-                    <button id="lockPriceBtn">Lock Price</button>
-                </div>
+        <hr>
+        <div class="flex" id="total-price-div">
+            <div>
+                <p id="total-price">RS 11,100</p>
+                <span class="small-blue">Fare Details</span>
             </div>
-        <div>
-            
+            <div>
+                <button id="bookNowBtn">Book Now</button><br>
+                <button id="lockPriceBtn">Lock Price</button>
+            </div>
         </div>
     </div>
+
+
+
 </body>
-    <script src="scripts\flight.js"></script>
+<script src="scripts\flight.js"></script>
+
 </html>

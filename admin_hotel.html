@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/admin_hotel.css">
+  <link rel="stylesheet" href="style/navigation.css">
+  <title>MakemyTrip Admin</title>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <h2>Make my Trip</h2>
+    <div class="flex">
+      <div class="icon">
+        <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
+        <div class="imgs"><img src="img/flight.png" alt="flights"></div>
+        <div class="imgs"><img src="img/hotels.png" alt="hotels"></div>
+        <div class="imgs"><img src="img/homestay.png" alt="homestay"></div>
+        <div class="imgs"> <img src="img/holiday-p.png" alt="holiday"></div>
+        <div class="imgs"> <img src="img/traines.png" alt="traines"></div>
+        <div class="imgs"><img src="img/buses.png" alt="buses"></div>
+        <div class="imgs"> <img src="img/cabs.png" alt="cabs"></div>
+        <div class="imgs"><img src="img/users.png" alt="users"></div>
+      </div>
+      <div class="iname">
+        <p onclick="dashboardPage()">Dahsboard</p>
+        <p onclick="flightPage()">Flights</p>
+        <p>Hotels</p>
+        <p>Homestay</p>
+        <p>Holiday Package</p>
+        <p>Trains</p>
+        <p>Buses</p>
+        <p>Cabs</p>
+        <p onclick="userPage()">Users</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main container -->
+  <div class="container">
+    <!-- hotel container work start here -->
+    <div class="hotels">
+      <div class="hotel-head">
+        <h2>Hotel</h2>
+        <div>
+          <input type="text" name="" id="searchByCity" placeholder="Search By City">
+          <button id="myBtn">Add New Hotel</button>
+        </div>
+        <h4 id="adminNameShow">Admin</h4>
+      </div>
+
+      <div class="hotel-body">
+        <div class="sort-filter">
+          <select name="pricesort" id="sortPrice">
+            <option value="">Sort By Price</option>
+            <option value="l2h">Low to High</option>
+            <option value="h2l">High to Low</option>
+          </select>
+          <select name="ratingFilter" id="filterByrating">
+            <option value="">Filter By Ratings</option>
+            <option value="1">1+ Star Rating</option>
+            <option value="2">2+ Star Rating</option>
+            <option value="3">3+ Star Rating</option>
+            <option value="4">4+ Star Rating</option>
+          </select>
+        </div>
+        <div class="hotel-data">
+          <header class="table_head">
+            <p class="rewHead head-1">Image</p>
+            <p class="rewHead head-2">Name</p>
+            <p class="rewHead head-3">City</p>
+            <p class="rewHead head-4">Price</p>
+            <p class="rewHead head-5">Operation</p>
+          </header>
+          <div class="hotel-card-list" id="hotel-cont">
+
+            <!-- All appended hotel data here -->
+            <div class="hotel-card">
+              <div class="card-head-1">
+                <img
+                  src="https://r1imghtlak.mmtcdn.com/8630176c237c11e8a8d6025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp"
+                  alt="">
+              </div>
+              <div class="card-head-2">
+                <p class="thoda-big">Taj Santacruz,Mumbai</p>
+              </div>
+              <div class="card-head-3">
+                <p class="thoda-big">Mumbai</p>
+                <p>Near Mumbai Airport</p>
+              </div>
+              <div class="card-head-4">
+                <p class="thoda-big">48750</p>
+              </div>
+              <div class="card-head-5">
+                <p class="green">Update</p>
+                <p class="red">Delete</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 id="addHotelhead">Add New Hotel</h3>
+        <h3 id="updateHotelhead">Update Hotel</h3>
+        <form class="flex center" id="hotel-add">
+          <div class="input1">
+            <label for="hotelname">Hotel Name</label>
+            <input type="text" name="hotelname" id="hotelname" placeholder="Hotel Name" required>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="City" required>
+            <label for="nearBy">Near By</label>
+            <input type="text" name="nearBy" id="nearBy" placeholder="Near By">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" placeholder="Price" required>
+            <label for="rating">Rating</label>
+            <input type="number" name="rating" id="rating" placeholder="Rating" required>
+          </div>
+          <div class="input2">
+            <label for="image1">Main Image</label>
+            <input type="text" name="image1" id="mainImg" placeholder="Image-1" required>
+            <label for="image2">Image-2</label>
+            <input type="text" name="image2" id="image_2" placeholder="Image-2">
+            <label for="image3">Image-3</label>
+            <input type="text" name="image3" id="image_3" placeholder="Image-3">
+            <label for="image4">Image-2</label>
+            <input type="text" name="image4" id="image_4" placeholder="Image-4">
+            <label for="image5">Image-5</label>
+            <input type="text" name="image5" id="image_5" placeholder="Image-5">
+
+            <button type="close" class="margin-left" id="close">Close</button>
+            <button type="reset" class="margin-left">Reset</button>
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="update" id="updateBtn">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+<script src="scripts/admin_hotel.js"></script>
+
+</html>

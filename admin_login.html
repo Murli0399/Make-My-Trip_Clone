@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take a Trip - Admin Login</title>
+  <style>
+    .container {
+      width: 20%;
+      margin: auto;
+      /* border: 1px solid red; */
+      margin-top: 120px;
+      padding: 30px;
+      background: linear-gradient(#061424, #154378);
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .container h2 {
+      margin-top: 0;
+      color: white;
+    }
+
+    #form {
+      /* width: 80%; */
+      margin: auto;
+    }
+
+    #form input {
+      width: 100%;
+      margin: 10px 0px;
+      padding: 5px 0;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      background: transparent;
+      color: white;
+      border-bottom: 1px solid #939393;
+    }
+
+    #form input {
+      width: 100%;
+      margin: 10px 0px;
+      padding: 5px 0;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      background: transparent;
+      color: white;
+      border-bottom: 1px solid #939393;
+    }
+    #form input:focus{
+      outline: none;
+      background-color: linear-gradient(#061424, #154378);
+    }
+
+    #form .button {
+      border-bottom: none;
+      cursor: pointer;
+      border: 1px solid #939393;
+      display: block;
+      width: 50%;
+      margin: auto;
+      margin-top: 20px;
+      padding: 13px 0;
+      border-radius: 15px;
+      font-size: 18px;
+    }
+
+    #form .button:hover {
+      transition: .5s;
+      border: 1px solid #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Admin Login</h2>
+    <form id="form">
+
+      <input type="email" name="admin_name" id="admin_name" placeholder="Admin Name">
+
+      <input type="password" name="password" id="password" placeholder="Password">
+      <input type="submit" class="button" value="Login">
+    </form>
+  </div>
+</body>
+
+<script>
+
+  let baseServerURL = "http://localhost:3000";
+  let myform = document.getElementById("form");
+
+  myform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let admin_name = myform.admin_name.value;
+    let pass = myform.password.value;
+    if (admin_name.length < 11) {
+      alert("Please enter correct Admin Name");
+    }
+    else if (pass.length < 6 || pass.length > 8) {
+      alert("Please enter correct password");
+    }
+    else {
+      fetch(`${baseServerURL}/admins`)
+        .then(res => {
+          return res.json()
+        })
+        .then(data => {
+          let adminData;
+          data.forEach(element => {
+            if (element.adminName == admin_name) {
+              adminData = element;
+              return
+            }
+          });
+          console.log(adminData)
+          if (adminData.adminName == admin_name) {
+            if (adminData.password == pass) {
+              localStorage.setItem("admin", JSON.stringify(adminData.adminName));
+              location.href = "admin.html";
+            }
+            else {
+              alert("Please enter correct password");
+            }
+          }
+          else {
+            alert("Admin is not Registered");
+          }
+
+        })
+    }
+  })
+
+
+</script>
+
+</html>
