@@ -217,6 +217,10 @@ function hotelPage() {
   location.href = "admin_hotel.html";
 }
 
+function userPage() {
+  location.href = "admin_users.html";
+}
+
 // model functionality
 
 btn.onclick = function () {
@@ -272,3 +276,6 @@ function dashboardPage() {
 function flightPage() {
   location.href = "admin_flight.html";
 }
+
+let adminName = JSON.parse(localStorage.getItem("admin"));
+document.getElementById("adminNameShow").innerText = adminName;

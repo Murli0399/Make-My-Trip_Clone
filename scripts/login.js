@@ -25,6 +25,7 @@ let  number_input = document.getElementById("number_input").value;
 
 let bag = []
 let scope = []
+var display_name=[]
 let continue_button = document.getElementById("continue_button");
 continue_button.addEventListener("click", function () {
 let flag=true;
@@ -43,6 +44,7 @@ let flag=true;
         // console.log(ele.number)
         if(number_input==ele.number){
           flag=false;
+           display_name=ele.name;
         }
       })
        if(flag==false){
@@ -95,9 +97,13 @@ new_continue.addEventListener('click', function () {
   let otp_inputs = document.getElementById("otp_input").value;
   if (otp_inputs == scope) {
     alert("Login Succesfull")
+    localStorage.setItem("name",display_name)
   } else {
     alert('please fill correct otp')
   }
+  // if(otp_inputs==scope){
+  //   localStorage.setItem("name",display_name)
+  // }
 })
 
 // var new_number;
