@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hoteldetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato';
+        }
+        #head{
+            height: 100px;
+            background-image: linear-gradient(black, darkblue);
+            padding-top: 20px;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+        h2{
+            color: white;
+            margin-left: 70px;
+        }
+        #body{
+            border: 2px solid black;
+            width: 90%;
+            position: absolute;
+            z-index: 3;
+            margin-top: 70px;
+            margin-left: 65px;
+            display: flex;
+        }
+        .mainh{
+            background-color: white;
+            width: 70%;
+            display: flex;
+            justify-content:space-between;
+            border: 1px solid black;
+            border-right: 0;
+            border-left: 0;
+            border-top: 0;
+        }
+        h3{
+            font-size: 22px;
+            padding:15px 0 0 15px;
+            width: 430px;
+            height: 40px;
+        }
+        .mainh img{
+            margin: 20px 20px 20px 280px ;
+            width: 30%;
+        }
+        #rating{
+            background-color:#0b58b4;
+            border: 0;
+            color: white;
+            width: 30px;
+            border-radius: 5px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+        #review{
+            font-size: 15px;
+            color:#0b58b4;
+            font-weight: bolder;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
+    <div id="head">
+        <h2>Review your Booking</h2>
+    </div>
+    <div id="body">
+        <div class="mainm">
+            <div class="mainh">
+                
+            </div>
+
+        </div>
+        <div>
+            p
+        </div>
+        <br><br><br><br><br><br>
+    </div>
+</body>
+</html>
+<script>
+    data = JSON.parse(localStorage.getItem("book"));
+    mainh=document.querySelector(".mainh")
+    mainh.innerHTML=`
+    <div>
+        <h3>${data.hotelname}</h3>
+        <button id="rating">${data.rating}</button>
+        <small id="review"></small>
+    </div>
+    <div><img src="${data.mainimg}" alt="" ></div>
+    `
+    review=document.querySelector("#review")
+    if(data.rating>=4.5){
+      review.innerText="Excellent"
+    }else if(data.rating>=4 && data.rating<4.5){
+      review.innerText="Very Good"
+    }else if(data.rating>=3 && data.rating<4){
+      review.innerText="Good"
+    }
+
+    // <></>
+    // <></>
+</script>

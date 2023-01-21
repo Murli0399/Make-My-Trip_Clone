@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/admin_user.css">
+  <link rel="stylesheet" href="style/navigation.css">
+  <title>MakemyTrip Admin</title>
+</head>
+
+<body>
+
+  <div class="navigation">
+    <h2>Make my Trip</h2>
+    <div class="flex">
+      <div class="icon">
+        <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
+        <div class="imgs"><img src="img/flight.png" alt="flights"></div>
+        <div class="imgs"><img src="img/hotels.png" alt="hotels"></div>
+        <div class="imgs"><img src="img/homestay.png" alt="homestay"></div>
+        <div class="imgs"> <img src="img/holiday-p.png" alt="holiday"></div>
+        <div class="imgs"> <img src="img/traines.png" alt="traines"></div>
+        <div class="imgs"><img src="img/buses.png" alt="buses"></div>
+        <div class="imgs"> <img src="img/cabs.png" alt="cabs"></div>
+        <div class="imgs"><img src="img/users.png" alt="users"></div>
+      </div>
+      <div class="iname">
+        <p onclick="dashboardPage()">Dahsboard</p>
+        <p onclick="flightPage()">Flights</p>
+        <p onclick="hotelPage()">Hotels</p>
+        <p>Homestay</p>
+        <p>Holiday Package</p>
+        <p>Trains</p>
+        <p>Buses</p>
+        <p>Cabs</p>
+        <p>Users</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main container -->
+  <div class="container">
+    <!-- hotel container work start here -->
+    <div class="users">
+      <div class="user-head">
+        <h2>User</h2>
+        <div>
+          <input type="text" name="" id="searchByName" placeholder="Search By Name">
+        </div>
+        <h4 id="adminNameShow">Admin</h4>
+      </div>
+
+      <div class="user-body">
+
+        <div class="sort-filter">
+          <select name="namesort" id="sortName">
+            <option value="">Sort By Name</option>
+            <option value="l2h">A to Z</option>
+            <option value="h2l">Z to A</option>
+          </select>
+        </div>
+
+        <div class="user-data">
+          <header class="table_head">
+            <p class="rewHead head-1">Name</p>
+            <p class="rewHead head-2">Email</p>
+            <p class="rewHead head-3">Mobile</p>
+            <p class="rewHead head-4">Operation</p>
+          </header>
+          <div class="user-card-list" id="user-cont">
+
+            <!-- All appended hotel data here -->
+            <div class="user-card">
+              <div class="card-head-1">
+                <p class="thoda-big">Murli Khaire</p>
+              </div>
+              <div class="card-head-2">
+                <p class="thoda-big">murlikhaire28@gmail.com</p>
+              </div>
+              <div class="card-head-3">
+                <p class="thoda-big">8462858556</p>
+              </div>
+              <div class="card-head-4">
+                <p class="red thoda-big">Delete</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+<script src="scripts/admin_user.js"></script>
+
+</html>
