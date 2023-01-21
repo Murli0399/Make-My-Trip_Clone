@@ -16,10 +16,11 @@
 }
 
 .user-head h4 {
+  float: right;
   cursor: pointer;
 }
 
-.user-head div {
+.user-head .seacrhBar {
   width: 40%;
   background: linear-gradient(to right, #154378, #061424);
   font-size: 14px;

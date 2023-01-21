@@ -16,10 +16,11 @@
 }
 
 .flight-head h4 {
+  float: right;
   cursor: pointer;
 }
 
-.flight-head div {
+.flight-head .searchBar {
   width: 50%;
   /* border: 1px solid red; */
   background-color: #061424;
@@ -29,7 +30,7 @@
   border-bottom-right-radius: 5px;
 }
 
-.flight-head div input {
+.flight-head .searchBar input {
   width: 69%;
   height: 40px;
   text-align: center;
@@ -40,7 +41,7 @@
 
 }
 
-.flight-head div button {
+.flight-head .searchBar button {
   width: 30%;
   height: 40px;
   text-align: center;

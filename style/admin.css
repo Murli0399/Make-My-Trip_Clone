@@ -1,5 +1,3 @@
-
-
 /* side bar work end */
 /* --------------------------------------- */
 
@@ -25,6 +23,7 @@
 }
 
 .dash-head h4 {
+    float: right;
     cursor: pointer;
 }
 
@@ -72,16 +71,32 @@
 
 /* ------------------------ */
 
+.graph {
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+}
+
+.graph img {
+    display: flex;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* ------------------------------------ */
 
 /* scroll bar edit */
 ::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #666;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: rgb(51, 51, 51);
-  }
+}
+
+/* -------------------------- */
+
