@@ -31,7 +31,23 @@
     background: rgb(51, 51, 51);
 }
 /* ----------------------------------------------------------------------nav1---------------------------------------------------------------------------- */
-
+.nav1{
+    padding-left: 70px;
+    display: flex;
+}
+.nav1 button img{
+    width: 40px;
+}
+.nav1 button{
+    margin-right: 20px;
+    background: transparent;
+    border: 0;
+    margin-bottom: 15px;
+}
+.nav1 button p{
+    font-size:12px;
+    color: #4A4A4A;
+}
 /* ----------------------------------------------------------------------nav1---------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
 .nav2{
@@ -87,6 +103,28 @@
     top: 0;
     width: 100%;
     }
+#ci input , #co input{
+    background: transparent;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    margin-top:5px;
+    position: relative;
+    width: 100%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
 /* ----------------------------------------------------------------------nav2---------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------nav3---------------------------------------------------------------------------- */
 .nav3{

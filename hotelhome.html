@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style/hotelhome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+</head>
+<body><!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+    <nav class="nav1" >
+        <img src="./New folder/Take-a-trip-logo-final.jpg" alt="" width="130px" height="45px" style="margin-right: 30px;margin-top: 10px;">
+        <div>
+            <button>
+            <img src="./New folder/flight.png" alt="">
+            <p>Flights</p>
+        </button>
+        <button>
+            <img src="./New folder/hotel.png" alt="" >
+            <p style="width:50px;border-radius:20px;background-color:#008cff;font-size:12px;color:white;padding: 2px 2px;">Hotels</p>
+        </button>
+        <button>
+            <img src="./New folder/homestay.png" alt="" style="width: 50px;">
+            <p>Homestays</p>
+        </button>
+        <button>
+            <img src="./New folder/hp.png" alt="" style="width: 50px;">
+            <p>Holiday Packages</p>
+        </button>
+        <button>
+            <img src="./New folder/train.png" alt="" style="width: 30px;">
+            <p>Trains</p>
+        </button>
+        <button>
+            <img src="./New folder/bus.png" alt="" style="width: 30px;">
+            <p>Buses</p>
+        </button>
+        <button>
+            <img src="./New folder/cab.png" alt="" style="width: 30px;">
+            <p>Cabs</p>
+        </button>
+        <button>
+            <img src="./New folder/forex.png" alt="">
+            <p>Forex</p>
+        </button>
+        <button>
+            <img src="./New folder/more.png" alt="">
+            <p>More<span class="hsw_inputBoxArrow" style="font-size:12px;color: #4A4A4A;"></span></p>
+        </button>
+        <!-- <button class="langbtn">Admin</button> -->
+        </div>
+    </nav>
+    <div class="back">
+        <div class="container">
+            
+            <div style="display: flex;justify-content: space-around;">
+                <img src="./New folder/take-a-trip-logo-final-removebg-preview.png" alt="" class="logo">
+                <!-- <button class="login">
+                    <img src="/images/makemytriplogo.png" alt="">
+                    Login or Create Account
+                    <i class="fa-solid fa-angle-down"></i>
+            </button> -->
+        <button class="langbtn">Admin</button></div>
+        <div class="data">
+            <div class="cate">
+                <span><img src="./New folder/fl.png" alt=""> Flights</span>
+                <span style="color: #008cff;border-bottom: 5px solid #008cff;"><img src="./New folder/hotel1.png" alt="" > Hotels</span>
+                <span><img src="./New folder/hs.png" alt=""> Homestays</span>
+                <span><img src="./New folder/hp1.png" alt="" style="width:55px;"> Holiday Packages</span>
+                <span><img src="./New folder/t1.png" alt="" style="width:27px;"> Trains</span>
+                <span><img src="./New folder/b1.png" alt="" style="width:35px;"> Buses</span>
+                <span><img src="./New folder/c.png" alt="" style="width:37px;"> Cabs</span>
+                <span><img src="./New folder/f.png" alt="" style="width:44px;"> Forex</span>
+                <span><img src="./New folder/cf.png" alt="" style="width:43px;"> Charter Flights</span>
+                <span><img src="./New folder/a.png" alt="" style="width:30px;"> Activities</span>
+            </div>
+            <div class="tickets">
+                <div class="tt">
+                    <span style="margin-right: 20px;font-size: 14px;font-weight: bold;"><input type="radio" name="" id="" checked> UPTO 5 ROOMS</span>
+                    <span style="font-size:14px;color: #9b9b9b;font-weight: bold;"><input type="radio" name="" id=""> GROUP DEALS</span>
+                </div>
+                <div class="full">
+                    <label for="">
+                        <span style="font-size:14px;color: #4a4a4a;font-weight:bold;padding-right: 10px;">CITY, PROPERTY NAME OR LOCATION</span>
+                        <select name="" id="city">
+                            <optgroup label="Popular Cities" style="font-size: 15px;color: #4a4a4a;">
+                            <option  value="Mumbai" >Mumbai</option>
+                            <option  value="Delhi" >Delhi</option>
+                            <option  value="Bengaluru">Bengaluru</option>
+                            <option  value="Goa">Goa</option>
+                            <option  value="Chennai">Chennai</option>
+                            <option  value="Jaipur">Jaipur</option>
+                            <option  value="Hyderabad">Hyderabad</option>
+                            <option  value="Singapore">Singapore</option>
+                            <option  value="Dubai">Dubai</option>
+                            <option  value="Bangkok">Bangkok</option>
+                            </optgroup>
+                        </select>
+                        <span>India</span>
+                    </label>
+                    <label for="">
+                        <span style="font-size:14px;color: #4a4a4a;font-weight:bold;">CHECK-IN<span class="hsw_inputBoxArrow"></span></span>
+                        <div id="ci"></div>
+                        <div id="cdi"></div>
+                    </label>
+                    <label for="">
+                        <span style="font-size:14px;color: #4a4a4a;font-weight:bold;">CHECK-OUT<span class="hsw_inputBoxArrow"></span></span>
+                        <div id="co"></div>
+                        <div id="cdo"></div>
+                    </label>
+                    <label for="">
+                        <span style="font-size:14px;color: #4a4a4a;font-weight:bold;padding-right: 70px;">ROOM & GUESTS<span class="hsw_inputBoxArrow"></span></span>
+                        <p style="font-size: 25px;color: black;font-weight: 900;cursor: pointer;">1 Room 2 Adults</p>
+                    </label>
+                    <label for="">
+                        <span style="font-size:14px;color: #4a4a4a;font-weight:bold;padding-right: 60px;">PRICE PER NIGHT<span class="hsw_inputBoxArrow"></span></span>
+                        <p style="font-size:14px;color: #4a4a4a;    cursor: pointer;">Rs 0 -Rs 1500, Rs 1500-</p>
+                        <p style="font-size:14px;color: #4a4a4a;    cursor: pointer;">Rs 2500...</p>
+                    </label>
+                </div>
+                <button id="search" style="margin-top:20px;margin-left:450px;"><b>SEARCH</b></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="background-color: #f2f3f3;">
+         <img src="./New folder/Screenshot 202.png" alt="">
+    <img src="./New folder/Screenshot .png" alt="">
+
+    </div>
+   
+</body>
+
+</html>
+<script src="./scripts/hotelhome.js"></script>
