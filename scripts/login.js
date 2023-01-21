@@ -98,7 +98,18 @@ new_continue.addEventListener('click', function () {
   if (otp_inputs == scope) {
     alert("Login Succesfull")
     localStorage.setItem("name",display_name)
-  } else {
+    window.location.assign("index.html")
+    // let img=document.createElement("img");
+    // img.setAttribute("src","https://gifimage.net/wp-content/uploads/2017/08/loading-gif-transparent-25.gif")
+    // let apn=document.getElementById("apn");
+    // apn.append(img)
+
+    // setTimeout(() => {
+    //   alert("Login Succesfull")
+    //   window.location.assign("index.html")
+    // }, 3000);
+   
+  } else{
     alert('please fill correct otp')
   }
   // if(otp_inputs==scope){

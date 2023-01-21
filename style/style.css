@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .offers{
     width: 80%;
     margin: auto;
@@ -91,7 +96,7 @@ body {
     margin: 0;
     /* padding: 0; */
 }
-.background {
+/* .background {
     background: #f2f2f2 ;
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, #051322, #15457c);
@@ -99,8 +104,8 @@ body {
     display: flex;
     justify-content: center;
     height: 500px;
-    /* border:1px solid red; */
-}
+   
+} */
 /* nav area  */
 .floatingnav{
     height: 60px;
@@ -1492,7 +1497,7 @@ body {
     background: #f2f2f2;
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, #051322, #15457c);
-    background-size: 100% 500px;
+    background-size: 100% ;
     display: flex;
     justify-content: center;
     height: 500px;
@@ -1507,7 +1512,6 @@ body {
     width: 113px;
     margin: 10px;
 }
-
 .data {
     display: flex;
     justify-content: center;
@@ -1584,6 +1588,7 @@ body {
     border-right: 1px solid rgb(221, 220, 220);
     /* border:1px solid rgb(131, 128, 128); */
     padding: 0px;
+   cursor: pointer;
 }
 
 .flight2 {
@@ -1592,6 +1597,7 @@ body {
     width: 270px;
     border-right: 1px solid rgb(221, 220, 220);
     /* border:1px solid red; */
+    cursor: pointer;
 }
 
 .flight3 {
@@ -1600,6 +1606,7 @@ body {
     width: 150px;
     border-right: 1px solid rgb(221, 220, 220);
     /* border:1px solid red; */
+    cursor: pointer;
 }
 
 .flight4 {
@@ -1608,6 +1615,7 @@ body {
     width: 150px;
     border-right: 1px solid rgb(221, 220, 220);
     /* border:1px solid red; */
+    cursor: pointer;
 }
 
 .flight5 {
@@ -1616,6 +1624,7 @@ body {
     width: 270px;
     border-right: 1px solid rgb(221, 220, 220);
     /* border:1px solid red; */
+    cursor: pointer;
 }
 
 .flight1 h1 {
@@ -1743,7 +1752,7 @@ body {
     outline: none;
     border: none;
     text-decoration: none;
-
+    cursor: pointer;
 }
 
 #end {
@@ -1773,4 +1782,25 @@ body {
     outline: none;
     color:#008cff;
     font-size: 16px;
+}
+.login{
+    cursor: pointer;
+}
+.langbtn{
+    cursor: pointer;
+}
+#flight{
+    cursor: pointer;
+}
+#flight_second_btn{
+    cursor: pointer;
+}
+.search-button{
+    cursor: pointer;
+}
+#hotel{
+    cursor: pointer;
+}
+#second_hotel_btn{
+    cursor: pointer;
 }
