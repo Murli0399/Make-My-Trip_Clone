@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/admin.css">
   <link rel="stylesheet" href="style/navigation.css">
+  <link rel="shortcut icon" href="img/logo-final.png" type="image/x-icon">
   <title>MakemyTrip Admin</title>
 </head>
 
 <body>
 
   <div class="navigation">
-    <h2>Take a Trip</h2>
+    <div class="logoPNG">
+      <img src="img/Take-a-trip-logo-final.jpg">
+    </div>
     <div class="flex">
       <div class="icon">
         <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
@@ -47,9 +50,14 @@
     <div class="dashboard" id="dashboard">
       <div class="dash-head">
         <h2>Dashboard</h2>
-        <h4 id="adminNameShow">Admin</h4>
+        <div class="popup">
+          <h4 id="adminNameShow">Admin</h4>
+          <div class="boxpopup">
+            <p>See u soon...</p>
+            <button id="logout" class="logincss" onclick=logoutFun()>Sign Out</button>
+          </div>
+        </div>
       </div>
-
       <div class="card-list">
         <div class="card">
           <div class="flex-div">
@@ -109,9 +117,12 @@
         </div>
       </div>
 
-    </div>
 
-  </div>
+      <div class="graph">
+        <img src="img/graph.png" alt="" srcset="">
+      </div>
+
+    </div>
 
 </body>
 

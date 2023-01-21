@@ -5,6 +5,10 @@ body {
     padding: 0px;
     box-sizing: border-box;
     width: 100vw;
+    overflow-x: hidden;
+}
+input,button,select{
+    cursor: pointer;
 }
 /* * {
     font-family: 'Lato';
@@ -62,14 +66,15 @@ body {
     color:#008cff;
     font-weight: bold;
 }
-.nav2 button{
+.nav2 button{ 
     background:#223950;
-    padding:5px 9px 10px 9px;
+    padding:5px 9px 0px 9px;
     border: 0;
     width: 12%;
     border-radius: 5px;
     display: grid;
     text-align: left;
+    overflow: hidden;
 }
 .nav2 select{
     padding: 5px 0px 0px 0px ;
@@ -89,6 +94,7 @@ body {
     margin-left: 50px;
     color: white;
     text-align: center;
+    align-items: center;
     padding:10px 10px 10px 10px;
     border-radius: 50px;
     font-size: 20px;
@@ -155,12 +161,15 @@ body {
   .sliderValue{
     position: relative;
     top: 60px;
-    font-size: 16px;
+    font-size: 18px;
     color: #4A4A4A;
     margin-bottom: 0px;
     font-weight: bold;
   }
 
+  #slide-value{
+    color:#008cff ;
+  }
   /* .sliderValue{
     position: relative;
     width: 100%;
@@ -207,17 +216,17 @@ body {
   }
   .field .value{
     position: absolute;
-    font-size: 18px;
+    font-size: 16px;
     color: #008cff;
     font-weight: 600;
   }
   .field .value.left{
-    bottom: 30px;
+    bottom:40px;
     left: 0px;
   }
   .field .value.right{
     right: -0px;
-    bottom: 30px;
+    bottom: 40px;
   }
   .range input{
     -webkit-appearance: none;
@@ -323,7 +332,7 @@ body {
 #Right-side-container {
     display: flex;
     justify-content: space-between;
-    width: 74%;
+    width: 72%;
     gap: 10px;
 }
 
@@ -347,6 +356,15 @@ body {
     padding: 10px;
     font-size: small;
     margin: 25px 0px 0px 0px;
+    text-align: center;
+}
+
+#one-ward-departure-sort,#one-ward-duration-sort,#one-ward-arrival-sort,#one-ward-price-sort{
+    cursor: pointer;
+}
+
+#one-departure-sort-arrow,#one-duration-sort-arrow,#one-arrival-sort-arrow,#one-price-sort-arrow{
+    display: none;
 }
 
 .left-sort-button-arrow {
@@ -422,6 +440,11 @@ body {
     padding: 10px 20px 20px 20px;
 
 }
+
+#return-departure-sort,#return-duration-sort,#return-arrival-sort,#return-price-sort{
+    cursor: pointer;
+}
+
 .return-sort-button-arrow {
     margin-left: 5px;
 }
@@ -513,5 +536,155 @@ body {
 }
 
 #return-selected-box{
+    display:none;
+
+}
+#rsb-hr{
     display: none;
+}
+
+
+
+
+/* Input Taking Css */
+
+
+.flight1 {
+    /* margin-left: 15px; */
+    color: rgb(33, 32, 32);
+    width: 270px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid rgb(131, 128, 128); */
+    padding: 0px;
+}
+
+.flight2 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: auto;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight3 {
+    color: rgb(33, 32, 32);
+    width: 150px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+.flight4 {
+    margin: 15px;
+    color: rgb(33, 32, 32);
+    width: 150px;
+    border-right: 1px solid rgb(221, 220, 220);
+    /* border:1px solid red; */
+}
+
+
+.flight1 h1 {
+    margin: 0;
+    color: white;
+}
+
+.flight2 h1 {
+    margin: 0;
+    color: white;
+}
+
+.flight3 h1 {
+    margin: 0;
+}
+
+.flight4 h1 {
+    margin: 0;
+}
+
+.flight5 h1 {
+    margin: 0;
+}
+
+
+#input1 {
+    width: 95%;
+    height: 50%;
+    margin-bottom: -40px;
+    outline: none;
+    color: rgb(76, 74, 74);
+    display: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#down_bar {
+    width: auto;
+    max-height: 200px;
+    margin-top: 45px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    color: black;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    /* border:1px solid red; */
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+#input2 {
+    width: 95%;
+    height: 70%;
+    margin-bottom: -40px;
+    outline: none;
+    color: rgb(76, 74, 74);
+    display: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#down_bar1 {
+    width: auto;
+    max-height: 200px;
+    margin-top: 41px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    background-color: white;
+    color: black;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    /* border:1px solid red; */
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+#calendor {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+#span1,#span3{
+    color: #008cff;
+    margin-bottom: 0px;
+}
+
+#select_number{
+    /* border:1px solid red; */
+    font-size: 16px;
+    color: #008cff;
+    background-color: white;
+}
+
+.suggestion_name {
+    /* padding: 6px 0px; */
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-family: sans-serif;
+    font-weight: 600; */
+    color: rgb(63, 63, 63);
+    cursor: pointer;
 }

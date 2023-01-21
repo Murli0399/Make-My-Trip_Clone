@@ -34,20 +34,65 @@
                 
             </select>
         </button>
-        <button>
-            <label for="From">FROM</label>
+        <button class="flight1">
+            <label id="span1" for="From">FROM</label>
+
+            <input type="text" id="input1" placeholder="From">
+            <div id="down_bar" style="display: none;">
+               <p class="suggestion_name">Delhi</p>
+               <!-- <p class="suggestion_name">input2</p>
+               <p class="suggestion_name">GINH</p> -->
+               <p class="suggestion_name">Pune</p>
+               <p class="suggestion_name">Goa</p>
+            </div>
+            <h1 id="fromh1">Delhi</h1>
+
         </button>
-        <button>
-            <label for="To">TO</label>
+
+        <button class="flight2">
+            <label id="span3" for="To">TO</label>
+
+            <input type="text" id="input2" placeholder="To">
+            <div id="down_bar1">
+                <p class="suggestion_name">Banglore</p>
+                <p class="suggestion_name">Mumbai</p>
+                <p class="suggestion_name">Pune</p>
+            </div>
+            <h1 id="toh1">Bengaluru</h1>
         </button>
+
         <button>
             <label for="depart-date">DEPART</label>
+            <input id="calendor" type="date" >
+            <div style="color: white;"><span id="for_day"></span><span id="for_month"> </span><span id="for_year"></span></h1>
+                <span id="var"></span></div>
         </button>
+
         <button>
             <label for="return-date">RETURN</label>
+            <input id="calendor-return" type="date" >
+            <div style="color: white;"><span id="for_day_return"></span><span id="for_month_return"> </span><span id="for_year_return"></span></h1>
+                <span id="var_return"></span></div>
         </button>
         <button>
             <label for="passenger">PASSENGERS</label>
+            <span style="color: white;"> <span id="passengerNumber">1</span> Adult,Economy</span>
+            <!-- <select name="passenger" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+            </select> -->
+            <select name="passenger" id="select_number" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
         </button>
         <button id="search"><b>SEARCH</b></button>
 
@@ -72,7 +117,7 @@
                     <div class="field">
                         <div class="value left">
                             5000</div>
-                        <input type="range" min="5000" max="12000" value="10000" steps="1">
+                        <input type="range" min="5000" max="12000" value="12000" steps="1">
                         <div class="value right">
                             12000</div>
                     </div>
@@ -83,16 +128,16 @@
             <!-- .................Filter for Airline........................... -->
             <div class="fairline">
                 <span class="small">Airlines</span>
-                <div style="display: flex"><input type="checkbox" name="Airlines" id="Airlines" value="AirIndia" checked>
+                <div style="display: flex"><input type="checkbox" name="Airlines" id="Airlines" value="Air India" checked>
                     <p>Air India</p>
                 </div>
-                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="AirAsia" checked >
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Air Asia" checked >
                     <p>Air Asia</p>
                 </div>
                 <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Akasa" checked>
                     <p>Akasa Air</p>
                 </div>
-                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="GoFirst" checked>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Go First" checked>
                     <p>Go First</p>
                 </div>
                 <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="IndiGo" checked>
@@ -121,20 +166,20 @@
                     </div>
                     <div class="sort-buttons">
                         <div>
-                            <span id="one-ward-departure-sort">Departure</span>
-                            <span class="left-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
+                            <span id="one-ward-departure-sort" data-type="normal">Departure</span>
+                            <span class="left-sort-button-arrow" id="one-departure-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-duration-sort">Duration</span>
-                            <span class="left-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
+                            <span id="one-ward-duration-sort" data-type="normal">Duration</span>
+                            <span class="left-sort-button-arrow" id="one-duration-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-arrival-sort">Arrival</span>
-                            <span class="left-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
+                            <span id="one-ward-arrival-sort" data-type="normal">Arrival</span>
+                            <span class="left-sort-button-arrow" id="one-arrival-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-price-sort">Price</span>
-                            <span class="left-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
+                            <span id="one-ward-price-sort" data-type="normal">Price</span>
+                            <span class="left-sort-button-arrow" id="one-price-sort-arrow">&#8593;</span>
                         </div>
                     </div>
                 </div>
@@ -153,7 +198,7 @@
                                 <span class="card-place">New Delhi</span>
                             </div>
                             <div class="flex-col">
-                                <span class="duration">10 h 55 m</span>
+                                <span class="duration">10h 55m</span>
                                 <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
                                 <span class="no-stop">Non Stop</span>
                             </div>
@@ -181,19 +226,19 @@
                     </div>
                     <div class="sort-buttons">
                         <div>
-                            <span id="return-departure-sort">Departure</span>
+                            <span id="return-departure-sort" data-type="normal">Departure</span>
                             <span class="return-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-duration-sort">Duration</span>
+                            <span id="return-duration-sort" data-type="normal">Duration</span>
                             <span class="return-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-arrival-sort">Arrival</span>
+                            <span id="return-arrival-sort" data-type="normal">Arrival</span>
                             <span class="return-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
                         </div>
                         <div>
-                            <span id="one-ward-price-sort">Price</span>
+                            <span id="return-price-sort" data-type="normal">Price</span>
                             <span class="return-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
                         </div>
                     </div>
@@ -267,16 +312,16 @@
             <div class="flex" style="align-items:center;">
                 <p>Departure</p>
                 <span style="margin: 0px 7px;">&#8226</span>
-                <p id="selected-departure-flight-name">Indigo</p>
+                <p id="selected-departure-flight-name"></p>
             </div>
             <div class="flex">
                 <img class="flight-img-logo" id="selected-departure-flight-logo"
-                    src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                    src="" alt="">
                 <div>
-                    <span id="selected-on-ward-time-1">22:5</span>→<span id="selected-on-ward-time-2">01:45</span>
+                    <span id="selected-on-ward-time-1"></span>→<span id="selected-on-ward-time-2"></span>
                     <p class="small-blue">Flight Details</p>
                 </div>
-                <div id="selected-departure-price">Rs 5,200</div>
+                <div id="selected-departure-price"></div>
             </div>
         </div>
         <hr>
@@ -284,27 +329,27 @@
             <div class="flex" style="align-items:center;">
                 <p>Return</p>
                 <span style="margin: 0px 7px;">&#8226</span>
-                <p id="selected-return-flight-name">Air Asia</p>
+                <p id="selected-return-flight-name"></p>
             </div>
             <div class="flex">
                 <img class="flight-img-logo" id="selected-return-flight-logo"
-                    src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                    src="" alt="">
                 <div>
-                    <span id="selected-return-time-1">22:5</span>→<span id="selected-return-time-2">01:45</span>
+                    <span id="selected-return-time-1"></span>→<span id="selected-return-time-2"></span>
                     <p class="small-blue">Flight Details</p>
                 </div>
-                <div id="selected-return-price">Rs 5,900</div>
+                <div id="selected-return-price"></div>
             </div>
         </div>
-        <hr>
+        <hr id="rsb-hr">
         <div class="flex" id="total-price-div">
             <div>
-                <p id="total-price">RS 11,100</p>
+                <p id="total-price"></p>
                 <span class="small-blue">Fare Details</span>
             </div>
             <div>
-                <button id="bookNowBtn">Book Now</button><br>
-                <button id="lockPriceBtn">Lock Price</button>
+                <a href="flightpayment.html"><button id="bookNowBtn">Book Now</button><br></a>
+                <a href="flightpayment.html"><button id="lockPriceBtn">Lock Price</button></a>
             </div>
         </div>
     </div>
