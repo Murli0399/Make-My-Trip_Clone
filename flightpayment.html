@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato';
+        }
+
+        #head {
+            height: 100px;
+            background-image: linear-gradient(black, darkblue);
+            padding-top: 20px;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+
+        h2 {
+            color: white;
+            margin-left: 70px;
+        }
+
+        #body {
+            width: 90%;
+            position: absolute;
+            z-index: 3;
+            margin-top: 70px;
+            margin-left: 65px;
+            display: flex;
+        }
+
+        .mainh {
+            background-color: white;
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        h3 {
+            font-size: 22px;
+            padding: 15px 0 0 15px;
+            width: 430px;
+            height: 40px;
+        }
+
+        .mainh img {
+            margin: 20px 20px 20px 280px;
+            width: 25%;
+        }
+
+        #rating {
+            background-color: #0b58b4;
+            border: 0;
+            color: white;
+            width: 30px;
+            border-radius: 5px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        #review {
+            font-size: 15px;
+            color: #0b58b4;
+            font-weight: bolder;
+            margin-left: 4px;
+        }
+
+        .mainb {
+            display: flex;
+            gap: 10%;
+            padding: 0 20px 20px 20px;
+        }
+
+        .mainm {
+            background-color: white;
+            width: 70%;
+        }
+
+        .p1,
+        .p2,
+        .p3 {
+            display: grid;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .side {
+            margin-left: 20px;
+            background-color: white;
+            width: 320px;
+            border-radius: 5px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        #search {
+            margin-left: 30px;
+            color: white;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+            background: rgb(42, 242, 233);
+            background: linear-gradient(90deg, rgba(42, 242, 233, 1) 4%, rgba(64, 55, 212, 1) 100%);
+            cursor: pointer;
+            border: 0;
+            width: 80%;
+        }
+
+        .payment {
+            width: 20%;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            width: 30%;
+            padding: 16px;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+
+
+        /* Selected Flights Display */
+
+        #selected-flight {
+            background-color: #0a223d;
+            display: flex;
+            color: #fff;
+            padding: 20px 20px;
+            /* justify-content: space-between; */
+            box-sizing: border-box;
+        }
+
+
+        #selected-on-ward-time-1,
+        #selected-on-ward-time-2,
+        #selected-return-time-1,
+        #selected-return-time-2,
+        #selected-departure-price,
+        #selected-return-price {
+            font-weight: bold;
+
+        }
+
+
+
+        .small-blue {
+            font-size: smaller;
+            color: #32c5ff;
+        }
+
+        #selected-departure-price,
+        #selected-return-price {
+            margin-left: 100px;
+            color: #32c5ff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .vertical-line {
+            height: 50px;
+            width: 0px;
+            border: 1px solid white;
+        }
+
+        #return-selected-box {
+            display: none;
+
+        }
+
+        #rsb-hr {
+            display: none;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        #one-from-to,
+        #return-from-to {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #selected-departure-flight-name,
+        #selected-return-flight-name {
+            font-size: 18px;
+        }
+
+        #selected-flight p {
+            margin: 10px 0px
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
+    <div id="head">
+        <h2>Review your Booking</h2>
+    </div>
+    <div id="body">
+        <div class="mainm">
+            <div class="mainh">
+
+            </div>
+            <div class="mainb" id="selected-flight">
+                <div>
+                    <div class="flex" style="align-items:center;">
+                        <p style="font-weight: bold; color: #32c5ff">Departure</p>
+                        <span style="margin: 0px 7px;">&#8226</span>
+                        <p id="selected-departure-flight-name"></p>
+                    </div>
+                    <div id="one-from-to"></div>
+                    <div class="flex">
+                        <img class="flight-img-logo" id="selected-departure-flight-logo" src="" alt="">
+                        <div>
+                            <span id="selected-on-ward-time-1"></span>→<span id="selected-on-ward-time-2"></span>
+                            <p class="small-blue">Flight Details</p>
+                        </div>
+                        <div id="selected-departure-price"></div>
+                    </div>
+                </div>
+                <hr>
+                <div id="return-selected-box">
+                    <div class="flex" style="align-items:center;">
+                        <p style="font-weight: bold;color: #32c5ff;">Return</p>
+                        <span style="margin: 0px 7px;">&#8226</span>
+                        <p id="selected-return-flight-name"></p>
+                    </div>
+                    <div id="return-from-to"></div>
+                    <div class="flex">
+                        <img class="flight-img-logo" id="selected-return-flight-logo" src="" alt="">
+                        <div>
+                            <span id="selected-return-time-1"></span>→<span id="selected-return-time-2"></span>
+                            <p class="small-blue">Flight Details</p>
+                        </div>
+                        <div id="selected-return-price"></div>
+                    </div>
+                </div>
+                <hr id="rsb-hr">
+
+
+            </div>
+            <form action=""
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;margin-top:10px;padding:20px 0 20px 20px;">
+                <h4 style="font-size:18px;margin-bottom:5px;">Enter Details</h4>
+                <div>
+                    <div style="display: flex;">
+                        <div style="display: grid;width:5%;">
+                            <small style="font-size: 11px;color: #4a4a4a;">TITLE</small>
+                            <select name="" id="title" style="padding: 10px 10px 10px 10px;">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                            </select>
+                        </div>
+                        <div style="display:flex;">
+                            <div style="display: grid;">
+                                <small style="font-size: 11px;color: #4a4a4a;margin-left: 40px;">FULL NAME</small>
+                                <input type="text" name="" id="" placeholder="First Name"
+                                    style="padding: 10px 10px 10px 10px;margin-left:40px;">
+                            </div>
+                            <input type="text" name="" id="" placeholder="Last Name"
+                                style="padding: 10px 10px 10px 10px;margin-left: 10px;height:18px;margin-top:15px;">
+                        </div>
+                    </div>
+                    <div style="display: grid;">
+                        <label for=""
+                            style="font-size: 11px;color: #4a4a4a;margin-top: 20px;margin-bottom:10px;">AGE</label>
+                        <input type="number" placeholder="Enter Age" style="padding: 10px 10px 10px 10px;width:15%;">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="" style="font-size: 11px;color: #4a4a4a;margin-top: 20px;margin-bottom:10px;">Aadhar
+                            Number</label>
+                        <input type="number" placeholder="Enter your Aadhar Number"
+                            style="padding: 10px 10px 10px 10px;width:25%;">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="side"
+            style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;height:50%">
+            <h4 style="margin-bottom: 10px;">Price Breakup</h4>
+            <div style="display: flex;justify-content: space-between;font-weight: bold; margin-bottom: 15px;">
+                <span style="font-size: 14px;">Departure</span>
+                <p id="d-price" style="font-size: 14px;color: #4a4a4a;">5000</p>
+            </div>
+
+            <div style="display: flex;justify-content: space-between;font-weight: bold;">
+                <span style="font-size: 14px;">Return</span>
+                <p id="r-price" style="font-size: 14px;color: #4a4a4a;">5000</p>
+            </div>
+
+            <hr style="margin-top: 10px;">
+            <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 10px;">
+                <span style="font-size: 14px;">No. of Passengers</span>
+                <p id="passenger" style="font-size: 14px;color: #4a4a4a;">2</p>
+            </div>
+            <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 20px;">
+                <span style="font-size: 18px;">Total Amount to be paid</span>
+                <p id="totalprice" style="font-size: 18px;color: #4a4a4a;">10000</p>
+            </div>
+            <button id="search"><b><a href="javascript:void(0)" style="text-decoration: none;color: white;"
+                        onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">PAY
+                        NOW</a></b></button>
+        </div>
+    </div>
+
+    <!-- ============================================================Payment================================================================================ -->
+    <div id="light" class="white_content">
+        <h2 style="color: black;margin: 0;padding: 10px 10px 10px 0;">Payment</h2>
+        <h4>Accepted Card</h4>
+        <div style="display: flex;gap: 20px;">
+            <img src="https://d28wu8o6itv89t.cloudfront.net/images/Visadebitcardpng-1599584312349.png" width="50px"
+                alt="">
+            <img src="https://banner2.cleanpng.com/20180821/jpy/kisspng-mastercard-logo-credit-card-maestro-payment-card-mastercard-mastercard-logo-design-vector-free-down-5b7bd9c7c83ef0.9372206915348433358202.jpg"
+                width="40px" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png"
+                width="33px" alt="">
+        </div>
+        <label for="">Amount to Pay</label><br>
+        <button id="atp" style="width: 175px;text-align: left;padding:10px 0 10px 5px;"></button><br>
+        <label for="">Card Number</label><br>
+        <input type="number" placeholder="1111-2222-3333-4444" style="padding: 10px 10px 10px 10px ;"><br>
+        <label for="">Exp Month</label><br>
+        <input type="text" placeholder="Enter Month" style="padding: 10px 10px 10px 10px ;">
+        <div style="display: flex;gap: 20px;">
+            <div>
+                <label for="">Exp Year</label><br>
+                <input type="number" placeholder="Enter Year" style="padding: 10px 10px 10px 10px ;">
+            </div>
+            <div>
+                <label for="">CVV</label><br>
+                <input type="password" placeholder="Enter CVV" style="padding: 10px 10px 10px 10px ;">
+            </div>
+        </div>
+        <button id="search"><b>PAY</b></button>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+</body>
+
+</html>
+<script>
+
+
+    let bookingDetails = JSON.parse(localStorage.getItem("selectedFlight"))
+
+    console.log(bookingDetails, "hooi")
+
+
+    if (bookingDetails.return.airlines) {
+        document.getElementById("return-selected-box").style.display = "block"
+
+        document.getElementById("selected-departure-flight-logo").setAttribute("src", bookingDetails.oneway.logo)
+        document.getElementById("selected-departure-flight-name").innerText = bookingDetails.oneway.airlines
+        document.getElementById("selected-on-ward-time-1").innerText = bookingDetails.oneway['start_time']
+        document.getElementById("selected-on-ward-time-2").innerText = bookingDetails.oneway['end_time']
+        document.getElementById("selected-departure-price").innerText = `Rs ${bookingDetails.oneway.price}`
+        document.getElementById("one-from-to").innerText = `${bookingDetails.oneway.from}→${bookingDetails.oneway.to}`
+
+        document.getElementById("selected-return-flight-logo").setAttribute("src", bookingDetails.return.logo)
+        document.getElementById("selected-return-flight-name").innerText = bookingDetails.return.airlines
+        document.getElementById("selected-return-time-1").innerText = bookingDetails.return['start_time']
+        document.getElementById("selected-return-time-2").innerText = bookingDetails.return['end_time']
+        document.getElementById("selected-return-price").innerText = `Rs ${bookingDetails.return.price}`
+        document.getElementById("return-from-to").innerText = `${bookingDetails.return.from}→${bookingDetails.return.to}`
+
+    } else {
+        document.getElementById("return-selected-box").style.display = "none"
+
+        document.getElementById("selected-departure-flight-logo").setAttribute("src", bookingDetails.oneway.logo)
+        document.getElementById("selected-departure-flight-name").innerText = bookingDetails.oneway.airlines
+        document.getElementById("selected-on-ward-time-1").innerText = bookingDetails.oneway['start_time']
+        document.getElementById("selected-on-ward-time-2").innerText = bookingDetails.oneway['end_time']
+        document.getElementById("selected-departure-price").innerText = `Rs ${bookingDetails.oneway.price}`
+        document.getElementById("one-from-to").innerText = `${bookingDetails.oneway.from}→${bookingDetails.oneway.to}`
+    }
+
+    document.getElementById("d-price").innerText = `Rs ${bookingDetails.oneway.price}`
+    document.getElementById("r-price").innerText = `Rs ${bookingDetails.return.price}`
+    document.getElementById("passenger").innerText = `${bookingDetails.passenger}`
+    document.getElementById("totalprice").innerText = `Rs ${bookingDetails.passenger * bookingDetails.total}`
+
+
+
+
+
+
+    atp = document.getElementById("atp")
+    modal = document.getElementById("fade")
+    modal1 = document.getElementById("light")
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            modal1.style.display = "none";
+        }
+    }
+    atp.innerText = `₹ ${bookingDetails.passenger * bookingDetails.total} `
+    // const d = new Date(`${date.ci}`);
+    // let day = d.getDay()
+    // const p = new Date(`${date.co}`);
+    // let day1 = p.getDay()
+    // if (day == 0) {
+    //     dayw = "Sunday"
+    // } else if (day == 1) {
+    //     dayw = "Monday"
+    // } else if (day == 2) {
+    //     dayw = "Tuesday"
+    // } else if (day == 3) {
+    //     dayw = "Wednesday"
+    // } else if (day == 4) {
+    //     dayw = "Thursday"
+    // } else if (day == 5) {
+    //     dayw = "Friday"
+    // } else if (day == 6) {
+    //     dayw = "Saturday"
+    // }
+    // if (day1 == 0) {
+    //     day1w = "Sunday"
+    // } else if (day1 == 1) {
+    //     day1w = "Monday"
+    // } else if (day1 == 2) {
+    //     day1w = "Tuesday"
+    // } else if (day1 == 3) {
+    //     day1w = "Wednesday"
+    // } else if (day1 == 4) {
+    //     day1w = "Thursday"
+    // } else if (day1 == 5) {
+    //     day1w = "Friday"
+    // } else if (day1 == 6) {
+    //     day1w = "Saturday"
+    // }
+    // cid = document.getElementById("ci")
+    // cid.innerHTML = `<p>${date.ci}</p>`
+    // cod = document.getElementById("co")
+    // cod.innerHTML = `<p>${date.co}</p>`
+    // cdi = document.getElementById("cdi")
+    // cdi.innerHTML = `<p>${dayw}</p>`
+    // cdo = document.getElementById("cdo")
+    // cdo.innerHTML = `<p>${day1w}</p>`
+
+
+
+
+
+</script>
