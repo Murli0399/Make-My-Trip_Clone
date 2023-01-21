@@ -16,10 +16,11 @@
 }
 
 .hotel-head h4 {
+  float: right;
   cursor: pointer;
 }
 
-.hotel-head div {
+.hotel-head .searchBar {
   width: 50%;
   /* border: 1px solid red; */
   background-color: #061424;
@@ -29,7 +30,7 @@
   border-bottom-right-radius: 5px;
 }
 
-.hotel-head div input {
+.hotel-head .searchBar input {
   width: 69%;
   height: 40px;
   text-align: center;
@@ -40,7 +41,7 @@
 
 }
 
-.hotel-head div button {
+.hotel-head .searchBar button {
   width: 30%;
   height: 40px;
   text-align: center;
