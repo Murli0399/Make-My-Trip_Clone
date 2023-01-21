@@ -277,8 +277,42 @@ calendor.addEventListener("change",function(){
         }else if(month=="12"){
             for_month.innerText=" Dec"
         }
-       
     }
+})
 
 
+let login=document.querySelector(".login");
+login.addEventListener("click",function(){
+    window.location.assign("login.html")
+    console.log("working")
+})
+
+let langbtn=document.querySelector(".langbtn");
+langbtn.addEventListener("click",function(){
+    window.location.assign("admin_login.html")
+})
+
+let flight=document.querySelector("#flight");
+flight.addEventListener("click",function(){
+    window.location.assign("flight.html")
+})
+
+let flight_second_btn=document.querySelector("#flight_second_btn");
+flight_second_btn.addEventListener("click",function(){
+    window.location.assign("flight.html")
+})
+
+let search_button=document.querySelector(".search-button");
+search_button.addEventListener("click",function(){
+    window.location.assign("flight.html")
+})
+
+let hotel=document.querySelector("#hotel");
+hotel.addEventListener("click",function(){
+    window.location.assign("hotel.html")
+})
+
+let second_hotel_btn=document.querySelector("#second_hotel_btn");
+second_hotel_btn.addEventListener("click",function(){
+    window.location.assign("hotel.html")
 })

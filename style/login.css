@@ -364,6 +364,11 @@ input::-webkit-inner-spin-button {
 input{
     outline: none;
 }
+#apn{
+    width:20px;
+    height:20px;
+    text-align: center;
+}
 
 @media all and (min-width:300px) and (max-width:1286px) {
     #hr>hr+span{
@@ -374,6 +379,12 @@ input{
         text-align: center;
         font-size: 9px;
      }
+}
+#login_buttons{
+    font-size: 13px;
+}
+#sign_up_buttons{
+    font-size: 13px;
 }
 
 
@@ -387,6 +398,12 @@ input{
       
     }
     #sign_up_button{
+        font-size: 10px;
+    }
+    #login_buttons{
+        font-size: 10px;
+    }
+    #sign_up_buttons{
         font-size: 10px;
     }
     #hr>hr+span{
@@ -437,9 +454,17 @@ input{
    border:1px solid #939090;
    font-size: 12px;
    margin-bottom: 20px;
+    }
 }
+@media all and (min-width:300px) and (max-width:850px) {
+    #login_buttons{
+        font-size: 8px;
+    }
+    #sign_up_buttons{
+        font-size: 8px;
+        width:45%;
+    }
 }
-
 @media all and (min-width:300px) and (max-width:800px) {
     #hr>hr{
         width:25%;
@@ -453,7 +478,15 @@ input{
         margin-top: 5px;
         font-size: 6px;
      }
-
+    
+}
+@media all and (min-width:300px) and (max-width:760px) {
+    #login_buttons{
+      margin-bottom: 0px;
+    }
+    #sign_up_buttons{
+   
+    }
 }
 
 @media all and (min-width:300px) and (max-width:670px) {
@@ -487,9 +520,12 @@ input{
         margin-right: 20px;
     }
     #sign_up_button{
+      
         font-size: 4px;
         width:35%;
+        margin-right: 20px;
     }
+
 }
 
 
