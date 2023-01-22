@@ -1,1 +1,464 @@
 
+{
+  "flights": [
+    {
+      "id": 2,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 5200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "02:55"
+    },
+    {
+      "id": 10,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 45m",
+      "price": 5400,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:45",
+      "end_time": "03:10"
+    },
+    {
+      "id": 11,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 05m",
+      "price": 5600,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "01:30",
+      "end_time": "03:55"
+    },
+    {
+      "id": 12,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "01h 55m",
+      "price": 6900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "02:30",
+      "end_time": "04:25"
+    },
+    {
+      "id": 13,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "03h 00m",
+      "price": 6200,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "04:30",
+      "end_time": "07:30"
+    },
+    {
+      "id": 14,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 6200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "12:30",
+      "end_time": "14:55"
+    },
+    {
+      "id": 15,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 5200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "19:30",
+      "end_time": "22:55"
+    },
+    {
+      "id": 16,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 15m",
+      "price": 5800,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "14:30",
+      "end_time": "17:45"
+    },
+    {
+      "id": 17,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 45m",
+      "price": 5900,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:45",
+      "end_time": "03:10"
+    },
+    {
+      "id": 18,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 05m",
+      "price": 6100,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "01:30",
+      "end_time": "03:55"
+    },
+    {
+      "id": 19,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "01h 55m",
+      "price": 6900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "02:30",
+      "end_time": "04:25"
+    },
+    {
+      "id": 20,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "03h 00m",
+      "price": 5800,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "04:30",
+      "end_time": "07:30"
+    },
+    {
+      "id": 21,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 25m",
+      "price": 6400,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "12:30",
+      "end_time": "14:55"
+    },
+    {
+      "id": 22,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 25m",
+      "price": 5950,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "19:30",
+      "end_time": "22:55"
+    },
+    {
+      "id": 23,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 15m",
+      "price": 6500,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "14:30",
+      "end_time": "17:45"
+    },
+    {
+      "id": 3,
+      "from": "New delhi",
+      "to": "Pune",
+      "distance": "03h 15m",
+      "price": 5100,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "01:30",
+      "end_time": "04:55"
+    },
+    {
+      "id": 4,
+      "from": "New Mumbai",
+      "to": "Pune",
+      "distance": "01h 25m",
+      "price": 5600,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "00:30",
+      "end_time": "01:55"
+    },
+    {
+      "id": 5,
+      "from": "Banglore",
+      "to": "Pune",
+      "distance": "04h 25m",
+      "price": 6100,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "04:55"
+    },
+    {
+      "from": "Indore",
+      "to": "Pune",
+      "distance": "06h 00m",
+      "price": 6580,
+      "airlines": "IndiGo",
+      "logo": "img/indigo.png",
+      "start_time": "06:30",
+      "end_time": "12:30",
+      "id": 6
+    },
+    {
+      "from": "Gujarat",
+      "to": "Pune",
+      "distance": "05h 15m",
+      "price": 5999,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "05:30",
+      "end_time": "10:45",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "from": "Kolkata",
+      "to": "Pune",
+      "distance": "07h 25m",
+      "price": 7000,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "00:30",
+      "end_time": "07:55"
+    },
+    {
+      "id": 9,
+      "from": "Kolkata",
+      "to": "Pune",
+      "distance": "06h 25m",
+      "price": 7900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "01:30",
+      "end_time": "07:55"
+    }
+  ],
+  "users": [
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Rohit",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "6909378587",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "423435",
+      "password": "atur",
+      "id": 3
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "9881273",
+      "password": "aefef",
+      "id": 4
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "98456",
+      "password": "aier",
+      "id": 5
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "989",
+      "password": "4356",
+      "id": 6
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "2355",
+      "password": "3456",
+      "id": 7
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "4366",
+      "password": "34325466",
+      "id": 8
+    },
+    {
+      "name": "atir",
+      "email": "atir@gmail.com",
+      "number": "9881567021",
+      "password": "35356",
+      "id": 9
+    }
+  ],"admins": 
+    [{
+      "adminName": "murlikhaire28@gmail.com",
+      "password": 123456,
+      "id": 1
+    }]
+,
+    "hotels": [
+      {
+        "hotelname": "The Leela Mumbai",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/2bace32677f911e789f00a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r1imghtlak.mmtcdn.com/b48e92c077f911e7800e0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,13&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/h811uu97357pp7hmntnmaaii0037.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,13&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/74pbf14mo96jb08omejkihh5002p.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,13&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/c337e71877f911e7800e0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.5",
+        "locat": "Near Mumbai Airport",
+        "dprice": 12000,
+        "id": 1
+      },
+      {
+        "hotelname": "Meluha-The Fern",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/qlh0j89put6tl7pr4t3vo14f0054.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+        "img1": "https://r1imghtlak.mmtcdn.com/4qdtvncq4p0g7e3ldi48vmk1000k.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/f347c9cef69211e799db025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/vvccavsmdp4ep0n7f0slangd001r.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/1e3vr8lkrh139f7c0ifvsla50043.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.5",
+        "locat": "Powai",
+        "dprice": 8460,
+        "id": 2
+      },
+      {
+        "hotelname": "JW Marriott Mumbai Sahar",
+        "city": "Mumbai",
+        "mainimg": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201502241232053860-ba7d0b4e5fe811e8adec0a33396621b6.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r1imghtlak.mmtcdn.com/cf9d84223f1311e8833a0223efad7ef0.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/ce93bfa63f1311e88aa102b33b168fc8.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/9b488bee237b11e8bfc5025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/9dc5e0ce237b11e8963e0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.5",
+        "locat": "Near Mumbai Airport",
+        "dprice": 11500,
+        "id": 3
+      },
+      {
+        "hotelname": "Gateway Inn | Rooms in an Apartment",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/be25d13aabd211eab2d40242ac110002.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg",
+        "img1": "https://r1imghtlak.mmtcdn.com/e4991b88abd211ea84230242ac110002.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg",
+        "img2": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202006111715495709-3ca2bd0c8f1b11ec97dc0a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;55,0&output-format=jpg",
+        "img3": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202006111715495709-3c670a8c8f1b11ecaae50a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,7&output-format=jpg",
+        "img4": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202006111715495709-5474923e8f1b11ec8d1d0a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;125,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "3.2",
+        "locat": "Near Mumbai Airport",
+        "dprice": 1997,
+        "id": 4
+      },
+      {
+        "hotelname": "Four Seasons Hotel Mumbai",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/471cf77abf8811ea901e0242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;94,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r1imghtlak.mmtcdn.com/a0b3e08ce33811e9961d0242ac110002.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,7&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201507241424266753-37f28bceee5611e985860242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,66&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/483ea946bf8811ea929f0242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201507241424266753-459b367acf6611ebad970242ac110002.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,35&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.4",
+        "locat": "South Mumbai",
+        "dprice": 18000,
+        "id": 5
+      },
+      {
+        "hotelname": "The Leela Mumbai",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/4c7bb2f4dbfe11ebbef40242ac110002.jpg?&output-quality=75&downsize=910:612&crop=910:612;89,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200701161152483573-8087576203df11eba5e20242ac110002.jpg?&output-quality=75&downsize=910:612&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/249d44e6719511e7a5c1025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/f7a010ae719411e7b1ef025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/1561db68719511e7900a025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.1",
+        "locat": "Near Mumbai Airport",
+        "dprice": 12859,
+        "id": 6
+      },
+      {
+        "hotelname": "Ramada Plaza",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/d154bc84f52311e78080025f77df004f.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200703221754425607-1cd4527c085511e68ee8001ec9b85d13.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200703221754425607-67602f5a085511e68e5e001ec9b85d13.jpg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200703221754425607-625285bc085511e6abd00015c5f4277e.jpg?&output-quality=75&downsize=910:612&crop=910:612;5,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200703221754425607-1b5af64e085511e6934e0015c5f4277e.jpg?&output-quality=75&downsize=910:612&crop=910:612;5,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.1",
+        "locat": "Juhu",
+        "dprice": 9870,
+        "id": 7
+      },
+      {
+        "hotelname": "Taj Mahal Tower",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/f2d4bc54237411e89e9c0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img1": "https://r1imghtlak.mmtcdn.com/4e014eb05a5e11e8a80402100dd5a6fe.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/56142ce4a8ad11eb92f50242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,35&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r1imghtlak.mmtcdn.com/aefd8d04325511e8bae90a465e05dbdc.jpg?&output-quality=75&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/f426d8ee237411e89e9c0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "4.6",
+        "locat": "South Mumbai",
+        "dprice": 23500,
+        "id": 8
+      },
+      {
+        "hotelname": "Hotel Auris ",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/70e8dba8571e11ecb8fa0a58a9feac02.jfif?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg",
+        "img1": "https://r1imghtlak.mmtcdn.com/da856668571d11ec8c640a58a9feac02.jfif?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg",
+        "img2": "https://r1imghtlak.mmtcdn.com/dae0ead8571d11ec96980a58a9feac02.jfif?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg",
+        "img3": "https://r1imghtlak.mmtcdn.com/3c12dc80571e11ecaf170a58a9feac02.jfif?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg",
+        "img4": "https://r1imghtlak.mmtcdn.com/b6950d80571d11ec81ef0a58a9feac02.jfif?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg",
+        "rating": "4.3",
+        "locat": "Andheri East",
+        "dprice": 4706,
+        "id": 9
+      },
+      {
+        "hotelname": "WYND HOTEL",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/3153f504d77b11eb820f0242ac110009.jpg?&output-quality=75&downsize=583:388&crop=583:388;0,97&output-format=webp",
+        "img1": "https://r1imghtlak.mmtcdn.com/b48e92c077f911e7800e0a4cef95d023.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,13&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/001f840c581a11ebb31d0242ac110004.jpeg?&output-quality=75&downsize=583:388&crop=583:388;0,24&output-format=webp",
+        "img3": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202006111715495709-3c670a8c8f1b11ecaae50a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,7&output-format=jpg",
+        "img4": "https://r1imghtlak.mmtcdn.com/1561db68719511e7900a025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "3.5",
+        "locat": "Andheri East",
+        "dprice": 1911,
+        "id": 10
+      },
+      {
+        "hotelname": "Novotel Mumbai Juhu Beach",
+        "city": "Mumbai",
+        "mainimg": "https://r1imghtlak.mmtcdn.com/f5c1e518f52511e786b5025f77df004f.jpg?&output-quality=75&downsize=583:388&output-format=webp",
+        "img1": "https://r1imghtlak.mmtcdn.com/5c584058830f11e7a0b50a9df65c8753.jfif?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img2": "https://r1imghtlak.mmtcdn.com/f42f4754f52511e786b5025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img3": "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201002050947588989-c16b3586830f11e7818102755708f0b3.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "img4": "https://r1imghtlak.mmtcdn.com/f502f482f52511e78a88025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg&downsize=821:550&crop=821:550",
+        "rating": "3.6",
+        "locat": "Juhu",
+        "dprice": 12000,
+        "id": 11
+      }
+    ]
+    }
+

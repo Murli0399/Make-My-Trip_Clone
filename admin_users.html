@@ -13,7 +13,9 @@
 <body>
 
   <div class="navigation">
-    <h2>Make my Trip</h2>
+    <div class="logoPNG">
+      <img src="img/Take-a-trip-logo-final-removebg.png">
+    </div>
     <div class="flex">
       <div class="icon">
         <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
@@ -46,10 +48,16 @@
     <div class="users">
       <div class="user-head">
         <h2>User</h2>
-        <div>
+        <div class="seacrhBar">
           <input type="text" name="" id="searchByName" placeholder="Search By Name">
         </div>
-        <h4 id="adminNameShow">Admin</h4>
+        <div class="popup">
+          <h4 id="adminNameShow">Admin</h4>
+          <div class="boxpopup">
+            <p>See u soon...</p>
+            <button id="logout" class="logincss" onclick=logoutFun()>Sign Out</button>
+          </div>
+        </div>
       </div>
 
       <div class="user-body">

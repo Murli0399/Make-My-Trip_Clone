@@ -13,7 +13,9 @@
 <body>
 
   <div class="navigation">
-    <h2>Make my Trip</h2>
+    <div class="logoPNG">
+      <img src="img/Take-a-trip-logo-final.jpg">
+    </div>
     <div class="flex">
       <div class="icon">
         <div class="imgs"><img src="img/dahsboard.png" alt="dahsboard"></div>
@@ -48,11 +50,17 @@
     <div class="flights" id="flight">
       <div class="flight-head">
         <h2>Flight</h2>
-        <div>
+        <div class="searchBar">
           <input type="text" name="" id="searchByCity" placeholder="Search By City">
           <button id="myBtn">Add New Flight</button>
         </div>
-        <h4 id="adminNameShow">Admin</h4>
+        <div class="popup">
+          <h4 id="adminNameShow">Admin</h4>
+          <div class="boxpopup">
+            <p>See u soon...</p>
+            <button id="logout" class="logincss" onclick=logoutFun()>Sign Out</button>
+          </div>
+        </div>
       </div>
 
       <div class="flight-body">

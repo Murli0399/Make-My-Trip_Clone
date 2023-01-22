@@ -1,6 +1,6 @@
 let flight1 = document.querySelector(".flight1")
 let input1 = document.getElementById("input1")
-
+let searchData={}
 
   let cityArr;
   fetch("http://localhost:3000/flights")
@@ -100,7 +100,6 @@ flight1.addEventListener("click", function () {
     down_bar.style.display = "block"
     fromh1.style.display = "none"
     span2.style.display = "none"
-    console.log("wporking")
 
 })
 
@@ -277,8 +276,51 @@ calendor.addEventListener("change",function(){
         }else if(month=="12"){
             for_month.innerText=" Dec"
         }
-       
     }
+})
 
 
+let login=document.querySelector(".login");
+login.addEventListener("click",function(){
+    window.location.assign("login.html")
+    console.log("working")
+})
+
+let langbtn=document.querySelector(".langbtn");
+langbtn.addEventListener("click",function(){
+    window.location.assign("admin_login.html")
+})
+
+let flight=document.querySelector("#flight");
+flight.addEventListener("click",function(){
+    window.location.assign("flight.html")
+})
+
+let flight_second_btn=document.querySelector("#flight_second_btn");
+flight_second_btn.addEventListener("click",function(){
+    window.location.assign("flight.html")
+})
+
+let search_button=document.querySelector(".search-button");
+search_button.addEventListener("click",function(){
+    searchData={
+        from:document.getElementById("fromh1").innerText,
+        to:document.getElementById("toh1").innerText,
+        date1:document.getElementById("for_day").innerText+document.getElementById("for_month").innerText+document.getElementById("for_year").innerText+" " + document.getElementById("var").innerText,
+        date2:document.getElementById("for_day").innerText+document.getElementById("for_month").innerText+document.getElementById("for_year").innerText+" "+ document.getElementById("var").innerText,
+        passenger:document.getElementById("new_span").innerText
+    }
+    localStorage.setItem("searchData",JSON.stringify(searchData))
+ 
+    window.location.assign("flight.html")
+})
+
+let hotel=document.querySelector("#hotel");
+hotel.addEventListener("click",function(){
+    window.location.assign("hotel.html")
+})
+
+let second_hotel_btn=document.querySelector("#second_hotel_btn");
+second_hotel_btn.addEventListener("click",function(){
+    window.location.assign("hotel.html")
 })

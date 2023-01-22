@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,32 +23,34 @@
     />
    <link rel="stylesheet" href="style/style.css">
     <!-- <style>
-        
-        
+      
     </style> -->
 
 </head>
-<body>
-    <div class="background">
-        <div class="container">
-                <!-- floating nav  -->
-                <div class="floatingnav">
-                        <img class="logo" src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png">
-                        <div class="midbtns">
-                                <div><i class="fa-sharp fa-solid fa-plane-departure"></i><br>Flights</div>
-                                <div><i class="fa-solid fa-hotel"></i><br>Hotel</div>
-                                <div><i class="fa-sharp fa-solid fa-house"></i><br>HomeStays</div>
-                                <div><i class="fa-solid fa-hotel"></i><br>Holiday Package</div>
-                                <div><i class="fa-solid fa-train-subway"></i><br>Trains</div>
-                                <div><i class="fa-solid fa-bus"></i><br>Bushes</div>
-                                <div><i class="fa-solid fa-taxi"></i><br>Cabs</div>
-                                <div><i class="fa-solid fa-camera"></i><br>Forex</div>
-                                <div><i class="fa-sharp fa-solid fa-plane-arrival"></i><br>Charted Flight</div>
-                                <div><i class="fa-solid fa-person-hiking"></i><br>Activities</div>
 
-                        </div>
-                        <div class="rightbtnsup">
-                                <!-- <button class="login">
+<body>
+        <div class="background">
+                <div class="container">
+                        <!-- floating nav  -->
+                        <div class="floatingnav">
+                                <!-- <img class="logo"
+                                          src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png">  -->
+                                <img class="logo" src="/images/Take-a-trip-logo-final.png">
+                                <div class="midbtns">
+                                        <div id="flight"><i class="fa-sharp fa-solid fa-plane-departure"></i><br>Flights</div>
+                                        <div id="hotel"><i class="fa-solid fa-hotel"></i><br>Hotel</div>
+                                        <div><i class="fa-sharp fa-solid fa-house"></i><br>HomeStays</div>
+                                        <div><i class="fa-solid fa-hotel"></i><br>Holiday Package</div>
+                                        <div><i class="fa-solid fa-train-subway"></i><br>Trains</div>
+                                        <div><i class="fa-solid fa-bus"></i><br>Bushes</div>
+                                        <div><i class="fa-solid fa-taxi"></i><br>Cabs</div>
+                                        <div><i class="fa-solid fa-camera"></i><br>Forex</div>
+                                        <div><i class="fa-sharp fa-solid fa-plane-arrival"></i><br>Charted Flight</div>
+                                        <div><i class="fa-solid fa-person-hiking"></i><br>Activities</div>
+
+                                </div>
+                                <div class="rightbtnsup">
+                                        <!-- <button class="login">
                                         <img src="/images/mylogogreen.png" alt="">
                                         Login or Create Account
                                 </button>
@@ -63,6 +67,7 @@
                                         <i class="fa-solid fa-angle-down"></i>
 
                                 </button> -->
+
                                 <button class="login">
                                         <img src="/images/makemytriplogo.png" alt="">
                                         Login or Create Account
@@ -103,99 +108,144 @@
                                 <span> <input type="radio" />ROUND TRIP</span>
                                 <span> <input type="radio" />MULTI CITY</span>
                                 <span id="end">Book International and Domestic Flights</span>
+
                         </div>
-                        <div>
-    
-    
-    <div class="flight-search">
-          <div class="flight1">
-    
-             <span id="span1">FROM</span>
-             <input type="text" id="input1" placeholder="From">
-             <div id="down_bar">
-                <p class="suggestion_name"></p>
-                <!-- <p class="suggestion_name">input2</p>
+                        <nav>
+                                <img class="logo"
+                                        src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png">
+                                <!-- <div class="rightbtns">
+                                        <button class="login">
+                                                <img src="/images/makemytriplogo.png" alt="">
+                                                Login or Create Account
+                                                <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                        <button class="langbtn">Admin</button>
+                                </div> -->
+                        </nav>
+                        <div class="data">
+                                <div class="categories">
+                                        <span id="flight_second_btn"><i class="fa-sharp fa-solid fa-plane-departure"></i>Flights</span>
+                                        <span id="second_hotel_btn"><i class="fa-solid fa-hotel"></i>Hotel</span>
+                                        <span><i class="fa-sharp fa-solid fa-house"></i>HomeStays</span>
+                                        <span><i class="fa-solid fa-hotel"></i>Holiday Package</span>
+                                        <span><i class="fa-solid fa-train-subway"></i>Trains</span>
+                                        <span><i class="fa-solid fa-bus"></i>Bushes</span>
+                                        <span><i class="fa-solid fa-taxi"></i>Cabs</span>
+                                        <span><i class="fa-solid fa-camera"></i>Forex</span>
+                                        <span><i class="fa-sharp fa-solid fa-plane-arrival"></i>Charted Flight</span>
+                                        <span><i class="fa-solid fa-person-hiking"></i>Activities</span>
+
+                                </div>
+                                <div class="tickets">
+                                        <div class="ticket-type">
+                                                <span class="selected-ticket-type"><i
+                                                                class="fa-solid fa-circle-check"></i>ONEWAY</span>
+                                                <span> <input type="radio" />ROUND TRIP</span>
+                                                <span> <input type="radio" />MULTI CITY</span>
+                                                <span id="end">Book International and Domestic Flights</span>
+                                        </div>
+                                        <div>
+
+
+                                                <div class="flight-search">
+                                                        <div class="flight1">
+
+                                                                <span id="span1">FROM</span>
+                                                                <input type="text" id="input1" placeholder="From">
+                                                                <div id="down_bar">
+                                                                        <p class="suggestion_name"></p>
+                                                                        <!-- <p class="suggestion_name">input2</p>
                 <p class="suggestion_name">GINH</p> -->
-               
-             </div>
-             <h1 id="fromh1">Delhi</h1>
-             <!-- <span id="span2">DEL, Delhi Airport India</span> -->
-             <span id="span2"><a id="anchor1">DEL</a> , <a id="anchor2">Delhi</a> Airport India</span>
-    
-         </div>
-    
-          <div class="flight2">
-    
-                <span id="span3">TO</span>
-                <input type="text" id="input2" placeholder="To">
-                <div id="down_bar1">
-                    <p class="suggestion_name"></p>
-                    <!-- <p class="suggestion_name">input2</p>
+
+                                                                </div>
+                                                                <h1 id="fromh1">Delhi</h1>
+                                                                <!-- <span id="span2">DEL, Delhi Airport India</span> -->
+                                                                <span id="span2"><a id="anchor1">DEL</a> , <a
+                                                                                id="anchor2">Delhi</a> Airport
+                                                                        India</span>
+
+                                                        </div>
+
+                                                        <div class="flight2">
+
+                                                                <span id="span3">TO</span>
+                                                                <input type="text" id="input2" placeholder="To">
+                                                                <div id="down_bar1">
+                                                                        <p class="suggestion_name"></p>
+                                                                        <!-- <p class="suggestion_name">input2</p>
                     <p class="suggestion_name">GINH</p> -->
-                </div>
-                <h1 id="toh1">Bengaluru</h1>
-                <span id="span4"><a id="anchor3">BRL</a>, <a id="anchor4">Bengluro</a> International Airp...</span>
-         </div>
-    
-         <div class="flight3">
-    
-            <span id="span3">DEPARTURE <input id="calendor" type="date" ></span>
-            <input type="text" id="input2" placeholder="To">
-            <!-- <div id="down_bar1"></div> -->
-            <h1 id="toh1">  <span id="for_day">6</span><span id="for_month"> Feb</span>'<span id="for_year">23</span></h1>
-            <!-- <span id="span4"><a id="anchor3">BRL</a>, <a id="anchor4">Bengluro</a> International Airp...</span> -->
-            <span id="var">Monday</span>
-          </div>
-    
-          <div class="flight4">
-    
-            <span id="span3">RETURN </span>
-            <p>Tap to add a return date for bigger discounts</p>
-          </div>
-    
-          <div class="flight5">
-        <div>
-            <span id="span1">TRAVELLERS & CLASS</span>
-            <select id="select_number">
-                <option></option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-        </div>
-            <h1 id="fromh1"><span id="new_span">1</span> Traveller</h1>
-            <!-- <span id="span2">DEL, Delhi Airport India</span> -->
-            <span id="span2">Economy/Premium Economy</span>
-            <span id="span2">Group Bookings Available!</span>
-            <!-- <select id="select_number">
+                                                                </div>
+                                                                <h1 id="toh1">Pune</h1>
+                                                                <span id="span4"><a id="anchor3">Pune</a>, <a
+                                                                                id="anchor4">Pune</a> International
+                                                                        Airp...</span>
+                                                        </div>
+
+                                                        <div class="flight3">
+
+                                                                <span id="span3">DEPARTURE <input id="calendor"
+                                                                                type="date"></span>
+                                                                <input type="text" id="input2" placeholder="To">
+                                                                <!-- <div id="down_bar1"></div> -->
+                                                                <h1 > <span id="for_day">6</span><span
+                                                                                id="for_month"> Feb</span>'<span
+                                                                                id="for_year">23</span></h1>
+                                                                <!-- <span id="span4"><a id="anchor3">BRL</a>, <a id="anchor4">Bengluro</a> International Airp...</span> -->
+                                                                <span id="var">Monday</span>
+                                                        </div>
+
+                                                        <div class="flight4">
+
+                                                                <span id="span3">RETURN </span>
+                                                                <p>Tap to add a return date for bigger discounts</p>
+                                                        </div>
+
+                                                        <div class="flight5">
+                                                                <div>
+                                                                        <span id="span1">TRAVELLERS & CLASS</span>
+                                                                        <select id="select_number">
+                                                                                <option></option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                                <option>6</option>
+                                                                                <option>7</option>
+                                                                                <option>8</option>
+                                                                                <option>9</option>
+                                                                                <option>10</option>
+                                                                        </select>
+                                                                </div>
+                                                                <h1 id="fromh1"><span id="new_span">1</span> Traveller
+                                                                </h1>
+                                                                <!-- <span id="span2">DEL, Delhi Airport India</span> -->
+                                                                <span id="span2">Economy/Premium Economy</span>
+                                                                <span id="span2">Group Bookings Available!</span>
+                                                                <!-- <select id="select_number">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
             </select> -->
-        </div>
-    
-    </div>
-                            <div class="fare-search">
-                                <span class="fare-select">Select A Fare Type:</span>
-                                <div class="fare-type">
-                                    <span class="selected-fare-type"><i class="fa-solid fa-circle-check"></i>Regular
-                                        Fares</span>
-                                    <span> <input type="radio" />Armmed Forces Fares</span>
-                                    <span> <input type="radio" />Students Fares</span>
-                                    <span> <input type="radio" />Senior Citizen Fares</span>
-                                    <span> <input type="radio" />Doctors & Nurses Fares</span>
-                                </div>
-                            </div>
-                        </div>
-                <!-- <div class="tickets">
+                                                        </div>
+
+                                                </div>
+                                                <div class="fare-search">
+                                                        <span class="fare-select">Select A Fare Type:</span>
+                                                        <div class="fare-type">
+                                                                <span class="selected-fare-type"><i
+                                                                                class="fa-solid fa-circle-check"></i>Regular
+                                                                        Fares</span>
+                                                                <span> <input type="radio" />Armmed Forces Fares</span>
+                                                                <span> <input type="radio" />Students Fares</span>
+                                                                <span> <input type="radio" />Senior Citizen Fares</span>
+                                                                <span> <input type="radio" />Doctors & Nurses
+                                                                        Fares</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- <div class="tickets">
                     <div class="ticket-type">
                         <span class="selected-ticket-type"><i class="fa-solid fa-circle-check"></i>ONEWAY</span>
                         <span> <input type="radio" />ROUND TRIP</span>
@@ -227,47 +277,61 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="searchbtncont">
-                        <button class="search-button">SEARCH</button>
-                    </div>
+                                        <div class="searchbtncont">
+                                                <button class="search-button">SEARCH</button>
+                                        </div>
+                                </div>
+
+
+                        </div> -->
                 </div>
-    
-    
-            </div> -->
+
         </div>
 
-    </div>
+        <!-- OFFERS SECTION -------------------------------------------- -->
+        <div class="offers">
+                <div class="offers-first-img">
+                        <img src="./images/offers.png" alt="">
+                </div>
 
-    <!-- OFFERS SECTION -------------------------------------------- -->
-    <div class="offers">
-        <div class="offers-first-img">
-                <img src="./images/offers.png" alt="">
-        </div>
-           
-        <div class="offers-child">
-        <div>
-                <img src="./images/bus ticket.png" alt="">
+                <div class="offers-child">
+                        <div>
+                                <img src="./images/bus ticket.png" alt="">
+                        </div>
+
+                        <div>
+                                <img src="./images/domestic flights.png" alt="">
+                        </div>
+
+                        <div>
+                                <img src="./images/domestic hotels.png" alt="">
+                        </div>
+
+                        <div>
+                                <img src="./images/outstation cab.png" alt="">
+                        </div>
+
+                        <div>
+                                <img src="./images/republic.png" alt="">
+                        </div>
+
+                        <div>
+                                <img src="./images/airport cabs.png" alt="">
+                        </div>
+                </div>
+
         </div>
 
-        <div>
-                <img src="./images/domestic flights.png" alt="">
+        <!-- DOWNLOAD APP NOW*********** -->
+        <div class="down-app-now">
+                <img src="./images/download app now.png" alt="">
         </div>
 
-        <div>
-                <img src="./images/domestic hotels.png" alt="">
+        <!-- TRIP MONEY************* -->
+        <div class="trip-money">
+                <img src="./images/trip money.png" alt="">
         </div>
 
-        <div>
-                <img src="./images/outstation cab.png" alt="">
-        </div>
-
-        <div>
-                <img src="./images/republic.png" alt="">
-        </div>
-
-        <div>
-                <img src="./images/airport cabs.png" alt="">
-        </div>
        </div>
 
     </div>
@@ -564,9 +628,35 @@
                                         suggest, you double-check online flight booking prices when purchasing
                                         flight tickets, as the airfare might have been dynamically updated since
                                         you first selected the air travel dates or planned your itinerary.</div>
+
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </article>
+                                </section>
+                        </section>
+                </div>
+                <div class="footerBottom">
+                        <div class="landingContainer makeFlex whiteText">
+                                <div class="socialMediaLinks makeFlex hrtlcenter spaceBetween"><a
+                                                class="makeFlex perfectCenter" href="https://twitter.com/makemytrip/"><i
+                                                        class="fa-brands fa-twitter fa-xl"></i></span></a><a
+                                                class="makeFlex perfectCenter"
+                                                href="https://www.facebook.com/makemytrip/"> <i
+                                                        class="fa-brands fa-facebook-f fa-xl"></i></a></div>
+                                <div class="pushRight rightcontent makeFlex column textRight">
+                                        <p class="appendBottom5 latoBold font16">© 2022 MAKEMYTRIP PVT. LTD.</p>
+                                        <p>Country<span class="latoBlack"><a class="bdrWhite"
+                                                                href="https://www.makemytrip.com/"><!-- -->
+                                                                India<!-- --> </a><a class="bdrWhite"
+                                                                href="https://www.makemytrip.com/?ccde=US">USA</a> <a
+                                                                class="bdrWhite"
+                                                                href="https://www.makemytrip.com/?ccde=AE">UAE</a></span>
+                                        </p>
+
                                 </div>
-                            </div>
                         </div>
+
                     </article>
                 </section>
             </section>
@@ -582,10 +672,10 @@
                                 href="https://www.makemytrip.com/"><!-- --> India<!-- --> </a><a
                                 class="bdrWhite" href="https://www.makemytrip.com/?ccde=US">USA</a> <a
                                 class="bdrWhite" href="https://www.makemytrip.com/?ccde=AE">UAE</a></span></p>
+
                 </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <script src="scripts/index.js"></script>
+
 </html>

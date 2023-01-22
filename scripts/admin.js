@@ -52,3 +52,7 @@ function userPage() {
 
 let adminName = JSON.parse(localStorage.getItem("admin"));
 document.getElementById("adminNameShow").innerText = adminName;
+function logoutFun() {
+  localStorage.removeItem("admin");
+  location.href = "index.html"
+}

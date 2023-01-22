@@ -29,7 +29,7 @@ var display_name=[]
 let continue_button = document.getElementById("continue_button");
 continue_button.addEventListener("click", function () {
 let flag=true;
-  fetch("http://localhost:3000/user")
+  fetch("http://localhost:3000/users")
     .then((res) => {
       return res.json()
     })
@@ -98,7 +98,18 @@ new_continue.addEventListener('click', function () {
   if (otp_inputs == scope) {
     alert("Login Succesfull")
     localStorage.setItem("name",display_name)
-  } else {
+    window.location.assign("index.html")
+    // let img=document.createElement("img");
+    // img.setAttribute("src","https://gifimage.net/wp-content/uploads/2017/08/loading-gif-transparent-25.gif")
+    // let apn=document.getElementById("apn");
+    // apn.append(img)
+
+    // setTimeout(() => {
+    //   alert("Login Succesfull")
+    //   window.location.assign("index.html")
+    // }, 3000);
+   
+  } else{
     alert('please fill correct otp')
   }
   // if(otp_inputs==scope){
@@ -174,7 +185,7 @@ registerForm.addEventListener("submit", function (event) {
 
   let inputMobile = registerForm.numbers_input.value;
   let flag = true;
-  fetch("http://localhost:3000/user")
+  fetch("http://localhost:3000/users")
     .then((res) => {
       return res.json()
     })
@@ -195,9 +206,11 @@ registerForm.addEventListener("submit", function (event) {
         console.log(names, emails, inputMobile, passwords)
         if (names.value.length < 3) {
           cre_one.style.display = "block"
+          return
         }
         if (inputMobile.length < 10 || inputMobile.length > 10) {
           cre_two.style.display = "block"
+          return
         }
         if (passwords.value.length < 4) {
           return cre_three.style.display = "block"
@@ -211,7 +224,7 @@ registerForm.addEventListener("submit", function (event) {
           password: passwords.value,
         }
 
-        fetch("http://localhost:3000/user", {
+        fetch("http://localhost:3000/users", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
