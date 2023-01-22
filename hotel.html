@@ -13,34 +13,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
-    <!-- <nav class="nav1">
-        <button>
+    <!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+    <nav class="nav1">
+        <img src="./New folder/Take-a-trip-logo-final.jpg" alt="" width="130px" height="45px" style="margin-right: 30px;margin-top: 10px;">
+        <div>
+            <button>
             <img src="./New folder/flight.png" alt="">
-            <p>Flight</p>
+            <p>Flights</p>
         </button>
         <button>
-            <img src="./New folder/hotel.png" alt="">
-            <p>Hotel</p>
+            <img src="./New folder/hotel.png" alt="" >
+            <p style="width:50px;border-radius:20px;background-color:#008cff;font-size:12px;color:white;padding: 2px 2px;">Hotels</p>
         </button>
         <button>
-            <img src="./New folder/homestay.png" alt="">
+            <img src="./New folder/homestay.png" alt="" style="width: 50px;">
             <p>Homestays</p>
         </button>
         <button>
-            <img src="./New folder/hp.png" alt="">
+            <img src="./New folder/hp.png" alt="" style="width: 50px;">
             <p>Holiday Packages</p>
         </button>
         <button>
-            <img src="./New folder/train.png" alt="">
+            <img src="./New folder/train.png" alt="" style="width: 30px;">
             <p>Trains</p>
         </button>
         <button>
-            <img src="./New folder/bus.png" alt="">
+            <img src="./New folder/bus.png" alt="" style="width: 30px;">
             <p>Buses</p>
         </button>
         <button>
-            <img src="./New folder/cab.png" alt="">
+            <img src="./New folder/cab.png" alt="" style="width: 30px;">
             <p>Cabs</p>
         </button>
         <button>
@@ -49,9 +51,13 @@
         </button>
         <button>
             <img src="./New folder/more.png" alt="">
-            <p>More<span class="hsw_inputBoxArrow"></span></p>
+            <p>More<span class="hsw_inputBoxArrow" style="font-size:12px;color: #4A4A4A;"></span></p>
         </button>
-    </nav> -->
+        </div>
+        
+        
+    </nav>
+    <!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
     <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
     <nav class="nav2">
         <button>
@@ -72,17 +78,13 @@
                 
             </select>
         </button>
-        <button>
+        <button >
             <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow" ></span></label>
-            <select name="" id="">
-                <option>Thu, 19 Jan 2023</option>
-            </select>
+            <div id="ci"></div>
         </button>
         <button>
             <label for="outdate">CHECK-OUT<span class="hsw_inputBoxArrow"></span></label>
-            <select name="" id="">
-                <option>Fri, 20 Jan 2023</option>
-            </select>
+            <div id="co"></div>
         </button>
         <button>
             <label for="room">ROOMS & GUESTS<span class="hsw_inputBoxArrow"></span></label>
@@ -117,7 +119,7 @@
             </select>
             <label for="" style="font-size: 14px;font-weight: 600;">Sort by:</label>
             <select name="" id="select1">
-                <option value="">Popularity</option>
+                <option value="Popularity">Popularity</option>
                 <option value="Price-Low to High">Price-Low to High</option>
                 <option value="Price-High to Low">Price-High to Low</option>
             </select>
