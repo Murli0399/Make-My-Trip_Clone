@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./hoteldetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
@@ -15,9 +14,29 @@
             padding: 0;
             font-family: 'Lato';
         }
+        /* ----------------------------------------------------------------------nav1---------------------------------------------------------------------------- */
+.nav1{
+    padding-left: 70px;
+    display: flex;
+}
+.nav1 button img{
+    width: 40px;
+}
+.nav1 button{
+    margin-right: 20px;
+    background: transparent;
+    border: 0;
+    margin-bottom: 15px;
+}
+.nav1 button p{
+    font-size:12px;
+    color: #4A4A4A;
+}
+/* ----------------------------------------------------------------------nav1---------------------------------------------------------------------------- */
+
         #head{
             height: 100px;
-            background-image: linear-gradient(black, darkblue);
+            background-image: linear-gradient(to bottom, #051322, #15457c);
             padding-top: 20px;
             position: absolute;
             z-index: 1;
@@ -28,7 +47,6 @@
             margin-left: 70px;
         }
         #body{
-            border: 2px solid black;
             width: 90%;
             position: absolute;
             z-index: 3;
@@ -38,13 +56,8 @@
         }
         .mainh{
             background-color: white;
-            width: 70%;
             display: flex;
-            justify-content:space-between;
-            border: 1px solid black;
-            border-right: 0;
-            border-left: 0;
-            border-top: 0;
+            border-bottom: 1px solid gray;
         }
         h3{
             font-size: 22px;
@@ -54,7 +67,7 @@
         }
         .mainh img{
             margin: 20px 20px 20px 280px ;
-            width: 30%;
+            width: 25%;
         }
         #rating{
             background-color:#0b58b4;
@@ -71,10 +84,122 @@
             font-weight: bolder;
             margin-left: 4px;
         }
+        .mainb{
+            display: flex;
+            gap: 10%;
+            padding: 0 20px 20px 20px;
+        }
+        .mainm{
+            background-color: white;
+            width: 70%;
+        }
+        .p1,.p2,.p3{
+            display: grid;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .side{
+            margin-left: 20px;
+            background-color: white;
+            width: 320px;
+            border-radius:5px ;
+            padding: 20px 20px 20px 20px;
+        }
+        #search{
+            margin-left: 30px;
+            color: white;
+            text-align: center;
+            padding:10px 10px 10px 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-top:40px;
+            margin-bottom: 5px;
+            background: rgb(42,242,233);
+            background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+            cursor: pointer;
+            border: 0;
+            width: 80%;
+        }
+        .payment{
+            width: 20%;
+            padding: 20px 20px 20px 20px;
+        }
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            width: 30%;
+            padding: 16px;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
     </style>
 </head>
 <body>
-    <img src="./New folder/Screenshot 2023-01-18 151941.png" alt="">
+<!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+<nav class="nav1">
+    <img src="./New folder/Take-a-trip-logo-final.jpg" alt="" width="130px" height="45px" style="margin-right: 30px;margin-top: 10px;">
+    <div>
+        <button>
+        <img src="./New folder/flight.png" alt="">
+        <p>Flights</p>
+    </button>
+    <button>
+        <img src="./New folder/hotel.png" alt="" >
+        <p style="width:50px;border-radius:20px;background-color:#008cff;font-size:12px;color:white;padding: 2px 2px;">Hotels</p>
+    </button>
+    <button>
+        <img src="./New folder/homestay.png" alt="" style="width: 50px;">
+        <p>Homestays</p>
+    </button>
+    <button>
+        <img src="./New folder/hp.png" alt="" style="width: 50px;">
+        <p>Holiday Packages</p>
+    </button>
+    <button>
+        <img src="./New folder/train.png" alt="" style="width: 30px;">
+        <p>Trains</p>
+    </button>
+    <button>
+        <img src="./New folder/bus.png" alt="" style="width: 30px;">
+        <p>Buses</p>
+    </button>
+    <button>
+        <img src="./New folder/cab.png" alt="" style="width: 30px;">
+        <p>Cabs</p>
+    </button>
+    <button>
+        <img src="./New folder/forex.png" alt="">
+        <p>Forex</p>
+    </button>
+    <button>
+        <img src="./New folder/more.png" alt="">
+        <p>More<span class="hsw_inputBoxArrow" style="font-size:12px;color: #4A4A4A;"></span></p>
+    </button>
+    </div>
+    
+    
+</nav>
+<!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+
     <div id="head">
         <h2>Review your Booking</h2>
     </div>
@@ -83,23 +208,108 @@
             <div class="mainh">
                 
             </div>
-
+            <div class="mainb">
+                <div class="p1">
+                    <span style="font-size: 11px;color: #9b9b9b;margin-top: 15px;">CHECK IN</span>
+                    <span style="font-size: 22px;color: black;font-weight: 900;" id="checkind"><div id="ci"></div></span>
+                    <span style="font-size: 14px;color: #9b9b9b;"><div id="cdi"></div></span>
+                </div>
+                <div class="p2">
+                    <span style="font-size: 11px;color: #9b9b9b;margin-top: 15px;">CHECK OUT</span>
+                    <span style="font-size: 22px;color: black;font-weight: 900;" id="checkoutd"><div id="co"></div></span>
+                    <span style="font-size: 14px;color: #9b9b9b;"><div id="cdo"></div></span>
+                </div>
+                <div class="p3">
+                    <p style="font-size: 20px;color: black;font-weight: 900;margin-top:30px;" id="ran">1 Room | 2 Adults | 1 Night</p> 
+                </div>
+            </div>
+            <form action="" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;margin-top:30px;padding:20px 0 20px 20px;">
+                <h4 style="font-size:18px;margin-bottom:5px;">Guest Details</h4>
+                <div>
+                    <div style="display: flex;">
+                        <div style="display: grid;width:5%;">
+                        <small style="font-size: 11px;color: #4a4a4a;">TITLE</small>
+                        <select name="" id="title" style="padding: 10px 10px 10px 10px;">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                        </select>
+                    </div>
+                    <div style="display:flex;">
+                        <div style="display: grid;">
+                            <small style="font-size: 11px;color: #4a4a4a;margin-left: 40px;">FULL NAME</small>
+                            <input type="text" name="" id="" placeholder="First Name" style="padding: 10px 10px 10px 10px;margin-left:40px;">
+                        </div>
+                        <input type="text" name="" id="" placeholder="Last Name"style="padding: 10px 10px 10px 10px;margin-left: 10px;height:18px;margin-top:15px;">
+                    </div>
+                    </div>
+                    <div style="display: grid;">
+                        <label for="" style="font-size: 11px;color: #4a4a4a;margin-top: 20px;margin-bottom:10px;">AGE</label>
+                        <input type="number" placeholder="Enter Age"style="padding: 10px 10px 10px 10px;width:15%;">
+                    </div>
+                    <p style="color:#0b58b4;font-weight:900;padding-top: 20px;">+Add Guest</p>
+                </div>
+            </form>
         </div>
-        <div>
-            p
+        <div class="side" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;height:50%">
+            <h4 style="margin-bottom: 10px;">Price Breakup</h4>
+            <div style="display: flex;justify-content: space-between;font-weight: bold;">
+                <span style="font-size: 14px;">1 Room x 1 Night</span>
+                <p id="mainprice" style="font-size: 14px;color: #4a4a4a;"></p>
+            </div><hr style="margin-top: 10px;">
+            <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 10px;">
+                <span style="font-size: 14px;">Hotel Taxes</span>
+                <p id="taxprice" style="font-size: 14px;color: #4a4a4a;"></p>
+            </div>
+            <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 20px;">
+                <span style="font-size: 18px;">Total Amount to be paid</span>
+                <p id="totalprice" style="font-size: 18px;color: #4a4a4a;"></p>
+            </div>
+            <button id="search"><b><a href="javascript:void(0)" style="text-decoration: none;color: white;" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">PAY NOW</a></b></button>
         </div>
-        <br><br><br><br><br><br>
     </div>
+
+<!-- ============================================================Payment================================================================================ -->
+    <div  id="light" class="white_content">
+        <h2 style="color: black;margin: 0;padding: 10px 10px 10px 0;">Payment</h2>
+        <h4>Accepted Card</h4>
+        <div style="display: flex;gap: 20px;">
+            <img src="https://d28wu8o6itv89t.cloudfront.net/images/Visadebitcardpng-1599584312349.png" width="50px" alt="">
+            <img src="https://banner2.cleanpng.com/20180821/jpy/kisspng-mastercard-logo-credit-card-maestro-payment-card-mastercard-mastercard-logo-design-vector-free-down-5b7bd9c7c83ef0.9372206915348433358202.jpg" width="40px" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" width="33px" alt="">
+        </div>
+        <label for="">Amount to Pay</label><br>
+        <button id="atp" style="width: 175px;text-align: left;padding:10px 0 10px 5px;"></button><br>
+        <label for="">Card Number</label><br>
+        <input type="number" placeholder="1111-2222-3333-4444" style="padding: 10px 10px 10px 10px ;"><br>
+        <label for="">Exp Month</label><br>
+        <input type="text" placeholder="Enter Month" style="padding: 10px 10px 10px 10px ;">
+        <div style="display: flex;gap: 20px;">
+            <div>
+                <label for="">Exp Year</label><br>
+            <input type="number" placeholder="Enter Year" style="padding: 10px 10px 10px 10px ;">
+            </div>
+            <div>
+                <label for="">CVV</label><br>
+            <input type="password" placeholder="Enter CVV" style="padding: 10px 10px 10px 10px ;">
+            </div>
+        </div>
+        <button id="search" class="pay"><b>PAY</b></button>
+    </div>
+    <div id="fade" class="black_overlay"></div>
 </body>
+
 </html>
 <script>
     data = JSON.parse(localStorage.getItem("book"));
+    date = JSON.parse(localStorage.getItem("date"));
     mainh=document.querySelector(".mainh")
     mainh.innerHTML=`
     <div>
         <h3>${data.hotelname}</h3>
         <button id="rating">${data.rating}</button>
         <small id="review"></small>
+        <p style="padding: 5px 20px 20px 15px;font-size:18px;color: #4a4a4a;">${data.locat}</p>
     </div>
     <div><img src="${data.mainimg}" alt="" ></div>
     `
@@ -111,7 +321,75 @@
     }else if(data.rating>=3 && data.rating<4){
       review.innerText="Good"
     }
-
+    checkind=document.getElementById("checkind")
+    mainprice=document.getElementById("mainprice")
+    mainprice.innerHTML=`₹ ${data.dprice}`
+    taxprice=document.getElementById("taxprice")
+    taxprice.innerHTML=`₹ ${Math.ceil((data.dprice/100)*18)}`
+    totalprice=document.getElementById("totalprice")
+    totalprice.innerHTML=`₹ ${Math.ceil((data.dprice/100)*18)+data.dprice}`
     // <></>
     // <></>
+    atp=document.getElementById("atp")
+    modal=document.getElementById("fade")
+    modal1=document.getElementById("light")
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        modal1.style.display = "none";
+    }
+}
+    atp.innerText=`₹ ${Math.ceil((data.dprice/100)*18)+data.dprice}`
+    const d = new Date(`${date.ci}`);
+    let day = d.getDay()
+    const p = new Date(`${date.co}`);
+    let day1 = p.getDay()
+    if(day==0){
+        dayw="Sunday"
+    }else if(day==1){
+        dayw="Monday"
+    }else if(day==2){
+        dayw="Tuesday"
+    }else if(day==3){
+        dayw="Wednesday"
+    }else if(day==4){
+        dayw="Thursday"
+    }else if(day==5){
+        dayw="Friday"
+    }else if(day==6){
+        dayw="Saturday"
+    }
+    if(day1==0){
+        day1w="Sunday"
+    }else if(day1==1){
+        day1w="Monday"
+    }else if(day1==2){
+        day1w="Tuesday"
+    }else if(day1==3){
+        day1w="Wednesday"
+    }else if(day1==4){
+        day1w="Thursday"
+    }else if(day1==5){
+        day1w="Friday"
+    }else if(day1==6){
+        day1w="Saturday"
+    }
+    cid=document.getElementById("ci")
+    cid.innerHTML=`<p>${date.ci}</p>`
+    cod=document.getElementById("co")
+    cod.innerHTML=`<p>${date.co}</p>`
+    cdi=document.getElementById("cdi")
+    cdi.innerHTML=`<p>${dayw}</p>`
+    cdo=document.getElementById("cdo")
+    cdo.innerHTML=`<p>${day1w}</p>`
+    pay=document.querySelector(".pay")
+    light=document.getElementById("light")
+    pay.onclick=()=>{
+        setTimeout(() => {
+            light.innerHTML=`<img src="./New folder/Paymentsuccessful21.png" alt="" width="100%">`
+            setTimeout(() => {
+                window.location.href = "./hotelhome.html";
+            }, 2000);
+        }, 2000);
+    }
 </script>

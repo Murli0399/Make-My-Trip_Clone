@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+.hsw_inputBoxArrow {
+    align-items: center;
+    display: inline-flex;
+    height: 12px;
+    justify-content: center;
+    margin-left: 5px;
+    width: 12px;
+}
+.hsw_inputBoxArrow:after {
+    border: solid #008cff;
+    border-width: 0 2px 2px 0;
+    content: "";
+    padding: 3px;
+    position: relative;
+    top: -3px;
+    transform: rotate(45deg);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 51, 51);
+}
+.back{
+    background: rgb(232, 232 ,232);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #051322, #15457c);
+    background-size: 100% 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px 0 50px;
+}
+.container{
+    width: 1200px;
+}
+.logo{
+    height: 40px;
+    width: 116px;
+    cursor: pointer;
+}
+.data{
+    display: flex;
+    justify-content:center ;
+    position: relative;
+}
+.cate{
+    background-color: white;
+    width:950px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index:2;
+}
+.cate span{
+    font-size: 14px;
+    padding-top:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size:14px;
+    color: #4a4a4a;
+    cursor: pointer;
+}
+.cate span img{
+    width: 45px;
+}
+.tickets{
+    background-color: white;
+    width: 1200px;
+    height: 250px;
+    position: absolute;
+    top: 56px;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 20px;
+}
+.tt{
+    margin-top: 50px;
+}
+.full{
+    border:1px solid #9b9b9b;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    gap: 14px;
+}
+.full label{
+    display: grid;
+    padding: 10px 0 10px 15px;
+    border-radius: 5px;
+}
+.full label select{
+    padding: 5px 0px 0px 0px ;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    background: transparent;
+    width: 150px;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.full label select:focus{
+    outline: none;
+}
+.full label:hover{
+    background-color: #E3F2FD;
+}
+#ci input , #co input{
+    background: transparent;
+    color: black;
+    outline: 0;
+    border: 0;
+    font-size:25px;
+    font-weight: 900;
+    margin-top:5px;
+    position: relative;
+    width: 100%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+#search{
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    border-radius: 50px;
+    font-size: 25px;
+    border:0;
+    width: 230px;
+    cursor: pointer;
+    background: rgb(42,242,233);
+    background: linear-gradient(90deg, rgba(42,242,233,1) 4%, rgba(64,55,212,1) 100%);
+}
+.langbtn{ 
+    height: 44px;
+    background-color: #2b3745;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 30px;
+    bottom: -20;
+    left: 40%;
+    border-style: none;
+    margin: auto;
+    cursor: pointer;
+    margin-left: 1000px;
+}
+
+.login{ 
+    width: 216px;
+    height: 44px;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4px 10px; */
+    bottom: -20;
+    border-style: none;
+    margin: auto;
+    margin-left: 790px;
+    margin-right: 10px;
+}
+/* ----------------------------------------------------------------------nav1---------------------------------------------------------------------------- */
+.nav1{
+    padding-left: 70px;
+    display: flex;
+}
+.nav1 button img{
+    width: 40px;
+}
+.nav1 button{
+    margin-right: 20px;
+    background: transparent;
+    border: 0;
+    margin-bottom: 15px;
+}
+.nav1 button p{
+    font-size:12px;
+    color: #4A4A4A;
+}
+.nav1{
+    display: none;
+}
+.sticky{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    }

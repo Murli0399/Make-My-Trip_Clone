@@ -12,7 +12,7 @@ function myFunction() {
 var navbar1 = document.querySelector(".nav4");
 var sticky1 = navbar1.offsetTop;
 function myFunction1() {
-  if (0<= sticky1) {
+  if (0 <= sticky1) {
     navbar1.classList.add("sticky1")
   } else {
     navbar1.classList.remove("sticky1");
@@ -97,8 +97,9 @@ select1.onchange=()=>{
     select1.style.width="130px"
     newData.sort((a, b) => a.dprice - b.dprice);
     display(newData);
-  }else if(select1.value==""){
+  }else if(select1.value=="Popularity"){
     select1.style.width="90px"
+    location.reload();
   }else if(select1.value=="Price-High to Low"){
     select1.style.width="130px"
     newData.sort((a, b) => b.dprice - a.dprice);
@@ -214,10 +215,25 @@ function display(data){
     o.style.fontSize="10px"
     money.append(strikeprice,displayprice,tax,o)
     mace.append(sett,eddy,money)
-    box.onclick=()=>{
+    eddy.onclick=()=>{
+      localStorage.setItem("key",JSON.stringify(element))
+      window.location.href="./hoteldetail.html"
+    }
+    money.onclick=()=>{
       localStorage.setItem("key",JSON.stringify(element))
       window.location.href="./hoteldetail.html"
     }
   });
 }
 // --------------------------------------------------------------main body--------------------------------------------------------------------------------//
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+ci=document.getElementById("ci")
+co=document.getElementById("co")
+ci.innerHTML=`<input type="date" id="cid" value="${year}-0${month}-${day}">`
+co.innerHTML=`<input type="date" id="cod" min="${year}-0${month}-${day+1}" value="${year}-0${month}-${day+1}">`
+search=document.getElementById("search")
+
+
