@@ -25,6 +25,11 @@
             width: 100%;
         }
 
+        .flight-img-logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+
         h2 {
             color: white;
             margin-left: 70px;
@@ -159,8 +164,8 @@
             background-color: #0a223d;
             display: flex;
             color: #fff;
-            padding: 20px 20px;
-            /* justify-content: space-between; */
+            padding: 10px 20px;
+            justify-content: space-around;
             box-sizing: border-box;
         }
 
@@ -184,7 +189,6 @@
 
         #selected-departure-price,
         #selected-return-price {
-            margin-left: 100px;
             color: #32c5ff;
             font-weight: bold;
             font-size: 20px;
@@ -227,6 +231,23 @@
         input:focus {
             outline: none;
         }
+
+        /* Passenger Increment */
+
+        .changePassenger {
+            width: 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        #plusPassenger {
+            background-color: green;
+        }
+
+        #minusPassenger {
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -241,40 +262,54 @@
 
             </div>
             <div class="mainb" id="selected-flight">
-                <div>
-                    <div class="flex" style="align-items:center;">
-                        <p style="font-weight: bold; color: #32c5ff">Departure</p>
-                        <span style="margin: 0px 7px;">&#8226</span>
-                        <p id="selected-departure-flight-name"></p>
-                    </div>
-                    <div id="one-from-to"></div>
-                    <div class="flex">
-                        <img class="flight-img-logo" id="selected-departure-flight-logo" src="" alt="">
-                        <div>
-                            <span id="selected-on-ward-time-1"></span>→<span id="selected-on-ward-time-2"></span>
-                            <p class="small-blue">Flight Details</p>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                    <div>
+                        <div class="flex" style="align-items:center;">
+                            <p style="font-weight: bold; color: #32c5ff">Departure</p>
+                            <span style="margin: 0px 7px;">&#8226</span>
+                            <img class="flight-img-logo" id="selected-departure-flight-logo" src="" alt="">
+                            <p id="selected-departure-flight-name"></p>
                         </div>
-                        <div id="selected-departure-price"></div>
+                        <div id="one-from-to"></div>
+                        <div class="flex">
+
+                            <div>
+                                <span id="selected-on-ward-time-1"></span>→<span id="selected-on-ward-time-2"></span>
+                                <p class="small-blue">Flight Details</p>
+                            </div>
+
+                        </div>
+
                     </div>
+                    <div id="selected-departure-price"></div>
                 </div>
-                <hr>
+                <hr id="line">
+
                 <div id="return-selected-box">
-                    <div class="flex" style="align-items:center;">
-                        <p style="font-weight: bold;color: #32c5ff;">Return</p>
-                        <span style="margin: 0px 7px;">&#8226</span>
-                        <p id="selected-return-flight-name"></p>
-                    </div>
-                    <div id="return-from-to"></div>
-                    <div class="flex">
-                        <img class="flight-img-logo" id="selected-return-flight-logo" src="" alt="">
+                    <div style="display: flex;align-items: center;justify-content: space-between;">
                         <div>
-                            <span id="selected-return-time-1"></span>→<span id="selected-return-time-2"></span>
-                            <p class="small-blue">Flight Details</p>
+                            <div class="flex" style="align-items:center;">
+                                <p style="font-weight: bold;color: #32c5ff;">Return</p>
+                                <span style="margin: 0px 7px;">&#8226</span>
+                                <img class="flight-img-logo" id="selected-return-flight-logo" src="" alt="">
+                                <p id="selected-return-flight-name"></p>
+                            </div>
+                            <div id="return-from-to"></div>
+
+                            <div class="flex">
+
+                                <div>
+                                    <span id="selected-return-time-1"></span>→<span id="selected-return-time-2"></span>
+                                    <p class="small-blue">Flight Details</p>
+                                </div>
+
+                            </div>
                         </div>
                         <div id="selected-return-price"></div>
                     </div>
                 </div>
-                <hr id="rsb-hr">
+
+                
 
 
             </div>
@@ -318,7 +353,7 @@
         </div>
         <div class="side"
             style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;height:50%">
-            <h4 style="margin-bottom: 10px;">Price Breakup</h4>
+            <h4 style="margin-bottom: 10px;">Price Breakup (Per Person)</h4>
             <div style="display: flex;justify-content: space-between;font-weight: bold; margin-bottom: 15px;">
                 <span style="font-size: 14px;">Departure</span>
                 <p id="d-price" style="font-size: 14px;color: #4a4a4a;">5000</p>
@@ -332,11 +367,14 @@
             <hr style="margin-top: 10px;">
             <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 10px;">
                 <span style="font-size: 14px;">No. of Passengers</span>
-                <p id="passenger" style="font-size: 14px;color: #4a4a4a;">2</p>
+                <div style="display: flex; gap: 10px;"><button class="changePassenger" id="plusPassenger">+</button>
+                    <p id="passenger" style="font-size: 14px;color: #4a4a4a;"></p><button class="changePassenger"
+                        id="minusPassenger">-</button>
+                </div>
             </div>
             <div style="display: flex;justify-content: space-between;font-weight: bold;margin-top: 20px;">
                 <span style="font-size: 18px;">Total Amount to be paid</span>
-                <p id="totalprice" style="font-size: 18px;color: #4a4a4a;">10000</p>
+                <p id="totalprice" style="font-size: 18px;color:#008cff;">10000</p>
             </div>
             <button id="search"><b><a href="javascript:void(0)" style="text-decoration: none;color: white;"
                         onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">PAY
@@ -388,6 +426,7 @@
 
     if (bookingDetails.return.airlines) {
         document.getElementById("return-selected-box").style.display = "block"
+        document.getElementById("line").style.display="block"
 
         document.getElementById("selected-departure-flight-logo").setAttribute("src", bookingDetails.oneway.logo)
         document.getElementById("selected-departure-flight-name").innerText = bookingDetails.oneway.airlines
@@ -405,6 +444,7 @@
 
     } else {
         document.getElementById("return-selected-box").style.display = "none"
+        document.getElementById("line").style.display="none"
 
         document.getElementById("selected-departure-flight-logo").setAttribute("src", bookingDetails.oneway.logo)
         document.getElementById("selected-departure-flight-name").innerText = bookingDetails.oneway.airlines
@@ -414,10 +454,14 @@
         document.getElementById("one-from-to").innerText = `${bookingDetails.oneway.from}→${bookingDetails.oneway.to}`
     }
 
-    document.getElementById("d-price").innerText = `Rs ${bookingDetails.oneway.price}`
-    document.getElementById("r-price").innerText = `Rs ${bookingDetails.return.price}`
-    document.getElementById("passenger").innerText = `${bookingDetails.passenger}`
-    document.getElementById("totalprice").innerText = `Rs ${bookingDetails.passenger * bookingDetails.total}`
+    UpdateBill()
+
+    function UpdateBill() {
+        document.getElementById("d-price").innerText = `Rs ${bookingDetails.oneway.price}`
+        document.getElementById("r-price").innerText = `Rs ${bookingDetails.return.price}`
+        document.getElementById("passenger").innerText = `${bookingDetails.passenger}`
+        document.getElementById("totalprice").innerText = `Rs ${bookingDetails.passenger * bookingDetails.total}`
+    }
 
 
 
@@ -477,8 +521,28 @@
     // cdo = document.getElementById("cdo")
     // cdo.innerHTML = `<p>${day1w}</p>`
 
+    // Changing Passenger Number
 
+    let plus = document.getElementById("plusPassenger")
+    let minus = document.getElementById("minusPassenger")
 
+    plus.addEventListener("click", increase)
+    minus.addEventListener("click", decrease)
+
+    function increase() {
+        
+        bookingDetails.passenger=bookingDetails.passenger + 1
+        localStorage.setItem("selectedFlight",JSON.stringify(bookingDetails))
+        UpdateBill()
+        atp.innerText = `₹ ${bookingDetails.passenger * bookingDetails.total} `
+    }
+
+    function decrease() {
+        bookingDetails.passenger=bookingDetails.passenger -1
+        localStorage.setItem("selectedFlight",JSON.stringify(bookingDetails))
+        UpdateBill()
+        atp.innerText = `₹ ${bookingDetails.passenger * bookingDetails.total} `
+    }
 
 
 </script>

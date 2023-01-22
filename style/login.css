@@ -162,7 +162,7 @@ margin-right: 70px;
 #signup_page{
     width: 34%;
     margin: auto;
-    height: 87vh;
+    height: 94vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
     padding-top: 30px;
@@ -221,9 +221,10 @@ margin-right: 70px;
   color:#2e2d2d;
   font-size: 15px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 #p_tags span{
-    margin-left: 68%;
     color:#FF664B;
     font-family: sans-serif;
     font-size: 12px;

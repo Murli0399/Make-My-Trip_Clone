@@ -1,258 +1,318 @@
 {
-    "flights": [
-        {
-          "id": 2,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 25m",
-          "price": 5200,
-          "airlines": "Go First",
-          "logo": "img/gofirst.png",
-          "start_time": "00:30",
-          "end_time": "02:55"
-        },
-        {
-          "id": 10,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 45m",
-          "price": 5400,
-          "airlines": "Akasa",
-          "logo": "img/gofirst.png",
-          "start_time": "00:45",
-          "end_time": "03:10"
-        },
-        {
-          "id": 11,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 05m",
-          "price": 5600,
-          "airlines": "Air Asia",
-          "logo": "img/gofirst.png",
-          "start_time": "01:30",
-          "end_time": "03:55"
-        },
-        {
-          "id": 12,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "01h 55m",
-          "price": 6900,
-          "airlines": "Air India",
-          "logo": "img/gofirst.png",
-          "start_time": "02:30",
-          "end_time": "04:25"
-        },
-        {
-          "id": 13,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "03h 00m",
-          "price": 6200,
-          "airlines": "SpiceJet",
-          "logo": "img/gofirst.png",
-          "start_time": "04:30",
-          "end_time": "07:30"
-        },
-        {
-          "id": 14,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 25m",
-          "price": 6200,
-          "airlines": "Go First",
-          "logo": "img/gofirst.png",
-          "start_time": "12:30",
-          "end_time": "14:55"
-        },
-        {
-          "id": 15,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 25m",
-          "price": 5200,
-          "airlines": "Go First",
-          "logo": "img/gofirst.png",
-          "start_time": "19:30",
-          "end_time": "22:55"
-        },
-        {
-          "id": 16,
-          "from": "Delhi",
-          "to": "Pune",
-          "distance": "02h 15m",
-          "price": 5800,
-          "airlines": "Go First",
-          "logo": "img/gofirst.png",
-          "start_time": "14:30",
-          "end_time": "17:45"
-        },
-
-        {
-          "id": 17,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "02h 45m",
-          "price": 5900,
-          "airlines": "Akasa",
-          "logo": "img/gofirst.png",
-          "start_time": "00:45",
-          "end_time": "03:10"
-        },
-        {
-          "id": 18,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "02h 05m",
-          "price": 6100,
-          "airlines": "Air Asia",
-          "logo": "img/gofirst.png",
-          "start_time": "01:30",
-          "end_time": "03:55"
-        },
-        {
-          "id": 19,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "01h 55m",
-          "price": 6900,
-          "airlines": "Air India",
-          "logo": "img/gofirst.png",
-          "start_time": "02:30",
-          "end_time": "04:25"
-        },
-        {
-          "id": 20,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "03h 00m",
-          "price": 5800,
-          "airlines": "SpiceJet",
-          "logo": "img/gofirst.png",
-          "start_time": "04:30",
-          "end_time": "07:30"
-        },
-        {
-          "id": 21,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "02h 25m",
-          "price": 6400,
-          "airlines": "Go First",
-          "logo": "img/gofirst.png",
-          "start_time": "12:30",
-          "end_time": "14:55"
-        },
-        {
-          "id": 22,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "02h 25m",
-          "price": 5950,
-          "airlines": "Air India",
-          "logo": "img/gofirst.png",
-          "start_time": "19:30",
-          "end_time": "22:55"
-        },
-        {
-          "id": 23,
-          "from": "Pune",
-          "to": "Delhi",
-          "distance": "02h 15m",
-          "price": 6500,
-          "airlines": "Air Asia",
-          "logo": "img/gofirst.png",
-          "start_time": "14:30",
-          "end_time": "17:45"
-        },
-
-
-
-
-
-
-        {
-          "id": 3,
-          "from": "New delhi",
-          "to": "Pune",
-          "distance": "03h 15m",
-          "price": 5100,
-          "airlines": "Air India",
-          "logo": "img/gofirst.png",
-          "start_time": "01:30",
-          "end_time": "04:55"
-        },
-        {
-          "id": 4,
-          "from": "New Mumbai",
-          "to": "Pune",
-          "distance": "01h 25m",
-          "price": 5600,
-          "airlines": "Air Asia",
-          "logo": "img/gofirst.png",
-          "start_time": "00:30",
-          "end_time": "01:55"
-        },
-        {
-          "id": 5,
-          "from": "Banglore",
-          "to": "Pune",
-          "distance": "04h 25m",
-          "price": 6100,
-          "airlines": "Akasa",
-          "logo": "img/gofirst.png",
-          "start_time": "00:30",
-          "end_time": "04:55"
-        },
-        {
-          "from": "Indore",
-          "to": "Pune",
-          "distance": "06h 00m",
-          "price": 6580,
-          "airlines": "IndiGo",
-          "logo": "img/airindia.png",
-          "start_time": "06:30",
-          "end_time": "12:30",
-          "id": 6
-        },
-        {
-          "from": "Gujarat",
-          "to": "Pune",
-          "distance": "05h 15m",
-          "price": 5999,
-          "airlines": "SpiceJet",
-          "logo": "img/airindia.png",
-          "start_time": "05:30",
-          "end_time": "10:45",
-          "id": 7
-        },
-        {
-          "id": 8,
-          "from": "Kolkata",
-          "to": "Pune",
-          "distance": "07h 25m",
-          "price": 7000,
-          "airlines": "Air Asia",
-          "logo": "img/gofirst.png",
-          "start_time": "00:30",
-          "end_time": "07:55"
-        },
-        {
-          "id": 9,
-          "from": "Kolkata",
-          "to": "Pune",
-          "distance": "06h 25m",
-          "price": 7900,
-          "airlines": "Air India",
-          "logo": "img/gofirst.png",
-          "start_time": "01:30",
-          "end_time": "07:55"
-        }
-
-        
-        
-      ]
+  "flights": [
+    {
+      "id": 2,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 5200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "02:55"
+    },
+    {
+      "id": 10,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 45m",
+      "price": 5400,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:45",
+      "end_time": "03:10"
+    },
+    {
+      "id": 11,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 05m",
+      "price": 5600,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "01:30",
+      "end_time": "03:55"
+    },
+    {
+      "id": 12,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "01h 55m",
+      "price": 6900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "02:30",
+      "end_time": "04:25"
+    },
+    {
+      "id": 13,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "03h 00m",
+      "price": 6200,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "04:30",
+      "end_time": "07:30"
+    },
+    {
+      "id": 14,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 6200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "12:30",
+      "end_time": "14:55"
+    },
+    {
+      "id": 15,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 25m",
+      "price": 5200,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "19:30",
+      "end_time": "22:55"
+    },
+    {
+      "id": 16,
+      "from": "Delhi",
+      "to": "Pune",
+      "distance": "02h 15m",
+      "price": 5800,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "14:30",
+      "end_time": "17:45"
+    },
+    {
+      "id": 17,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 45m",
+      "price": 5900,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:45",
+      "end_time": "03:10"
+    },
+    {
+      "id": 18,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 05m",
+      "price": 6100,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "01:30",
+      "end_time": "03:55"
+    },
+    {
+      "id": 19,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "01h 55m",
+      "price": 6900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "02:30",
+      "end_time": "04:25"
+    },
+    {
+      "id": 20,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "03h 00m",
+      "price": 5800,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "04:30",
+      "end_time": "07:30"
+    },
+    {
+      "id": 21,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 25m",
+      "price": 6400,
+      "airlines": "Go First",
+      "logo": "img/gofirst.png",
+      "start_time": "12:30",
+      "end_time": "14:55"
+    },
+    {
+      "id": 22,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 25m",
+      "price": 5950,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "19:30",
+      "end_time": "22:55"
+    },
+    {
+      "id": 23,
+      "from": "Pune",
+      "to": "Delhi",
+      "distance": "02h 15m",
+      "price": 6500,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "14:30",
+      "end_time": "17:45"
+    },
+    {
+      "id": 3,
+      "from": "New delhi",
+      "to": "Pune",
+      "distance": "03h 15m",
+      "price": 5100,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "01:30",
+      "end_time": "04:55"
+    },
+    {
+      "id": 4,
+      "from": "New Mumbai",
+      "to": "Pune",
+      "distance": "01h 25m",
+      "price": 5600,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "00:30",
+      "end_time": "01:55"
+    },
+    {
+      "id": 5,
+      "from": "Banglore",
+      "to": "Pune",
+      "distance": "04h 25m",
+      "price": 6100,
+      "airlines": "Akasa",
+      "logo": "img/gofirst.png",
+      "start_time": "00:30",
+      "end_time": "04:55"
+    },
+    {
+      "from": "Indore",
+      "to": "Pune",
+      "distance": "06h 00m",
+      "price": 6580,
+      "airlines": "IndiGo",
+      "logo": "img/indigo.png",
+      "start_time": "06:30",
+      "end_time": "12:30",
+      "id": 6
+    },
+    {
+      "from": "Gujarat",
+      "to": "Pune",
+      "distance": "05h 15m",
+      "price": 5999,
+      "airlines": "SpiceJet",
+      "logo": "img/spicejet.png",
+      "start_time": "05:30",
+      "end_time": "10:45",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "from": "Kolkata",
+      "to": "Pune",
+      "distance": "07h 25m",
+      "price": 7000,
+      "airlines": "Air Asia",
+      "logo": "img/airasia.png",
+      "start_time": "00:30",
+      "end_time": "07:55"
+    },
+    {
+      "id": 9,
+      "from": "Kolkata",
+      "to": "Pune",
+      "distance": "06h 25m",
+      "price": 7900,
+      "airlines": "Air India",
+      "logo": "img/airindia.png",
+      "start_time": "01:30",
+      "end_time": "07:55"
+    }
+  ],
+  "users": [
+    {
+      "name": "sourabh",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "7909378587",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Rohit",
+      "email": "patidarsourabh574@gmail.com",
+      "number": "6909378587",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "423435",
+      "password": "atur",
+      "id": 3
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "9881273",
+      "password": "aefef",
+      "id": 4
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "98456",
+      "password": "aier",
+      "id": 5
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "989",
+      "password": "4356",
+      "id": 6
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "2355",
+      "password": "3456",
+      "id": 7
+    },
+    {
+      "name": "At",
+      "email": "atir@gmail.com",
+      "number": "4366",
+      "password": "34325466",
+      "id": 8
+    },
+    {
+      "name": "atir",
+      "email": "atir@gmail.com",
+      "number": "9881567021",
+      "password": "35356",
+      "id": 9
+    }
+  ],"admins": 
+    [{
+      "adminName": "murlikhaire28@gmail.com",
+      "password": 123456,
+      "id": 1
+    }]
 ,
     "hotels": [
       {
@@ -398,23 +458,5 @@
         "dprice": 12000,
         "id": 11
       }
-    ],
-    "user": [
-      {
-        "name": "sourabh",
-        "email": "patidarsourabh574@gmail.com",
-        "number": "7909378587",
-        "password": "1234",
-        "id": 1
-      },
-      {
-        "name": "Rohit",
-        "email": "patidarsourabh574@gmail.com",
-        "number": "6909378587",
-        "password": "1234",
-        "id": 2
-      }
     ]
-  }
-
-
+    }

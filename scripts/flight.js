@@ -13,9 +13,11 @@ inputSlider.onblur = (() => {
 
 
 // ...........Ftech Data From Server.............
-let from="Pune";
-let to="Delhi";
-
+let searchData=JSON.parse(localStorage.getItem("searchData")) || {}
+let from
+let to
+let date1;
+let date2;
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -23,8 +25,26 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
-let date1= today;
-let date2=today;
+
+if(searchData.from){
+    from= searchData.from
+    to=searchData.to
+    date1=searchData.date1;
+    date2=searchData.date2;
+}else{
+    from=  "Pune"
+    to="Delhi"
+    date1=today
+    date2=today
+}
+
+
+
+
+
+
+ 
+
 
 
 
@@ -33,7 +53,7 @@ let flightData = []
 let currentOneWayData = []
 let currentReturnData = []
 let flighttype = "round-trip"
-JSON.parse(localStorage.getItem("selectedFlight")) || []
+let selFlightData =  JSON.parse(localStorage.getItem("selectedFlight")) || {}
 
 
 fetch("http://localhost:3000/flights")
@@ -244,6 +264,11 @@ function SearchIt() {
         document.getElementById("return-selected-box").style.display = "none"
         document.getElementById("rsb-hr").style.display = "none"
         document.getElementById("return-fligts").style.display="none"
+        selFlightData.return={}
+        selFlightData.total = selFlightData.oneway.price
+        document.getElementById("total-price").innerText=`Rs ${selFlightData.total}`
+        
+        
         let oneway = flightData.filter((el) => {
             if (el.from == fromValue && el.to == ToValue) {
                 return true
@@ -531,7 +556,7 @@ function sortByPriceOne() {
 
 // ................Function for selecting Flight.........................
 
-let selFlightData = {
+selFlightData = {
     oneway: {},
     return: {},
     total: 0,
@@ -553,7 +578,7 @@ function onSelectOne(value) {
     let totalprice = document.getElementById("total-price")
     if (selFlightData.return.price) {
         selFlightData.total = selFlightData.oneway.price + selFlightData.return.price
-        totalprice.innerText = selFlightData.total
+        totalprice.innerText = `Rs ${selFlightData.total}`
     } else {
         selFlightData.total = selFlightData.oneway.price
         totalprice.innerText = `Rs ${selFlightData.total}`

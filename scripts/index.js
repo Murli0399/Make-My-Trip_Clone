@@ -1,6 +1,6 @@
 let flight1 = document.querySelector(".flight1")
 let input1 = document.getElementById("input1")
-
+let searchData={}
 
   let cityArr;
   fetch("http://localhost:3000/flights")
@@ -100,7 +100,6 @@ flight1.addEventListener("click", function () {
     down_bar.style.display = "block"
     fromh1.style.display = "none"
     span2.style.display = "none"
-    console.log("wporking")
 
 })
 
@@ -304,6 +303,15 @@ flight_second_btn.addEventListener("click",function(){
 
 let search_button=document.querySelector(".search-button");
 search_button.addEventListener("click",function(){
+    searchData={
+        from:document.getElementById("fromh1").innerText,
+        to:document.getElementById("toh1").innerText,
+        date1:document.getElementById("for_day").innerText+document.getElementById("for_month").innerText+document.getElementById("for_year").innerText+" " + document.getElementById("var").innerText,
+        date2:document.getElementById("for_day").innerText+document.getElementById("for_month").innerText+document.getElementById("for_year").innerText+" "+ document.getElementById("var").innerText,
+        passenger:document.getElementById("new_span").innerText
+    }
+    localStorage.setItem("searchData",JSON.stringify(searchData))
+ 
     window.location.assign("flight.html")
 })
 
