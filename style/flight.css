@@ -1,3 +1,4 @@
+
 body {
     background-color: #e5eef4;
     font-family: 'Lato';
@@ -108,6 +109,7 @@ input,button,select{
     top: 0;
     width: 100%;
   }
+
 
 
 
@@ -559,7 +561,7 @@ input,button,select{
 }
 
 .flight2 {
-    margin: 15px;
+    /* margin: 15px; */
     color: rgb(33, 32, 32);
     width: auto;
     border-right: 1px solid rgb(221, 220, 220);
@@ -674,9 +676,13 @@ input,button,select{
 #select_number{
     /* border:1px solid red; */
     font-size: 16px;
-    color: #008cff;
-    background-color: white;
+    background-color: #223950;
+    color: #223950;
 }
+
+option:not(:checked) {
+    background-color: #FFF;
+ }
 
 .suggestion_name {
     /* padding: 6px 0px; */

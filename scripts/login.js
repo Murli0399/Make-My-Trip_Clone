@@ -29,7 +29,7 @@ var display_name=[]
 let continue_button = document.getElementById("continue_button");
 continue_button.addEventListener("click", function () {
 let flag=true;
-  fetch("http://localhost:3000/user")
+  fetch("http://localhost:3000/users")
     .then((res) => {
       return res.json()
     })
@@ -185,7 +185,7 @@ registerForm.addEventListener("submit", function (event) {
 
   let inputMobile = registerForm.numbers_input.value;
   let flag = true;
-  fetch("http://localhost:3000/user")
+  fetch("http://localhost:3000/users")
     .then((res) => {
       return res.json()
     })
@@ -206,9 +206,11 @@ registerForm.addEventListener("submit", function (event) {
         console.log(names, emails, inputMobile, passwords)
         if (names.value.length < 3) {
           cre_one.style.display = "block"
+          return
         }
         if (inputMobile.length < 10 || inputMobile.length > 10) {
           cre_two.style.display = "block"
+          return
         }
         if (passwords.value.length < 4) {
           return cre_three.style.display = "block"
@@ -222,7 +224,7 @@ registerForm.addEventListener("submit", function (event) {
           password: passwords.value,
         }
 
-        fetch("http://localhost:3000/user", {
+        fetch("http://localhost:3000/users", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
