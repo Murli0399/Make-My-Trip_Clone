@@ -74,8 +74,49 @@ Start the server
 
 - Rajeev Ranjan
 
+## Home Page
 
 
+![image](https://drive.google.com/uc?export=view&id=1rMXPPAjk20bqgEOFdIpFbspYeC1OAtJV)
+
+
+## Login and Otp verification
+
+![image](https://drive.google.com/uc?export=view&id=1rGoQBin8NQ0AVW-u0jLmqekKZXSZ4YI6)
+
+
+## Flight Page
+
+![image](https://drive.google.com/uc?export=view&id=1vQvpRQcpf3yajdCpp5NTL1Rs0nss4QJm)
+
+
+## Hotel Page
+
+![image](https://drive.google.com/uc?export=view&id=1QXdTwlOVuxz7sd72FlGUSghR8NMeEkM1)
+
+
+##Booking Page
+
+![image](https://drive.google.com/uc?export=view&id=1t9viNPDOWB1AnssQaxvIVoSughDD0Y2h)
+
+
+##Payment Page
+
+![image](https://drive.google.com/uc?export=view&id=1cYK5spLx1zL-jitKwI-p7ftXGWDqu63h)
+
+
+##Admin Site
+
+![image](https://drive.google.com/uc?export=view&id=1vTKgKJ5HIVUhYReB2QyWM5Nzg5Y141GX)
+
+##Admin Site(Flight)
+
+![image](https://drive.google.com/uc?export=view&id=1rXvvNmKxOQx79fU55vIj1dv854byACVs)
+
+
+##Admin Site(Hotel)
+
+![image](https://drive.google.com/uc?export=view&id=1Ek5uuromp3QiE0rfxHeFzkINpXze4Oz9)
 
 
 
