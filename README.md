@@ -42,13 +42,18 @@ Start the server
 
 ## Features
 
-- Login and Sign up using Mobile OTP
+- Login and Sign up using OTP
 - Search engine to search Flights
-- Sorting of flights as his price
+- Sorting of flights (Price,Arrival,Duration,Departure)
+- Filter Flights with respect to Airlines
 -  Search engine to search Hotels
-- Sorting of Hotels as his price
+- Sorting of Hotels according to Price
+- Filter Hotels (Price,Rating)
 - Purchase the Product
 - Do payment
+- Admin site 
+- Add New Flight And Hotel Details
+- Delete Data on the Website
 
 
 ## Acknowledgements
