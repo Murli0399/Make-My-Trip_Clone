@@ -1,7 +1,7 @@
 
 ![Logo](https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png)
 
-# Clone of Make my Trip
+# (Take-A-Trip)Clone of Make my Trip
 
 # Technology we use
 
