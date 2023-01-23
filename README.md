@@ -77,3 +77,5 @@ Start the server
 
 
 - GITHUB - https://github.com/atir09/purple-crook-1402
+- NETLIFY - https://take-a-trip-purple.netlify.app/
+
